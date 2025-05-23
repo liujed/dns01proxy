@@ -4,8 +4,20 @@ import (
 	"os"
 
 	"github.com/caddyserver/caddy/v2"
+	"github.com/liujed/caddy-dns01proxy/flags"
 	"github.com/liujed/dns01proxy"
+	"github.com/liujed/goutil/optionals"
 	"github.com/spf13/cobra"
+)
+
+// Flag definitions.
+var (
+	flgDebug = flags.Flag[bool]{
+		Persistent: true,
+		Name:       "debug",
+		ShortName:  optionals.Some('v'),
+		UsageMsg:   "turn on verbose debug logs",
+	}
 )
 
 // The base command when called without any subcommands.
@@ -42,4 +54,6 @@ func Execute() {
 
 func init() {
 	rootCmd.SetVersionTemplate("{{.Version}}\n")
+
+	flags.AddBoolFlag(rootCmd, flgDebug)
 }
