@@ -1,0 +1,11 @@
+EXE := $(if $(filter $(shell go env GOOS),windows),.exe,)
+
+.PHONY: build
+build:
+	CGO_ENABLED=0 \
+	GO111MODULE=on \
+	go build -ldflags '-w -s' \
+		-trimpath \
+		-tags=nobadger,nomysql,nopgx \
+		-o "../../../dist/dns01proxy-{{.PackageName}}$(EXE)" \
+		.

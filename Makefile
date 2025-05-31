@@ -3,12 +3,14 @@ default: clean build
 
 .PHONY: clean
 clean:
-	rm -rf dist/
+	rm -rf dist/ internal/builds/*/
+	go mod tidy
+
+.PHONY: generate
+generate: clean
+	go generate ./...
+	go mod tidy
 
 .PHONY: build
-build: clean
-	go build -ldflags '-w -s' \
-		-tags=nobadger,nomysql,nopgx \
-		-trimpath \
-		-o dist/dns01proxy \
-		./cmd/dns01proxy
+build: clean generate
+	$(MAKE) -C internal/builds

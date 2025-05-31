@@ -38,7 +38,22 @@ access to your DNS provider or API keys.
 Designed to work with:
   * acme.sh's 'acmeproxy' provider,
   * Caddy's 'acmeproxy' DNS provider module, and
-  * lego's 'httpreq' DNS provider.`,
+  * lego's 'httpreq' DNS provider.
+
+
+DNS PROVIDER MODULES
+
+dns01proxy is built using Caddy, and uses DNS provider modules that are written
+by the Caddy community. To limit the amount of third-party code that you run,
+dns01proxy ships binaries that are built with a single DNS module.
+
+Make sure that the binary you are running supports your DNS provider, and always
+check that you trust the author of the DNS module. The release notes has details
+about the source of the DNS module in each build:
+
+  https://github.com/liujed/dns01proxy/releases
+
+` + getDNSProviderVersions(),
 	Version: dns01proxy.Release(),
 	CompletionOptions: cobra.CompletionOptions{
 		HiddenDefaultCmd: true,

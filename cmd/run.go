@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/caddyserver/caddy/v2"
 	caddycmd "github.com/caddyserver/caddy/v2/cmd"
 	"github.com/liujed/caddy-dns01proxy/flags"
 	_ "github.com/liujed/dns01proxy/internal/caddyimports"
@@ -27,6 +28,13 @@ var runCmd = &cobra.Command{
 	Use:   "run",
 	Short: "Starts the dns01proxy server",
 	RunE: func(cmd *cobra.Command, args []string) error {
+		// Log an error if there aren't any DNS providers available.
+		if len(caddy.GetModules("dns.providers")) == 0 {
+			caddy.Log().Error(
+				`No DNS provider modules found. dns01proxy will fail to start. Please make sure that your copy of dns01proxy is compiled with a DNS provider. Download a release at https://github.com/liujed/dns01proxy/releases`,
+			)
+		}
+
 		flags := caddycmd.Flags{FlagSet: cmd.Flags()}
 		configFile, err := flags.GetString(flgConfig.Name)
 		if err != nil {

@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	"strings"
 
 	"github.com/caddyserver/caddy/v2"
 	caddydns01proxy "github.com/liujed/caddy-dns01proxy"
@@ -26,20 +27,40 @@ var versionCmd = &cobra.Command{
 		fmt.Printf("  caddy-dns01proxy %s\n", version)
 
 		fmt.Println()
-		fmt.Println("Available DNS providers:")
-		for idx, caddyModuleInfo := range caddy.GetModules("dns.providers") {
-			if idx > 0 {
-				fmt.Println()
-			}
+		fmt.Println()
 
-			goModulePath, version := gomodversions.GetVersionOfValue(caddyModuleInfo.New())
-			fmt.Printf("  %s\t%s\n    %s\n",
+		fmt.Print(getDNSProviderVersions())
+	},
+}
+
+// Returns details about the DNS providers available, suitable for displaying as
+// part of help or version information.
+func getDNSProviderVersions() string {
+	modules := caddy.GetModules("dns.providers")
+	if len(modules) == 0 {
+		return `NO DNS PROVIDERS ARE AVAILABLE IN THIS BUILD. Please make sure that your copy of
+dns01proxy is compiled with a DNS provider. Download a release at
+https://github.com/liujed/dns01proxy/releases
+`
+	}
+
+	buf := strings.Builder{}
+	buf.WriteString("DNS providers in this build:\n")
+	for _, caddyModuleInfo := range modules {
+		buf.WriteRune('\n')
+
+		goModulePath, version := gomodversions.GetVersionOfValue(caddyModuleInfo.New())
+		buf.WriteString(
+			fmt.Sprintf(
+				"  %s\t%s\n    %s\n",
 				caddyModuleInfo.ID.Name(),
 				version,
 				goModulePath,
-			)
-		}
-	},
+			),
+		)
+	}
+
+	return buf.String()
 }
 
 func init() {
