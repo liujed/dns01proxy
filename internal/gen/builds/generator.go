@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"context"
+	"encoding/json"
 	"fmt"
 	"go/format"
 	"io"
@@ -13,6 +14,7 @@ import (
 	"strings"
 
 	"github.com/google/go-github/v72/github"
+	"github.com/liujed/dns01proxy/internal/gen"
 )
 
 var topDir = filepath.Join("..", "..", "..")
@@ -51,10 +53,10 @@ func mainWithErr() error {
 		// Print progress info.
 		fmt.Printf("(%*d/%d) %s\n", maxLen, idx+1, len(repos), modPath)
 
-		version, err := getGoModuleVersion(modPath)
+		version, hash, err := getGoModuleVersion(modPath)
 		if err != nil {
 			return fmt.Errorf(
-				"unable to get Go module version for %q: %w",
+				"unable to get Go module version/hash for %q: %w",
 				modPath,
 				err,
 			)
@@ -63,7 +65,7 @@ func mainWithErr() error {
 		templateData := TemplateData{
 			PackageName: repo.GetName(),
 			ModPath:     modPath,
-			Version:     version,
+			Version:     fmt.Sprintf("%s (%s)", version, hash),
 		}
 
 		// Ensure the module's build directory exists.
@@ -102,6 +104,40 @@ func mainWithErr() error {
 		if err != nil {
 			return fmt.Errorf(
 				"unable to write main.go for %q: %w",
+				modPath,
+				err,
+			)
+		}
+
+		// Write the build metadata.
+		f, err = os.Create(filepath.Join(buildDir, "metadata.json"))
+		if err != nil {
+			return fmt.Errorf(
+				"unable to create build metadata for %q: %w",
+				modPath,
+				err,
+			)
+		}
+		func() {
+			defer f.Close()
+			enc := json.NewEncoder(f)
+			enc.SetIndent("", "  ")
+			err = enc.Encode(gen.Build{
+				ProjectURL:   *repo.HTMLURL,
+				GoModPath:    modPath,
+				GoModVersion: version,
+
+				// XXX Assumes Caddy module name can be derived from GitHub repository
+				// name.
+				CaddyDocURL: fmt.Sprintf(
+					"https://caddyserver.com/docs/modules/dns.providers.%s",
+					repo.GetName(),
+				),
+			})
+		}()
+		if err != nil {
+			return fmt.Errorf(
+				"unable to write build metadata for %q: %w",
 				modPath,
 				err,
 			)
@@ -164,24 +200,41 @@ func goGetModules(repos []*github.Repository) error {
 }
 
 // Returns the latest version and go-mod hash of the given Go module. For
-// example, "v0.0.0 (h1:abcd1234=)"
+// example, "v0.0.0" and "h1:abcd1234=".
 //
 // Depends on goGetModules being run.
-func getGoModuleVersion(modPath string) (string, error) {
+func getGoModuleVersion(
+	modPath string,
+) (
+	version string,
+	hash string,
+	err error,
+) {
 	// Use `go list` to get the module version.
-	cmd := exec.Command("go", "list", "-f", "{{.Version}} ({{.Sum}})", "-m", modPath)
+	cmd := exec.Command("go", "list", "-f", "{{.Version}}", "-m", modPath)
 	cmd.Stderr = os.Stderr
 	data, err := cmd.Output()
 	if err != nil {
-		return "", fmt.Errorf("error running 'go list': %w", err)
+		return "", "", fmt.Errorf("error running 'go list': %w", err)
+	}
+	version = strings.TrimSpace(string(data))
+	if version == "" {
+		version = "unknown"
 	}
 
-	output := strings.TrimSpace(string(data))
-	if output == "" {
-		return "unknown", nil
+	// Use `go list` to get the module hash.
+	cmd = exec.Command("go", "list", "-f", "{{.Sum}}", "-m", modPath)
+	cmd.Stderr = os.Stderr
+	data, err = cmd.Output()
+	if err != nil {
+		return "", "", fmt.Errorf("error running 'go list': %w", err)
+	}
+	hash = strings.TrimSpace(string(data))
+	if hash == "" {
+		hash = "unknown"
 	}
 
-	return output, nil
+	return version, hash, nil
 }
 
 func generateMakefile(w io.Writer, templateData TemplateData) error {

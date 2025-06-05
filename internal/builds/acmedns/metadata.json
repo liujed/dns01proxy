@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/acmedns",
+  "go_mod_path": "github.com/caddy-dns/acmedns",
+  "go_mod_version": "v0.4.1",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.acmedns"
+}

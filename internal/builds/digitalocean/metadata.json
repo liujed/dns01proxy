@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/digitalocean",
+  "go_mod_path": "github.com/caddy-dns/digitalocean",
+  "go_mod_version": "v0.0.0-20250606074528-04bde2867106",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.digitalocean"
+}

@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/luadns",
+  "go_mod_path": "github.com/caddy-dns/luadns",
+  "go_mod_version": "v0.0.0-20250529181927-a9a67e6bb4a8",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.luadns"
+}

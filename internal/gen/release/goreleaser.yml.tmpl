@@ -1,0 +1,126 @@
+# Adapted from Caddy's release process.
+version: 2
+
+before:
+  hooks:
+    - rm -rf vendor
+    - go mod vendor
+
+builds:
+⦃- range $id, $build := .Builds⦄
+- id: "⦃$id⦄"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/⦃$id⦄
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+⦃- end⦄
+
+archives:
+⦃- range $id, $build := .Builds⦄
+  - id: ⦃$id⦄
+    ids:
+    - ⦃$id⦄
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_⦃$id⦄_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+⦃- end⦄
+
+source:
+  enabled: true
+  name_template: '{{ .ProjectName }}_{{ .Version }}_src'
+  format: 'tar.gz'
+
+  # Additional files/template/globs you want to add to the source archive.
+  #
+  # Default: empty.
+  files:
+    - vendor
+
+
+checksum:
+  algorithm: sha512
+
+release:
+  github:
+    owner: liujed
+    name: dns01proxy
+  draft: true
+  prerelease: auto
+  header: |
+    ## DNS provider modules
+
+    The binaries in this release were built with the following Caddy DNS
+    provider packages:
+
+    | Name | Version | Source | Docs |
+    | :--- | :------ | :----- | :--: |
+⦃- range $id, $build := .Builds⦄
+    | ⦃$id⦄ | `⦃$build.GoModVersion⦄` | [`⦃$build.GoModPath⦄`](⦃$build.ProjectURL⦄) | [📖](⦃$build.CaddyDocURL⦄) |
+⦃- end⦄
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+    - '^chore:'
+    - '^ci:'
+    - '^docs?:'
+    - '^readme:'
+    - '^tests?:'

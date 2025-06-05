@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/desec",
+  "go_mod_path": "github.com/caddy-dns/desec",
+  "go_mod_version": "v1.0.1",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.desec"
+}
