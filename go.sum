@@ -58,6 +58,7 @@ github.com/AzureAD/microsoft-authentication-extensions-for-go/cache v0.1.1/go.mo
 github.com/AzureAD/microsoft-authentication-library-for-go v1.4.2 h1:oygO0locgZJe7PpYPXT5A29ZkwJaPqcva7BVeemZOZs=
 github.com/AzureAD/microsoft-authentication-library-for-go v1.4.2/go.mod h1:wP83P5OoQ5p6ip3ScPr0BAq0BvuPAvacpEuSzyouqAI=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
+github.com/BurntSushi/toml v1.4.0 h1:kuoIxZQy2WRRk1pttg9asf+WVv6tWQuBNVmK8+nqPr0=
 github.com/BurntSushi/toml v1.4.0/go.mod h1:ukJfTF/6rtPPRCnwkur4qwRxa8vTRFBF0uk2lLoLwho=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/DataDog/zstd v1.4.1/go.mod h1:1jcaCB/ufaK+sKp1NBhlGmpz41jOoPQ35bpF36t7BBo=
@@ -715,8 +716,8 @@ github.com/libdns/vultr/v2 v2.0.2 h1:3hTsVctr4IUzT6R7ASyYYShJKLAneVdfxMPTNZ038ow
 github.com/libdns/vultr/v2 v2.0.2/go.mod h1:u5Vgx6UG44bMLFKzqHdixc+o2TfP8aGUUmEZk4asH9o=
 github.com/lightstep/lightstep-tracer-common/golang/gogo v0.0.0-20190605223551-bc2310a04743/go.mod h1:qklhhLq1aX+mtWk9cPHPzaBjWImj5ULL6C7HFJtXQMM=
 github.com/lightstep/lightstep-tracer-go v0.18.1/go.mod h1:jlF1pusYV4pidLvZ+XD0UBX0ZE6WURAspgAczcDHrL4=
-github.com/liujed/caddy-dns01proxy v0.0.1 h1:4MBdRzUU+oGzRBD95Wx21M4mh6gW+/IgR0IJVnfOC4g=
-github.com/liujed/caddy-dns01proxy v0.0.1/go.mod h1:4tolRKaZziMCbG9cAcgeveOdKN/y39HiShSK/Iwz65c=
+github.com/liujed/caddy-dns01proxy v0.1.0 h1:xgqcHeCnCsNYW0fVtHBvFOEST0ImG0PHYtSuQvkTb9s=
+github.com/liujed/caddy-dns01proxy v0.1.0/go.mod h1:E7nITuj0HaYlsgCwQc1Lwmvn7uIfiJjDRKVMVSPOyB0=
 github.com/liujed/goutil v0.0.0 h1:2436TO9/CPSpL/M6Uih4Nt7B20NFQ0wwegoFnTgBC14=
 github.com/liujed/goutil v0.0.0/go.mod h1:dpiiIGi/qurLl5eG5TWq/eViVTAcWubEPPgbXA49w8A=
 github.com/logrusorgru/aurora v0.0.0-20181002194514-a7b3b318ed4e/go.mod h1:7rIyQOR62GCctdiQpZ/zOJlFyk6y+94wXzv6RNZgaR4=

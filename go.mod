@@ -36,7 +36,7 @@ require (
 	github.com/caddy-dns/vultr v0.0.0-20250607134539-f8ac7c9ae307
 	github.com/caddyserver/caddy/v2 v2.10.0
 	github.com/google/go-github/v72 v72.0.0
-	github.com/liujed/caddy-dns01proxy v0.0.1
+	github.com/liujed/caddy-dns01proxy v0.1.0
 	github.com/liujed/goutil v0.0.0
 	github.com/spf13/cobra v1.9.1
 )
@@ -51,6 +51,7 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/internal v1.11.1 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/dns/armdns v1.2.0 // indirect
 	github.com/AzureAD/microsoft-authentication-library-for-go v1.4.2 // indirect
+	github.com/BurntSushi/toml v1.4.0 // indirect
 	github.com/KimMachineGun/automemlimit v0.7.1 // indirect
 	github.com/Masterminds/goutils v1.1.1 // indirect
 	github.com/Masterminds/semver/v3 v3.3.0 // indirect

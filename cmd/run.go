@@ -19,7 +19,7 @@ var (
 		ShortName:    optionals.Some('c'),
 		UsageMsg:     "read configuration from `FILE`",
 		Required:     true,
-		FilenameExts: optionals.Some([]string{"json"}),
+		FilenameExts: optionals.Some([]string{"json", "toml"}),
 	}
 )
 

@@ -57,103 +57,111 @@ project for more on this second option.
 
 ## Configuring dns01proxy
 
-dns01proxy is configured through a single JSON file. Below is an example
+dns01proxy is configured through a single TOML file. Below is an example
 configuration for running at `https://dns01proxy.example.com` with Cloudflare
-as a DNS provider. A few things are worth noting about this example:
-* The user's password is hashed using `dns01proxy hash-password`.
-* Environment variables can be referenced using the `{env.VAR_NAME}` syntax.
-* Each DNS provider has a different set of configuration parameters. See the
-  documentation link for your provider in the [release
-  notes](https://github.com/liujed/dns01proxy/releases).
+as a DNS provider.
 
-```json
-{
-  "hostnames": ["dns01proxy.example.com"],
-  "listen": [":443"],
-  "dns": {
-    "provider": {
-      "name": "cloudflare",
-      "api_token": "{env.CF_API_TOKEN}"
-    }
-  },
-  "accounts": [
-    {
-      "username": "AzureDiamond",
-      "password": "$2a$14$N5bGBXf7zwAW9Ym7IQ/mxOHTGsvFNOTEAiN4/r1LnvfzYCpiWcHOa",
-      "allow_domains": ["private.example.com"]
-    }
-  ]
-}
+```toml
+hostnames = ["dns01proxy.example.com"]
+listen = [":443"]
+
+[dns.provider]
+name = "cloudflare"
+api_token = "{env.CF_API_TOKEN}"  # Reads from an environment variable.
+
+# One for each user. Password is hashed using `dns01proxy hash-password`.
+[[accounts]]
+username = "AzureDiamond"
+password = "$2a$14$N5bGBXf7zwAW9Ym7IQ/mxOHTGsvFNOTEAiN4/r1LnvfzYCpiWcHOa"
+allow_domains = ["private.example.com"]
 ```
 
+Each DNS provider has a different set of configuration parameters. See the
+Caddy documentation link for your provider in the [release
+notes](https://github.com/liujed/dns01proxy/releases). Caddy documents its
+modules' options in JSON, but remember that you'll need to configure the module
+in TOML.
+
 <details>
-<summary>Full JSON structure</summary>
+<summary>Full structure</summary>
 
-```jsonc
-{
-  // The server's hostnames. Used for obtaining TLS/SSL certificates.
-  "hostnames": ["<hostname>"],
+```toml
+# The server's hostnames. Used for obtaining TLS/SSL certificates.
+hostnames = ["<hostname>"]
 
-  // The sockets on which to listen.
-  "listen": ["<ip_addr:port>"],
+# The sockets on which to listen.
+listen = ["<ip_addr:port>"]
 
-  // Configures the set of trusted proxies, for accurate logging of client IP
-  // addresses.
-  "trusted_proxies": {
-    // An `http.ip_sources` Caddy module.
-    "source": "<module_name>",
-    // ...
-  },
+# Configures the set of trusted proxies, for accurate logging of client IP
+# addresses. This must be an `http.ip_sources` Caddy module. See Caddy's module
+# documentation at https://caddyserver.com/docs/modules/
+#
+# Note that Caddy documents its modules' options in JSON. You'll need to
+# configure the module in TOML. For example, to configure
+# `http.ip_sources.static`:
+#
+#     [trusted_proxies]
+#     source = "static"
+#     ranges = ["10.0.0.1", "192.168.0.1"]
+#
+[trusted_proxies]
+source = "<module_name>"
+# •••  # Module-specific configuration goes here.
 
-  "dns": {
-    // The DNS provider for publishing DNS-01 responses.
-    "provider": {
-      // A `dns.providers` Caddy module.
-      "name": "<provider_name>",
+[dns]
+# The TTL to use in DNS TXT records. Optional. Not usually needed.
+ttl = "<ttl>"  # e.g., "2m"
 
-      // Module configuration. See the documentation link for your provider in
-      // the release notes: https://github.com/liujed/dns01proxy/releases
+# Custom DNS resolvers to prefer over system or built-in defaults. Set this to
+# a public resolver if you are using split-horizon DNS.
+resolvers = ["<resolver>"]
 
-      // ... 
-    },
+# The DNS provider for publishing DNS-01 responses. This must be a
+# `dns.providers` Caddy module that is compiled into your dns01proxy binary.
+# See the Caddy documentation link for your provider in the release notes:
+# https://github.com/liujed/dns01proxy/releases
+#
+# Note that Caddy documents its modules' options in JSON. You'll need to
+# configure the module in TOML. For example, to configure
+# `dns.providers.cloudflare`:
+#
+#     [dns.provider]
+#     name = "cloudflare"
+#     api_token = "{env.CF_API_TOKEN}"  # Reads from an environment variable.
+#
+[dns.provider]
+name = "<provider_name>"
+# •••  # Module-specific configuration goes here.
 
-    // The TTL to use in DNS TXT records. Optional. Not usually needed.
-    "ttl": "<ttl>",  // e.g., "2m"
 
-    // Custom DNS resolvers to prefer over system or built-in defaults. Set
-    // this to a public resolver if you are using split-horizon DNS.
-    "resolvers": ["<resolver>"]
-  },
+# Configures HTTP basic authentication and the domains for which each user can
+# get TLS/SSL certificates.
+[[accounts]]
+user_id = "<userID>"
 
-  // Configures HTTP basic authentication and the domains for which each user
-  // can get TLS/SSL certificates.
-  "accounts": [
-    {
-      "user_id": "<userID>",
+# To hash passwords, use `dns01proxy hash-password`.
+password = "<hashed_password>"
 
-      // To hash passwords, use `dns01proxy hash-password`.
-      "password": "<hashed_password>",
-
-      // These largely follow Smallstep's domain name rules:
-      //
-      //   https://smallstep.com/docs/step-ca/policies/#domain-names
-      //
-      // Due to a limitation in ACME and DNS-01, allowing a domain also allows
-      // wildcard certificates for that domain.
-      "allow_domains": ["<domain>"],
-      "deny_domains": ["<domain>"]
-    }
-  ]
-}
+# These largely follow Smallstep's domain name rules:
+#
+#   https://smallstep.com/docs/step-ca/policies/#domain-names
+#
+# Due to a limitation in ACME and DNS-01, allowing a domain also allows
+# wildcard certificates for that domain.
+allow_domains = ["<domain>"]
+deny_domains = ["<domain>"]
 ```
 
 </details>
+
+If you prefer JSON, then just use the same JSON structure as the configuration
+for the [`dns01proxy` Caddy app](https://github.com/liujed/caddy-dns01proxy#configuring-a-dns01proxy-app-in-json).
 
 ## Running dns01proxy
 
 To run dns01proxy, use the `run` subcommand. For example,
 ```
-dns01proxy run --config /usr/local/etc/dns01proxy.json
+dns01proxy run --config /usr/local/etc/dns01proxy.toml
 ```
 
 ## Integrating with acme.sh
