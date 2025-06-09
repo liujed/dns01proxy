@@ -2162,7 +2162,7 @@ release:
     | duckdns | `v0.5.0` | [`github.com/caddy-dns/duckdns`](https://github.com/caddy-dns/duckdns) | [📖](https://caddyserver.com/docs/modules/dns.providers.duckdns) |
     | dynu | `v1.0.0` | [`github.com/caddy-dns/dynu`](https://github.com/caddy-dns/dynu) | [📖](https://caddyserver.com/docs/modules/dns.providers.dynu) |
     | glesys | `v1.0.0` | [`github.com/caddy-dns/glesys`](https://github.com/caddy-dns/glesys) | [📖](https://caddyserver.com/docs/modules/dns.providers.glesys) |
-    | he | `v1.1.1` | [`github.com/caddy-dns/he`](https://github.com/caddy-dns/he) | [📖](https://caddyserver.com/docs/modules/dns.providers.he) |
+    | he | `v1.2.0` | [`github.com/caddy-dns/he`](https://github.com/caddy-dns/he) | [📖](https://caddyserver.com/docs/modules/dns.providers.he) |
     | hetzner | `v1.0.0` | [`github.com/caddy-dns/hetzner`](https://github.com/caddy-dns/hetzner) | [📖](https://caddyserver.com/docs/modules/dns.providers.hetzner) |
     | infomaniak | `v1.0.2` | [`github.com/caddy-dns/infomaniak`](https://github.com/caddy-dns/infomaniak) | [📖](https://caddyserver.com/docs/modules/dns.providers.infomaniak) |
     | inwx | `v0.4.0` | [`github.com/caddy-dns/inwx`](https://github.com/caddy-dns/inwx) | [📖](https://caddyserver.com/docs/modules/dns.providers.inwx) |

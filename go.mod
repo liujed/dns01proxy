@@ -16,7 +16,7 @@ require (
 	github.com/caddy-dns/duckdns v0.5.0
 	github.com/caddy-dns/dynu v1.0.0
 	github.com/caddy-dns/glesys v1.0.0
-	github.com/caddy-dns/he v1.1.1
+	github.com/caddy-dns/he v1.2.0
 	github.com/caddy-dns/hetzner v1.0.0
 	github.com/caddy-dns/infomaniak v1.0.2
 	github.com/caddy-dns/inwx v0.4.0
@@ -114,7 +114,7 @@ require (
 	github.com/libdns/duckdns v0.3.0 // indirect
 	github.com/libdns/dynu v1.0.0 // indirect
 	github.com/libdns/glesys v1.0.0 // indirect
-	github.com/libdns/he v1.1.1 // indirect
+	github.com/libdns/he v1.2.0 // indirect
 	github.com/libdns/hetzner v1.0.0 // indirect
 	github.com/libdns/infomaniak v0.2.0 // indirect
 	github.com/libdns/inwx v0.3.0 // indirect
@@ -198,7 +198,7 @@ require (
 	golang.org/x/sys v0.33.0 // indirect
 	golang.org/x/term v0.32.0 // indirect
 	golang.org/x/text v0.25.0 // indirect
-	golang.org/x/time v0.11.0 // indirect
+	golang.org/x/time v0.12.0 // indirect
 	golang.org/x/tools v0.33.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250303144028-a0af3efb3deb // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250303144028-a0af3efb3deb // indirect
