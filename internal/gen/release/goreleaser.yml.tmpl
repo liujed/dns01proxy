@@ -86,6 +86,7 @@ source:
   enabled: true
   name_template: '{{ .ProjectName }}_{{ .Version }}_src'
   format: 'tar.gz'
+  prefix_template: '{{ .ProjectName }}-{{ .Version }}/'
 
   # Additional files/template/globs you want to add to the source archive.
   #
