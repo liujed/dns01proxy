@@ -36,7 +36,7 @@ require (
 	github.com/caddy-dns/vultr v0.0.0-20250607134539-f8ac7c9ae307
 	github.com/caddyserver/caddy/v2 v2.10.0
 	github.com/google/go-github/v72 v72.0.0
-	github.com/liujed/caddy-dns01proxy v0.1.0
+	github.com/liujed/caddy-dns01proxy v0.1.3
 	github.com/liujed/goutil v0.0.0
 	github.com/spf13/cobra v1.9.1
 )
