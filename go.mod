@@ -36,7 +36,7 @@ require (
 	github.com/caddy-dns/vultr v0.0.0-20250607134539-f8ac7c9ae307
 	github.com/caddyserver/caddy/v2 v2.10.0
 	github.com/google/go-github/v72 v72.0.0
-	github.com/liujed/caddy-dns01proxy v0.1.0
+	github.com/liujed/caddy-dns01proxy v0.1.3
 	github.com/liujed/goutil v0.0.0
 	github.com/spf13/cobra v1.9.1
 )
@@ -68,7 +68,7 @@ require (
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/chzyer/readline v1.5.1 // indirect
-	github.com/cloudflare/circl v1.6.0 // indirect
+	github.com/cloudflare/circl v1.6.1 // indirect
 	github.com/coreos/go-oidc/v3 v3.13.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.6 // indirect
 	github.com/dgraph-io/badger v1.6.2 // indirect
