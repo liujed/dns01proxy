@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/conoha",
+  "go_mod_path": "github.com/caddy-dns/conoha",
+  "go_mod_version": "v0.1.0",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.conoha"
+}

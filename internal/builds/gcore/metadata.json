@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/gcore",
+  "go_mod_path": "github.com/caddy-dns/gcore",
+  "go_mod_version": "v0.0.0-20250618083722-4ebfce0e46b0",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.gcore"
+}

@@ -1,6 +1,6 @@
 {
   "project_url": "https://github.com/caddy-dns/vultr",
   "go_mod_path": "github.com/caddy-dns/vultr",
-  "go_mod_version": "v0.0.0-20250607134539-f8ac7c9ae307",
+  "go_mod_version": "v0.0.0-20250723121531-55bf3e9768be",
   "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.vultr"
 }

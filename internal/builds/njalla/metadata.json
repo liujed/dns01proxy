@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/njalla",
+  "go_mod_path": "github.com/caddy-dns/njalla",
+  "go_mod_version": "v0.0.0-20250823094507-f709141f1fe6",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.njalla"
+}
