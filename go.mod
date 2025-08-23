@@ -3,7 +3,7 @@ module github.com/liujed/dns01proxy
 go 1.25
 
 require (
-	github.com/caddy-dns/acmedns v0.4.1
+	github.com/caddy-dns/acmedns v0.5.0
 	github.com/caddy-dns/acmeproxy v1.1.1
 	github.com/caddy-dns/alidns v1.0.26
 	github.com/caddy-dns/azure v0.6.0
@@ -108,7 +108,7 @@ require (
 	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/kolo/xmlrpc v0.0.0-20220921171641-a4b6fa1dd06b // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
-	github.com/libdns/acmedns v0.3.0-beta.2 // indirect
+	github.com/libdns/acmedns v0.4.0 // indirect
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd // indirect
 	github.com/libdns/alidns v1.0.4-libdns.v1.beta1 // indirect
 	github.com/libdns/azure v0.5.0 // indirect
