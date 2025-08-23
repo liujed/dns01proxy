@@ -227,8 +227,8 @@ github.com/caddy-dns/scaleway v0.1.1 h1:lOXn+Rrg0zbmFwKCKpmPbGdJt1wsLXM/aF6ujkQe
 github.com/caddy-dns/scaleway v0.1.1/go.mod h1:n0Dvgyh1TMZpj3q7ZfnJpgCbG54NTdPyuK9CqxNW/+4=
 github.com/caddy-dns/simplydotcom v1.0.0-beta2 h1:aDEY2dnNS3pOkOpUdaf/reSI826uvBujNvdJiKJ4NlA=
 github.com/caddy-dns/simplydotcom v1.0.0-beta2/go.mod h1:tah+2oxQ4whyGCxxKC6JjY5FFalc9cMAu3zggPZ8Ono=
-github.com/caddy-dns/tencentcloud v0.4.1 h1:etLnDophXRhZNqFlCN54wP2C6zt7EKngYZd4EUhKTbQ=
-github.com/caddy-dns/tencentcloud v0.4.1/go.mod h1:jyu48ZwtnzBy82OILJvzxh3ZcTmHRHZdy0a4dMMes5M=
+github.com/caddy-dns/tencentcloud v0.4.2 h1:28zBDITbcLCvKhDglaczL0uDDeGDAtuHkjkzjPP34UI=
+github.com/caddy-dns/tencentcloud v0.4.2/go.mod h1:Pv0lPP7qQZSj0KLIho03SGLdckvz1/qNhVymuOaT50c=
 github.com/caddy-dns/vultr v0.0.0-20250607134539-f8ac7c9ae307 h1:uZ1f8Qt8t2IMMN33y6in3W1XLKE1OgvGSvkBv8x2RU0=
 github.com/caddy-dns/vultr v0.0.0-20250607134539-f8ac7c9ae307/go.mod h1:h01s1sLG9RmiMCPb2zd8KQ9v69ziMyaCxQvgxhchiWc=
 github.com/caddyserver/caddy/v2 v2.4.1/go.mod h1:pVJidKm47Cc5VDUrd2VQPSp/d1DzNj2mjg4FQouWEJM=
@@ -706,8 +706,8 @@ github.com/libdns/scaleway v0.2.0 h1:ptOPvfhnjxyKPzm/ScY/z3vEAopPaJo/25/Q3XYtPs8
 github.com/libdns/scaleway v0.2.0/go.mod h1:wMx2gsHgzj2oSpUdqZeXEngAElpfupXJBqgWvyQZNlI=
 github.com/libdns/simplydotcom v1.0.0-beta2 h1:XfV5MFHC0B0OkR12Et43gWnN8Kx31EI7ywDrOr288rg=
 github.com/libdns/simplydotcom v1.0.0-beta2/go.mod h1:/Kmymu7kjcPe6mKVAzEIlzpsS4BePl0/s0AKCzPz/GM=
-github.com/libdns/tencentcloud v1.4.1 h1:eWEP/YxGG+pmSjQs0Fd92WLAChnhjPwE7GyInTFob8U=
-github.com/libdns/tencentcloud v1.4.1/go.mod h1:Be9gY3tDa12DuAPU79RV9NZIcjY6qg5s7zKPsP26yAM=
+github.com/libdns/tencentcloud v1.4.2 h1:UXvNISlwmdAapYxMgwDZW7uvn8+Bor+puLx1p6VH0c0=
+github.com/libdns/tencentcloud v1.4.2/go.mod h1:Be9gY3tDa12DuAPU79RV9NZIcjY6qg5s7zKPsP26yAM=
 github.com/libdns/vultr/v2 v2.0.2 h1:3hTsVctr4IUzT6R7ASyYYShJKLAneVdfxMPTNZ038ow=
 github.com/libdns/vultr/v2 v2.0.2/go.mod h1:u5Vgx6UG44bMLFKzqHdixc+o2TfP8aGUUmEZk4asH9o=
 github.com/lightstep/lightstep-tracer-common/golang/gogo v0.0.0-20190605223551-bc2310a04743/go.mod h1:qklhhLq1aX+mtWk9cPHPzaBjWImj5ULL6C7HFJtXQMM=

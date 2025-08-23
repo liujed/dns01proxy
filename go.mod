@@ -32,7 +32,7 @@ require (
 	github.com/caddy-dns/rfc2136 v1.0.0
 	github.com/caddy-dns/scaleway v0.1.1
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
-	github.com/caddy-dns/tencentcloud v0.4.1
+	github.com/caddy-dns/tencentcloud v0.4.2
 	github.com/caddy-dns/vultr v0.0.0-20250607134539-f8ac7c9ae307
 	github.com/caddyserver/caddy/v2 v2.10.2
 	github.com/google/go-github/v72 v72.0.0
@@ -138,7 +138,7 @@ require (
 	github.com/libdns/rfc2136 v1.0.0 // indirect
 	github.com/libdns/scaleway v0.2.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
-	github.com/libdns/tencentcloud v1.4.1 // indirect
+	github.com/libdns/tencentcloud v1.4.2 // indirect
 	github.com/libdns/vultr/v2 v2.0.2 // indirect
 	github.com/luadns/luadns-go v0.3.0 // indirect
 	github.com/luv2code/gomiabdns v1.1.0 // indirect
