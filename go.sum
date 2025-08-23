@@ -207,8 +207,8 @@ github.com/caddy-dns/ionos v1.2.0 h1:3cX4QnoNS49AJLGAqCOz70sUorsBJCuxleegLguk11E
 github.com/caddy-dns/ionos v1.2.0/go.mod h1:bUHqIsAjgauVCct0nbcFHAiZHswVAxgaI0aj+zoVPUA=
 github.com/caddy-dns/loopia v1.0.0 h1:MyRxrrNGXMenjt1YpXgFZyDjhsdKk3osHfusSlXW2hc=
 github.com/caddy-dns/loopia v1.0.0/go.mod h1:cYFlBplx8a7VDonJC9x42y+LNn8EitXSXWasPW5rmHk=
-github.com/caddy-dns/luadns v0.0.0-20250529181927-a9a67e6bb4a8 h1:G68XXWh75A9yh21qwmmY05tRSdxWid2l8rPBTtADmTQ=
-github.com/caddy-dns/luadns v0.0.0-20250529181927-a9a67e6bb4a8/go.mod h1:1j8igU1z5VO3diZvrj0BVcHOBKJD7XSfRaKulahItyA=
+github.com/caddy-dns/luadns v0.1.0 h1:KMpiSNXwgocXY4f0VywUcVjV42lmS+J+p2Bz4MeZcuI=
+github.com/caddy-dns/luadns v0.1.0/go.mod h1:1j8igU1z5VO3diZvrj0BVcHOBKJD7XSfRaKulahItyA=
 github.com/caddy-dns/mailinabox v1.0.0 h1:hzAzB0xRQUTv/cqChvjdUJc/E8dkFyjapbhhY00jzCo=
 github.com/caddy-dns/mailinabox v1.0.0/go.mod h1:tAm8AjOFpW4meIjJETrXqi9RtCPkBUXitPDcBaquT/8=
 github.com/caddy-dns/mijnhost v0.2.0 h1:zQ9iJKNevtIisJdcVzEo3DWShAqJQS77tem+GM6SHWY=

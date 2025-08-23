@@ -22,7 +22,7 @@ require (
 	github.com/caddy-dns/inwx v0.4.0
 	github.com/caddy-dns/ionos v1.2.0
 	github.com/caddy-dns/loopia v1.0.0
-	github.com/caddy-dns/luadns v0.0.0-20250529181927-a9a67e6bb4a8
+	github.com/caddy-dns/luadns v0.1.0
 	github.com/caddy-dns/mailinabox v1.0.0
 	github.com/caddy-dns/mijnhost v0.2.0
 	github.com/caddy-dns/nanelo v0.2.0
