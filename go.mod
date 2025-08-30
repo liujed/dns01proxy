@@ -50,7 +50,7 @@ require (
 	github.com/caddy-dns/westcn v1.0.0
 	github.com/caddyserver/caddy/v2 v2.10.2
 	github.com/google/go-github/v72 v72.0.0
-	github.com/liujed/caddy-dns01proxy v0.1.3
+	github.com/liujed/caddy-dns01proxy v0.1.4
 	github.com/liujed/goutil v0.0.0
 	github.com/spf13/cobra v1.9.1
 )
