@@ -24,7 +24,7 @@ require (
 	github.com/caddy-dns/glesys v1.0.0
 	github.com/caddy-dns/godaddy v1.1.1
 	github.com/caddy-dns/googleclouddns v1.1.0
-	github.com/caddy-dns/he v1.2.0
+	github.com/caddy-dns/he v1.2.1
 	github.com/caddy-dns/hetzner v1.0.0
 	github.com/caddy-dns/huaweicloud v1.0.0
 	github.com/caddy-dns/infomaniak v1.0.2
@@ -144,13 +144,13 @@ require (
 	github.com/libdns/glesys v1.0.0 // indirect
 	github.com/libdns/godaddy v1.1.0 // indirect
 	github.com/libdns/googleclouddns v1.2.0 // indirect
-	github.com/libdns/he v1.2.0 // indirect
+	github.com/libdns/he v1.2.1 // indirect
 	github.com/libdns/hetzner v1.0.0 // indirect
 	github.com/libdns/huaweicloud v1.0.0 // indirect
 	github.com/libdns/infomaniak v0.2.0 // indirect
 	github.com/libdns/inwx v0.3.0 // indirect
 	github.com/libdns/ionos v1.2.0 // indirect
-	github.com/libdns/libdns v1.1.0 // indirect
+	github.com/libdns/libdns v1.1.1 // indirect
 	github.com/libdns/loopia v1.0.0 // indirect
 	github.com/libdns/luadns v0.2.0 // indirect
 	github.com/libdns/mailinabox v1.0.0 // indirect
