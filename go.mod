@@ -1,6 +1,6 @@
 module github.com/liujed/dns01proxy
 
-go 1.25
+go 1.25.1
 
 require (
 	github.com/caddy-dns/acmedns v0.5.0
@@ -14,22 +14,25 @@ require (
 	github.com/caddy-dns/desec v1.0.1
 	github.com/caddy-dns/digitalocean v0.0.0-20250606074528-04bde2867106
 	github.com/caddy-dns/directadmin v0.4.0
+	github.com/caddy-dns/dnsimple v0.0.0-20250827225904-d062af077fc9
 	github.com/caddy-dns/dode v0.2.0
 	github.com/caddy-dns/domainnameshop v0.2.1
 	github.com/caddy-dns/duckdns v0.5.0
 	github.com/caddy-dns/dynu v1.0.0
-	github.com/caddy-dns/edgeone v0.0.0-20250727055259-5ec836c92a84
+	github.com/caddy-dns/easydns v1.1.1
+	github.com/caddy-dns/edgeone v0.0.0-20250912083837-4c8d64516966
 	github.com/caddy-dns/gandi v1.1.0
 	github.com/caddy-dns/gcore v0.0.0-20250618083722-4ebfce0e46b0
 	github.com/caddy-dns/glesys v1.0.0
 	github.com/caddy-dns/godaddy v1.1.1
 	github.com/caddy-dns/googleclouddns v1.1.0
-	github.com/caddy-dns/he v1.2.0
+	github.com/caddy-dns/he v1.2.1
 	github.com/caddy-dns/hetzner v1.0.0
 	github.com/caddy-dns/huaweicloud v1.0.0
 	github.com/caddy-dns/infomaniak v1.0.2
 	github.com/caddy-dns/inwx v0.4.0
 	github.com/caddy-dns/ionos v1.2.0
+	github.com/caddy-dns/linode v0.8.0
 	github.com/caddy-dns/loopia v1.0.0
 	github.com/caddy-dns/luadns v0.1.0
 	github.com/caddy-dns/mailinabox v1.0.0
@@ -50,9 +53,9 @@ require (
 	github.com/caddy-dns/westcn v1.0.0
 	github.com/caddyserver/caddy/v2 v2.10.2
 	github.com/google/go-github/v72 v72.0.0
-	github.com/liujed/caddy-dns01proxy v0.1.3
+	github.com/liujed/caddy-dns01proxy v0.1.5
 	github.com/liujed/goutil v0.0.0
-	github.com/spf13/cobra v1.9.1
+	github.com/spf13/cobra v1.10.1
 )
 
 require (
@@ -94,6 +97,7 @@ require (
 	github.com/dgraph-io/ristretto v0.2.0 // indirect
 	github.com/dgryski/go-farm v0.0.0-20200201041132-a6ae2369ad13 // indirect
 	github.com/digitalocean/godo v1.148.0 // indirect
+	github.com/dnsimple/dnsimple-go/v5 v5.0.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/francoispqt/gojay v1.2.13 // indirect
@@ -101,6 +105,7 @@ require (
 	github.com/go-jose/go-jose/v4 v4.0.5 // indirect
 	github.com/go-logr/logr v1.4.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
+	github.com/go-resty/resty/v2 v2.16.5 // indirect
 	github.com/go-sql-driver/mysql v1.8.1 // indirect
 	github.com/golang-jwt/jwt/v5 v5.2.2 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
@@ -111,6 +116,7 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.6 // indirect
 	github.com/googleapis/gax-go/v2 v2.14.2 // indirect
+	github.com/grafana/regexp v0.0.0-20240518133315-a468a5bfb3bc // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-retryablehttp v0.7.8 // indirect
 	github.com/huandu/xstrings v1.5.0 // indirect
@@ -134,23 +140,26 @@ require (
 	github.com/libdns/desec v1.0.1 // indirect
 	github.com/libdns/digitalocean v0.0.0-20250606071607-dfa7af5c2e31 // indirect
 	github.com/libdns/directadmin v0.4.0 // indirect
+	github.com/libdns/dnsimple v0.4.0 // indirect
 	github.com/libdns/dode v0.2.0 // indirect
 	github.com/libdns/domainnameshop v0.2.1 // indirect
 	github.com/libdns/duckdns v0.3.0 // indirect
 	github.com/libdns/dynu v1.0.0 // indirect
-	github.com/libdns/edgeone v1.0.0-beta.1 // indirect
+	github.com/libdns/easydns v1.1.1 // indirect
+	github.com/libdns/edgeone v1.0.0-beta.4 // indirect
 	github.com/libdns/gandi v1.1.0 // indirect
 	github.com/libdns/gcore v0.0.0-20250427050847-9964da923833 // indirect
 	github.com/libdns/glesys v1.0.0 // indirect
 	github.com/libdns/godaddy v1.1.0 // indirect
 	github.com/libdns/googleclouddns v1.2.0 // indirect
-	github.com/libdns/he v1.2.0 // indirect
+	github.com/libdns/he v1.2.1 // indirect
 	github.com/libdns/hetzner v1.0.0 // indirect
 	github.com/libdns/huaweicloud v1.0.0 // indirect
 	github.com/libdns/infomaniak v0.2.0 // indirect
 	github.com/libdns/inwx v0.3.0 // indirect
 	github.com/libdns/ionos v1.2.0 // indirect
-	github.com/libdns/libdns v1.1.0 // indirect
+	github.com/libdns/libdns v1.1.1 // indirect
+	github.com/libdns/linode v0.5.0 // indirect
 	github.com/libdns/loopia v1.0.0 // indirect
 	github.com/libdns/luadns v0.2.0 // indirect
 	github.com/libdns/mailinabox v1.0.0 // indirect
@@ -169,6 +178,7 @@ require (
 	github.com/libdns/tencentcloud v1.4.2 // indirect
 	github.com/libdns/vultr/v2 v2.0.4 // indirect
 	github.com/libdns/westcn v1.0.2 // indirect
+	github.com/linode/linodego v1.56.0 // indirect
 	github.com/luadns/luadns-go v0.3.0 // indirect
 	github.com/luv2code/gomiabdns v1.1.0 // indirect
 	github.com/manifoldco/promptui v0.9.0 // indirect
@@ -189,7 +199,7 @@ require (
 	github.com/pquerna/otp v1.4.0 // indirect
 	github.com/prometheus/client_golang v1.23.0 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
-	github.com/prometheus/common v0.65.0 // indirect
+	github.com/prometheus/common v0.66.0 // indirect
 	github.com/prometheus/procfs v0.17.0 // indirect
 	github.com/quic-go/qpack v0.5.1 // indirect
 	github.com/quic-go/quic-go v0.54.0 // indirect
@@ -207,7 +217,7 @@ require (
 	github.com/smallstep/scep v0.0.0-20240926084937-8cf1ca453101 // indirect
 	github.com/smallstep/truststore v0.13.0 // indirect
 	github.com/spf13/cast v1.7.0 // indirect
-	github.com/spf13/pflag v1.0.7 // indirect
+	github.com/spf13/pflag v1.0.9 // indirect
 	github.com/stoewer/go-strcase v1.3.0 // indirect
 	github.com/tailscale/tscert v0.0.0-20240608151842-d3f834017e53 // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
@@ -234,7 +244,7 @@ require (
 	golang.org/x/mod v0.27.0 // indirect
 	golang.org/x/net v0.43.0 // indirect
 	golang.org/x/oauth2 v0.30.0 // indirect
-	golang.org/x/sync v0.16.0 // indirect
+	golang.org/x/sync v0.17.0 // indirect
 	golang.org/x/sys v0.35.0 // indirect
 	golang.org/x/term v0.34.0 // indirect
 	golang.org/x/text v0.28.0 // indirect

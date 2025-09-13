@@ -592,6 +592,59 @@ builds:
   - nobadger
   - nomysql
   - nopgx
+- id: "dnsimple"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/dnsimple
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
 - id: "dode"
   env:
   - CGO_ENABLED=0
@@ -756,6 +809,59 @@ builds:
   - CGO_ENABLED=0
   - GO111MODULE=on
   main: ./internal/builds/dynu
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "easydns"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/easydns
   binary: dns01proxy
   goos:
   - darwin
@@ -1392,6 +1498,59 @@ builds:
   - CGO_ENABLED=0
   - GO111MODULE=on
   main: ./internal/builds/ionos
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "linode"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/linode
   binary: dns01proxy
   goos:
   - darwin
@@ -2561,6 +2720,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: dnsimple
+    ids:
+    - dnsimple
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_dnsimple_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: dode
     ids:
     - dode
@@ -2616,6 +2790,21 @@ archives:
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_dynu_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: easydns
+    ids:
+    - easydns
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_easydns_
       {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
       {{- .Arch }}
       {{- with .Arm }}v{{ . }}{{ end }}
@@ -2796,6 +2985,21 @@ archives:
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_ionos_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: linode
+    ids:
+    - linode
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_linode_
       {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
       {{- .Arch }}
       {{- with .Arm }}v{{ . }}{{ end }}
@@ -3113,22 +3317,25 @@ release:
     | desec | `v1.0.1` | [`github.com/caddy-dns/desec`](https://github.com/caddy-dns/desec) | [📖](https://caddyserver.com/docs/modules/dns.providers.desec) |
     | digitalocean | `v0.0.0-20250606074528-04bde2867106` | [`github.com/caddy-dns/digitalocean`](https://github.com/caddy-dns/digitalocean) | [📖](https://caddyserver.com/docs/modules/dns.providers.digitalocean) |
     | directadmin | `v0.4.0` | [`github.com/caddy-dns/directadmin`](https://github.com/caddy-dns/directadmin) | [📖](https://caddyserver.com/docs/modules/dns.providers.directadmin) |
+    | dnsimple | `v0.0.0-20250827225904-d062af077fc9` | [`github.com/caddy-dns/dnsimple`](https://github.com/caddy-dns/dnsimple) | [📖](https://caddyserver.com/docs/modules/dns.providers.dnsimple) |
     | dode | `v0.2.0` | [`github.com/caddy-dns/dode`](https://github.com/caddy-dns/dode) | [📖](https://caddyserver.com/docs/modules/dns.providers.dode) |
     | domainnameshop | `v0.2.1` | [`github.com/caddy-dns/domainnameshop`](https://github.com/caddy-dns/domainnameshop) | [📖](https://caddyserver.com/docs/modules/dns.providers.domainnameshop) |
     | duckdns | `v0.5.0` | [`github.com/caddy-dns/duckdns`](https://github.com/caddy-dns/duckdns) | [📖](https://caddyserver.com/docs/modules/dns.providers.duckdns) |
     | dynu | `v1.0.0` | [`github.com/caddy-dns/dynu`](https://github.com/caddy-dns/dynu) | [📖](https://caddyserver.com/docs/modules/dns.providers.dynu) |
-    | edgeone | `v0.0.0-20250727055259-5ec836c92a84` | [`github.com/caddy-dns/edgeone`](https://github.com/caddy-dns/edgeone) | [📖](https://caddyserver.com/docs/modules/dns.providers.edgeone) |
+    | easydns | `v1.1.1` | [`github.com/caddy-dns/easydns`](https://github.com/caddy-dns/easydns) | [📖](https://caddyserver.com/docs/modules/dns.providers.easydns) |
+    | edgeone | `v0.0.0-20250912083837-4c8d64516966` | [`github.com/caddy-dns/edgeone`](https://github.com/caddy-dns/edgeone) | [📖](https://caddyserver.com/docs/modules/dns.providers.edgeone) |
     | gandi | `v1.1.0` | [`github.com/caddy-dns/gandi`](https://github.com/caddy-dns/gandi) | [📖](https://caddyserver.com/docs/modules/dns.providers.gandi) |
     | gcore | `v0.0.0-20250618083722-4ebfce0e46b0` | [`github.com/caddy-dns/gcore`](https://github.com/caddy-dns/gcore) | [📖](https://caddyserver.com/docs/modules/dns.providers.gcore) |
     | glesys | `v1.0.0` | [`github.com/caddy-dns/glesys`](https://github.com/caddy-dns/glesys) | [📖](https://caddyserver.com/docs/modules/dns.providers.glesys) |
     | godaddy | `v1.1.1` | [`github.com/caddy-dns/godaddy`](https://github.com/caddy-dns/godaddy) | [📖](https://caddyserver.com/docs/modules/dns.providers.godaddy) |
     | googleclouddns | `v1.1.0` | [`github.com/caddy-dns/googleclouddns`](https://github.com/caddy-dns/googleclouddns) | [📖](https://caddyserver.com/docs/modules/dns.providers.googleclouddns) |
-    | he | `v1.2.0` | [`github.com/caddy-dns/he`](https://github.com/caddy-dns/he) | [📖](https://caddyserver.com/docs/modules/dns.providers.he) |
+    | he | `v1.2.1` | [`github.com/caddy-dns/he`](https://github.com/caddy-dns/he) | [📖](https://caddyserver.com/docs/modules/dns.providers.he) |
     | hetzner | `v1.0.0` | [`github.com/caddy-dns/hetzner`](https://github.com/caddy-dns/hetzner) | [📖](https://caddyserver.com/docs/modules/dns.providers.hetzner) |
     | huaweicloud | `v1.0.0` | [`github.com/caddy-dns/huaweicloud`](https://github.com/caddy-dns/huaweicloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.huaweicloud) |
     | infomaniak | `v1.0.2` | [`github.com/caddy-dns/infomaniak`](https://github.com/caddy-dns/infomaniak) | [📖](https://caddyserver.com/docs/modules/dns.providers.infomaniak) |
     | inwx | `v0.4.0` | [`github.com/caddy-dns/inwx`](https://github.com/caddy-dns/inwx) | [📖](https://caddyserver.com/docs/modules/dns.providers.inwx) |
     | ionos | `v1.2.0` | [`github.com/caddy-dns/ionos`](https://github.com/caddy-dns/ionos) | [📖](https://caddyserver.com/docs/modules/dns.providers.ionos) |
+    | linode | `v0.8.0` | [`github.com/caddy-dns/linode`](https://github.com/caddy-dns/linode) | [📖](https://caddyserver.com/docs/modules/dns.providers.linode) |
     | loopia | `v1.0.0` | [`github.com/caddy-dns/loopia`](https://github.com/caddy-dns/loopia) | [📖](https://caddyserver.com/docs/modules/dns.providers.loopia) |
     | luadns | `v0.1.0` | [`github.com/caddy-dns/luadns`](https://github.com/caddy-dns/luadns) | [📖](https://caddyserver.com/docs/modules/dns.providers.luadns) |
     | mailinabox | `v1.0.0` | [`github.com/caddy-dns/mailinabox`](https://github.com/caddy-dns/mailinabox) | [📖](https://caddyserver.com/docs/modules/dns.providers.mailinabox) |

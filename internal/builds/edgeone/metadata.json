@@ -1,6 +1,6 @@
 {
   "project_url": "https://github.com/caddy-dns/edgeone",
   "go_mod_path": "github.com/caddy-dns/edgeone",
-  "go_mod_version": "v0.0.0-20250727055259-5ec836c92a84",
+  "go_mod_version": "v0.0.0-20250912083837-4c8d64516966",
   "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.edgeone"
 }
