@@ -13,7 +13,7 @@ require (
 	github.com/caddy-dns/conoha v0.1.0
 	github.com/caddy-dns/desec v1.0.1
 	github.com/caddy-dns/digitalocean v0.0.0-20250606074528-04bde2867106
-	github.com/caddy-dns/directadmin v0.4.0
+	github.com/caddy-dns/directadmin v0.4.2
 	github.com/caddy-dns/dnsimple v0.0.0-20250827225904-d062af077fc9
 	github.com/caddy-dns/dode v0.2.0
 	github.com/caddy-dns/domainnameshop v0.2.1
@@ -139,7 +139,7 @@ require (
 	github.com/libdns/conoha v0.1.1 // indirect
 	github.com/libdns/desec v1.0.1 // indirect
 	github.com/libdns/digitalocean v0.0.0-20250606071607-dfa7af5c2e31 // indirect
-	github.com/libdns/directadmin v0.4.0 // indirect
+	github.com/libdns/directadmin v0.4.2 // indirect
 	github.com/libdns/dnsimple v0.4.0 // indirect
 	github.com/libdns/dode v0.2.0 // indirect
 	github.com/libdns/domainnameshop v0.2.1 // indirect
