@@ -174,8 +174,8 @@ github.com/boombuler/barcode v1.0.1 h1:NDBbPmhS+EqABEs5Kg3n/5ZNjy73Pz7SIV+KCeqyX
 github.com/boombuler/barcode v1.0.1/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
 github.com/bradfitz/go-smtpd v0.0.0-20170404230938-deb6d6237625/go.mod h1:HYsPBTaaSFSlLx/70C2HPIMNZpVV8+vt/A+FMnYP11g=
 github.com/buger/jsonparser v0.0.0-20181115193947-bf1c66bbce23/go.mod h1:bbYlZJ7hK1yFx9hf58LP0zeX7UjIGs20ufpu3evjr+s=
-github.com/caddy-dns/acmedns v0.5.0 h1:xOxRIfhb3EOHiE8gEPZpxHboD+ZPebHEvl67CJA7aiY=
-github.com/caddy-dns/acmedns v0.5.0/go.mod h1:SaR8H0FDoK0/YtkQqBtB7/l6WrkFjd0d7ScJjuOJAgg=
+github.com/caddy-dns/acmedns v0.6.0 h1:Bm8bJbe4Vm8B/ukw/QWFvOrzEjOQduDGlctSkQXDxH8=
+github.com/caddy-dns/acmedns v0.6.0/go.mod h1:ggGhjWHIZNoqXZymONNf4YRIZLu0OYMz88ZWkzaLO2s=
 github.com/caddy-dns/acmeproxy v1.1.1 h1:plQM/m9AcF/mZvIDTFODrEnUngd+kgz2mBzkCkOr75w=
 github.com/caddy-dns/acmeproxy v1.1.1/go.mod h1:JDVcu+T6ZNTQ3pSCL1kSR8c6D33W2ntG9dvUqP3EczM=
 github.com/caddy-dns/alidns v1.0.26 h1:IbUPhvcg2WtHA9NT8jnh4yi2/nGFyxkwNS5QilJ9QtY=
@@ -691,8 +691,8 @@ github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+
 github.com/letsencrypt/pkcs11key v2.0.1-0.20170608213348-396559074696+incompatible/go.mod h1:iGYXKqDXt0cpBthCHdr9ZdsQwyGlYFh/+8xa4WzIQ34=
 github.com/lib/pq v1.1.1/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
 github.com/lib/pq v1.2.0/go.mod h1:5WUZQaWbwv1U+lTReE5YruASi9Al49XbQIvNi/34Woo=
-github.com/libdns/acmedns v0.4.0 h1:45N3ikdxdQly/iCv2g3XZyYSrOmNaptZIYPVfjNNOx8=
-github.com/libdns/acmedns v0.4.0/go.mod h1:X7UAFP1Ep9NpTwWpVlrZzJLR7epynAy0wrIxSPFgKjQ=
+github.com/libdns/acmedns v0.5.0 h1:5pRtmUj4Lb/QkNJSl1xgOGBUJTWW7RjpNaIhjpDXjPE=
+github.com/libdns/acmedns v0.5.0/go.mod h1:X7UAFP1Ep9NpTwWpVlrZzJLR7epynAy0wrIxSPFgKjQ=
 github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd h1:bBqwHIX6JsdzW3rL+1FZ/gFc+XjTWY9JF/vCZLTbXvY=
 github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd/go.mod h1:II3fJcVY6zWiAPrXY/oHFKUZVCFhepsT2BSEv6a4G78=
 github.com/libdns/alidns v1.0.4-libdns.v1.beta1 h1:ods22gD4PcT0g4qRX77ucykjz7Rppnkz3vQoxDbbKTM=
