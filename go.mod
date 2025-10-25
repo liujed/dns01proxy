@@ -8,7 +8,7 @@ require (
 	github.com/caddy-dns/alidns v1.0.26
 	github.com/caddy-dns/azure v0.6.0
 	github.com/caddy-dns/bunny v1.2.0
-	github.com/caddy-dns/cloudflare v0.2.1
+	github.com/caddy-dns/cloudflare v0.2.2
 	github.com/caddy-dns/cloudns v1.1.0
 	github.com/caddy-dns/conoha v0.1.0
 	github.com/caddy-dns/desec v1.0.1
@@ -134,7 +134,7 @@ require (
 	github.com/libdns/alidns v1.0.4-libdns.v1.beta1 // indirect
 	github.com/libdns/azure v0.5.0 // indirect
 	github.com/libdns/bunny v1.4.0 // indirect
-	github.com/libdns/cloudflare v0.2.1 // indirect
+	github.com/libdns/cloudflare v0.2.2 // indirect
 	github.com/libdns/cloudns v1.1.0 // indirect
 	github.com/libdns/conoha v0.1.1 // indirect
 	github.com/libdns/desec v1.0.1 // indirect
