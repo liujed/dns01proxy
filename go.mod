@@ -37,7 +37,7 @@ require (
 	github.com/caddy-dns/luadns v0.1.0
 	github.com/caddy-dns/mailinabox v1.0.0
 	github.com/caddy-dns/metaname v0.3.1
-	github.com/caddy-dns/mijnhost v0.2.0
+	github.com/caddy-dns/mijnhost v1.1.0
 	github.com/caddy-dns/mythicbeasts v1.0.2
 	github.com/caddy-dns/nanelo v0.2.0
 	github.com/caddy-dns/netcup v1.0.0
@@ -192,7 +192,7 @@ require (
 	github.com/libdns/luadns v0.2.0 // indirect
 	github.com/libdns/mailinabox v1.0.0 // indirect
 	github.com/libdns/metaname v0.4.1 // indirect
-	github.com/libdns/mijnhost v0.2.0 // indirect
+	github.com/libdns/mijnhost v1.1.3 // indirect
 	github.com/libdns/mythicbeasts v1.0.2 // indirect
 	github.com/libdns/nanelo v1.1.0 // indirect
 	github.com/libdns/netcup v1.0.0 // indirect
@@ -229,6 +229,7 @@ require (
 	github.com/netlify/open-api/v2 v2.40.0 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/ovh/go-ovh v1.7.0 // indirect
+	github.com/pbergman/provider v1.0.1 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect
