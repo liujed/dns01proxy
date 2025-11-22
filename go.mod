@@ -20,7 +20,7 @@ require (
 	github.com/caddy-dns/duckdns v0.5.0
 	github.com/caddy-dns/dynu v1.0.0
 	github.com/caddy-dns/easydns v1.1.1
-	github.com/caddy-dns/edgeone v1.0.0
+	github.com/caddy-dns/edgeone v1.0.1
 	github.com/caddy-dns/gandi v1.1.0
 	github.com/caddy-dns/gcore v0.0.0-20250618083722-4ebfce0e46b0
 	github.com/caddy-dns/glesys v1.0.0
@@ -119,7 +119,6 @@ require (
 	github.com/dnsimple/dnsimple-go/v7 v7.0.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
-	github.com/francoispqt/gojay v1.2.13 // indirect
 	github.com/go-jose/go-jose/v3 v3.0.4 // indirect
 	github.com/go-jose/go-jose/v4 v4.0.5 // indirect
 	github.com/go-logr/logr v1.4.3 // indirect
@@ -174,7 +173,7 @@ require (
 	github.com/libdns/duckdns v0.3.0 // indirect
 	github.com/libdns/dynu v1.0.0 // indirect
 	github.com/libdns/easydns v1.1.1 // indirect
-	github.com/libdns/edgeone v1.0.0 // indirect
+	github.com/libdns/edgeone v1.0.1 // indirect
 	github.com/libdns/gandi v1.1.0 // indirect
 	github.com/libdns/gcore v0.0.0-20250427050847-9964da923833 // indirect
 	github.com/libdns/glesys v1.0.0 // indirect
@@ -235,10 +234,10 @@ require (
 	github.com/pquerna/otp v1.4.0 // indirect
 	github.com/prometheus/client_golang v1.23.2 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
-	github.com/prometheus/common v0.67.1 // indirect
-	github.com/prometheus/procfs v0.17.0 // indirect
+	github.com/prometheus/common v0.67.2 // indirect
+	github.com/prometheus/procfs v0.19.2 // indirect
 	github.com/quic-go/qpack v0.5.1 // indirect
-	github.com/quic-go/quic-go v0.55.0 // indirect
+	github.com/quic-go/quic-go v0.56.0 // indirect
 	github.com/rs/xid v1.6.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.33 // indirect
@@ -275,18 +274,18 @@ require (
 	go.uber.org/zap v1.27.0 // indirect
 	go.uber.org/zap/exp v0.3.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
-	golang.org/x/crypto v0.43.0 // indirect
+	golang.org/x/crypto v0.44.0 // indirect
 	golang.org/x/crypto/x509roots/fallback v0.0.0-20250305170421-49bf5b80c810 // indirect
 	golang.org/x/exp v0.0.0-20250408133849-7e4ce0ab07d0 // indirect
-	golang.org/x/mod v0.29.0 // indirect
-	golang.org/x/net v0.46.0 // indirect
-	golang.org/x/oauth2 v0.31.0 // indirect
-	golang.org/x/sync v0.17.0 // indirect
-	golang.org/x/sys v0.37.0 // indirect
-	golang.org/x/term v0.36.0 // indirect
-	golang.org/x/text v0.30.0 // indirect
+	golang.org/x/mod v0.30.0 // indirect
+	golang.org/x/net v0.47.0 // indirect
+	golang.org/x/oauth2 v0.32.0 // indirect
+	golang.org/x/sync v0.18.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/term v0.37.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
 	golang.org/x/time v0.14.0 // indirect
-	golang.org/x/tools v0.38.0 // indirect
+	golang.org/x/tools v0.39.0 // indirect
 	google.golang.org/api v0.240.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250603155806-513f23925822 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250603155806-513f23925822 // indirect
