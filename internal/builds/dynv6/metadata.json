@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/dynv6",
+  "go_mod_path": "github.com/caddy-dns/dynv6",
+  "go_mod_version": "v0.0.0-20251101220214-71fad600afb2",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.dynv6"
+}

@@ -6,6 +6,7 @@ require (
 	github.com/caddy-dns/acmedns v0.6.0
 	github.com/caddy-dns/acmeproxy v1.1.1
 	github.com/caddy-dns/alidns v1.0.26
+	github.com/caddy-dns/all-inkl v0.2.0
 	github.com/caddy-dns/azure v0.6.0
 	github.com/caddy-dns/bunny v1.2.0
 	github.com/caddy-dns/cloudflare v0.2.2
@@ -19,8 +20,9 @@ require (
 	github.com/caddy-dns/domainnameshop v0.2.1
 	github.com/caddy-dns/duckdns v0.5.0
 	github.com/caddy-dns/dynu v1.0.0
+	github.com/caddy-dns/dynv6 v0.0.0-20251101220214-71fad600afb2
 	github.com/caddy-dns/easydns v1.1.1
-	github.com/caddy-dns/edgeone v1.0.0
+	github.com/caddy-dns/edgeone v1.0.1
 	github.com/caddy-dns/gandi v1.1.0
 	github.com/caddy-dns/gcore v0.0.0-20250618083722-4ebfce0e46b0
 	github.com/caddy-dns/glesys v1.0.0
@@ -37,7 +39,7 @@ require (
 	github.com/caddy-dns/luadns v0.1.0
 	github.com/caddy-dns/mailinabox v1.0.0
 	github.com/caddy-dns/metaname v0.3.1
-	github.com/caddy-dns/mijnhost v0.2.0
+	github.com/caddy-dns/mijnhost v1.1.0
 	github.com/caddy-dns/mythicbeasts v1.0.2
 	github.com/caddy-dns/nanelo v0.2.0
 	github.com/caddy-dns/netcup v1.0.0
@@ -52,7 +54,8 @@ require (
 	github.com/caddy-dns/scaleway v0.1.1
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
 	github.com/caddy-dns/spaceship v1.0.0
-	github.com/caddy-dns/tencentcloud v0.4.2
+	github.com/caddy-dns/tencentcloud v0.4.3
+	github.com/caddy-dns/transip v0.0.0-20251031100338-2dbf19b35a3f
 	github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be
 	github.com/caddy-dns/westcn v1.0.0
 	github.com/caddyserver/caddy/v2 v2.10.2
@@ -108,6 +111,7 @@ require (
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/chzyer/readline v1.5.1 // indirect
+	github.com/clbanning/mxj v1.8.4 // indirect
 	github.com/cloudflare/circl v1.6.1 // indirect
 	github.com/coreos/go-oidc/v3 v3.14.1 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
@@ -119,7 +123,6 @@ require (
 	github.com/dnsimple/dnsimple-go/v7 v7.0.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
-	github.com/francoispqt/gojay v1.2.13 // indirect
 	github.com/go-jose/go-jose/v3 v3.0.4 // indirect
 	github.com/go-jose/go-jose/v4 v4.0.5 // indirect
 	github.com/go-logr/logr v1.4.3 // indirect
@@ -160,6 +163,7 @@ require (
 	github.com/libdns/acmedns v0.5.0 // indirect
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd // indirect
 	github.com/libdns/alidns v1.0.4-libdns.v1.beta1 // indirect
+	github.com/libdns/all-inkl v0.0.0-20251120145607-3d857407353b // indirect
 	github.com/libdns/azure v0.5.0 // indirect
 	github.com/libdns/bunny v1.4.0 // indirect
 	github.com/libdns/cloudflare v0.2.2 // indirect
@@ -173,8 +177,9 @@ require (
 	github.com/libdns/domainnameshop v0.2.1 // indirect
 	github.com/libdns/duckdns v0.3.0 // indirect
 	github.com/libdns/dynu v1.0.0 // indirect
+	github.com/libdns/dynv6 v1.1.1 // indirect
 	github.com/libdns/easydns v1.1.1 // indirect
-	github.com/libdns/edgeone v1.0.0 // indirect
+	github.com/libdns/edgeone v1.0.1 // indirect
 	github.com/libdns/gandi v1.1.0 // indirect
 	github.com/libdns/gcore v0.0.0-20250427050847-9964da923833 // indirect
 	github.com/libdns/glesys v1.0.0 // indirect
@@ -192,7 +197,7 @@ require (
 	github.com/libdns/luadns v0.2.0 // indirect
 	github.com/libdns/mailinabox v1.0.0 // indirect
 	github.com/libdns/metaname v0.4.1 // indirect
-	github.com/libdns/mijnhost v0.2.0 // indirect
+	github.com/libdns/mijnhost v1.1.3 // indirect
 	github.com/libdns/mythicbeasts v1.0.2 // indirect
 	github.com/libdns/nanelo v1.1.0 // indirect
 	github.com/libdns/netcup v1.0.0 // indirect
@@ -207,7 +212,8 @@ require (
 	github.com/libdns/scaleway v0.2.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
-	github.com/libdns/tencentcloud v1.4.2 // indirect
+	github.com/libdns/tencentcloud v1.4.3 // indirect
+	github.com/libdns/transip v1.0.2 // indirect
 	github.com/libdns/vultr/v2 v2.0.4 // indirect
 	github.com/libdns/westcn v1.0.2 // indirect
 	github.com/linode/linodego v1.56.0 // indirect
@@ -229,16 +235,17 @@ require (
 	github.com/netlify/open-api/v2 v2.40.0 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/ovh/go-ovh v1.7.0 // indirect
+	github.com/pbergman/provider v1.0.1 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pquerna/otp v1.4.0 // indirect
 	github.com/prometheus/client_golang v1.23.2 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
-	github.com/prometheus/common v0.67.1 // indirect
-	github.com/prometheus/procfs v0.17.0 // indirect
+	github.com/prometheus/common v0.67.2 // indirect
+	github.com/prometheus/procfs v0.19.2 // indirect
 	github.com/quic-go/qpack v0.5.1 // indirect
-	github.com/quic-go/quic-go v0.55.0 // indirect
+	github.com/quic-go/quic-go v0.56.0 // indirect
 	github.com/rs/xid v1.6.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.33 // indirect
@@ -256,6 +263,7 @@ require (
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/stoewer/go-strcase v1.3.0 // indirect
 	github.com/tailscale/tscert v0.0.0-20240608151842-d3f834017e53 // indirect
+	github.com/tiaguinho/gosoap v1.4.4 // indirect
 	github.com/tidwall/gjson v1.18.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
@@ -278,15 +286,15 @@ require (
 	golang.org/x/crypto v0.45.0 // indirect
 	golang.org/x/crypto/x509roots/fallback v0.0.0-20250305170421-49bf5b80c810 // indirect
 	golang.org/x/exp v0.0.0-20250408133849-7e4ce0ab07d0 // indirect
-	golang.org/x/mod v0.29.0 // indirect
+	golang.org/x/mod v0.30.0 // indirect
 	golang.org/x/net v0.47.0 // indirect
-	golang.org/x/oauth2 v0.31.0 // indirect
+	golang.org/x/oauth2 v0.32.0 // indirect
 	golang.org/x/sync v0.18.0 // indirect
 	golang.org/x/sys v0.38.0 // indirect
 	golang.org/x/term v0.37.0 // indirect
 	golang.org/x/text v0.31.0 // indirect
 	golang.org/x/time v0.14.0 // indirect
-	golang.org/x/tools v0.38.0 // indirect
+	golang.org/x/tools v0.39.0 // indirect
 	google.golang.org/api v0.240.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20250603155806-513f23925822 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250603155806-513f23925822 // indirect
