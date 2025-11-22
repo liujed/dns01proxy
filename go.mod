@@ -52,7 +52,7 @@ require (
 	github.com/caddy-dns/scaleway v0.1.1
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
 	github.com/caddy-dns/spaceship v1.0.0
-	github.com/caddy-dns/tencentcloud v0.4.2
+	github.com/caddy-dns/tencentcloud v0.4.3
 	github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be
 	github.com/caddy-dns/westcn v1.0.0
 	github.com/caddyserver/caddy/v2 v2.10.2
@@ -207,7 +207,7 @@ require (
 	github.com/libdns/scaleway v0.2.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
-	github.com/libdns/tencentcloud v1.4.2 // indirect
+	github.com/libdns/tencentcloud v1.4.3 // indirect
 	github.com/libdns/vultr/v2 v2.0.4 // indirect
 	github.com/libdns/westcn v1.0.2 // indirect
 	github.com/linode/linodego v1.56.0 // indirect
