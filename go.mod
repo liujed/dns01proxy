@@ -32,7 +32,7 @@ require (
 	github.com/caddy-dns/hetzner v1.0.0
 	github.com/caddy-dns/huaweicloud v1.0.0
 	github.com/caddy-dns/infomaniak v1.0.2
-	github.com/caddy-dns/inwx v0.4.0
+	github.com/caddy-dns/inwx v0.4.1
 	github.com/caddy-dns/ionos v1.2.0
 	github.com/caddy-dns/linode v0.8.0
 	github.com/caddy-dns/loopia v1.0.0
@@ -103,7 +103,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.38.5 // indirect
 	github.com/aws/smithy-go v1.23.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/boombuler/barcode v1.0.1 // indirect
+	github.com/boombuler/barcode v1.0.2 // indirect
 	github.com/caddyserver/certmagic v0.25.0 // indirect
 	github.com/caddyserver/zerossl v0.1.3 // indirect
 	github.com/ccoveille/go-safecast v1.6.1 // indirect
@@ -189,7 +189,7 @@ require (
 	github.com/libdns/hetzner v1.0.0 // indirect
 	github.com/libdns/huaweicloud v1.0.0 // indirect
 	github.com/libdns/infomaniak v0.2.0 // indirect
-	github.com/libdns/inwx v0.3.0 // indirect
+	github.com/libdns/inwx v0.3.1 // indirect
 	github.com/libdns/ionos v1.2.0 // indirect
 	github.com/libdns/libdns v1.1.1 // indirect
 	github.com/libdns/linode v0.5.0 // indirect
@@ -239,7 +239,7 @@ require (
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pquerna/otp v1.4.0 // indirect
+	github.com/pquerna/otp v1.5.0 // indirect
 	github.com/prometheus/client_golang v1.23.2 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
 	github.com/prometheus/common v0.67.2 // indirect

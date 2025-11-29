@@ -197,8 +197,8 @@ github.com/bketelsen/crypt v0.0.3-0.20200106085610-5cbc8cc4026c/go.mod h1:MKsuJm
 github.com/bombsimon/wsl/v2 v2.0.0/go.mod h1:mf25kr/SqFEPhhcxW1+7pxzGlW+hIl/hYTKY95VwV8U=
 github.com/boombuler/barcode v1.0.0/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
 github.com/boombuler/barcode v1.0.1-0.20190219062509-6c824513bacc/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
-github.com/boombuler/barcode v1.0.1 h1:NDBbPmhS+EqABEs5Kg3n/5ZNjy73Pz7SIV+KCeqyXcs=
-github.com/boombuler/barcode v1.0.1/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
+github.com/boombuler/barcode v1.0.2 h1:79yrbttoZrLGkL/oOI8hBrUKucwOL0oOjUgEguGMcJ4=
+github.com/boombuler/barcode v1.0.2/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
 github.com/bradfitz/go-smtpd v0.0.0-20170404230938-deb6d6237625/go.mod h1:HYsPBTaaSFSlLx/70C2HPIMNZpVV8+vt/A+FMnYP11g=
 github.com/buger/jsonparser v0.0.0-20181115193947-bf1c66bbce23/go.mod h1:bbYlZJ7hK1yFx9hf58LP0zeX7UjIGs20ufpu3evjr+s=
 github.com/caddy-dns/acmedns v0.6.0 h1:Bm8bJbe4Vm8B/ukw/QWFvOrzEjOQduDGlctSkQXDxH8=
@@ -259,8 +259,8 @@ github.com/caddy-dns/huaweicloud v1.0.0 h1:BfuzSVa3Mgtquz8nfGopv7TRFtVdX0RVwRats
 github.com/caddy-dns/huaweicloud v1.0.0/go.mod h1:Iuot4X7/Ys4OAQ1Rgx96uQeOCnIbnfwZ4Zo3j0jl9zc=
 github.com/caddy-dns/infomaniak v1.0.2 h1:CjZ14Lf+8P0VzU2uUMCXSBM1q7grFGPa+1CgAAuqqJc=
 github.com/caddy-dns/infomaniak v1.0.2/go.mod h1:EEbfSyC7RHzvYpG3YMLenZZRssq0n/SJ2iQvuWqNmLg=
-github.com/caddy-dns/inwx v0.4.0 h1:OuWY82cPT10S+XGpZySPBcK1Gt7qcNJ5L2jMdYIDD1Q=
-github.com/caddy-dns/inwx v0.4.0/go.mod h1:YpC4J0JVYti5pnoFejj/QIzTvnk9OXiK6mLsb/YVOoc=
+github.com/caddy-dns/inwx v0.4.1 h1:xarYyeCCj1dfrM1U69Nno7GstrTNHlFKzKZKKdBGrKs=
+github.com/caddy-dns/inwx v0.4.1/go.mod h1:5Xpi42yYojkisGfLuT8ajDl5JdRcZQqeToI+n/vl6kw=
 github.com/caddy-dns/ionos v1.2.0 h1:3cX4QnoNS49AJLGAqCOz70sUorsBJCuxleegLguk11E=
 github.com/caddy-dns/ionos v1.2.0/go.mod h1:bUHqIsAjgauVCct0nbcFHAiZHswVAxgaI0aj+zoVPUA=
 github.com/caddy-dns/linode v0.8.0 h1:e6lzkrYu1A5X4RuAFT0och0DOYwSYbPIgLhjteTkrKk=
@@ -946,8 +946,8 @@ github.com/libdns/huaweicloud v1.0.0 h1:BQUIkOAjF++ouiANRIE3jdMlCfeiAAr6tGqb+8hM
 github.com/libdns/huaweicloud v1.0.0/go.mod h1:W+XywkW+C93fM50Ayklf6KuoCHZTqbrmFUEtpQnVvcU=
 github.com/libdns/infomaniak v0.2.0 h1:TC3jP68Tnw4sAi87r1xNY4fPF5Cs5SPGbEkTWvXCmnc=
 github.com/libdns/infomaniak v0.2.0/go.mod h1:2RTkgFMLv45OPE8dwgFZKn4PKzECdVADdHdkIcbUZWE=
-github.com/libdns/inwx v0.3.0 h1:TFKFqKUDfrlmKpeZc0mxAM3o9GZ4sQ7cwq+KyuybGWk=
-github.com/libdns/inwx v0.3.0/go.mod h1:q+nLyMTVQGL8DRCLGB1IT6WIWr9GOu8billodJNQssY=
+github.com/libdns/inwx v0.3.1 h1:AZXlqU36Hl7RTRZf2xawxfwZ9Y120Xl0ZIozs7gsccU=
+github.com/libdns/inwx v0.3.1/go.mod h1:kUBDmTXFGY8BqpHRJOWQ+GYfFnJOeejKeJHhnVliUb8=
 github.com/libdns/ionos v1.2.0 h1:FQ2xQTBfsjc7aMArRBBCs9l48Squt76GHXbxDsqOKgw=
 github.com/libdns/ionos v1.2.0/go.mod h1:g/JYno/+VXdujTGPBDMDeCfeLF0PJyJynsCrFu+2EFQ=
 github.com/libdns/libdns v0.2.0/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSObbb40=
@@ -1200,8 +1200,8 @@ github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2/go.mod h1:iKH
 github.com/posener/complete v1.1.1/go.mod h1:em0nMJCgc9GFtwrmVmEMR/ZL6WyhyjMBndrE9hABlRI=
 github.com/pquerna/cachecontrol v0.0.0-20180517163645-1555304b9b35/go.mod h1:prYjPmNq4d1NPVmpShWobRqXY3q7Vp+80DqgxxUrUIA=
 github.com/pquerna/otp v1.0.0/go.mod h1:Zad1CMQfSQZI5KLpahDiSUX4tMMREnXw98IvL1nhgMk=
-github.com/pquerna/otp v1.4.0 h1:wZvl1TIVxKRThZIBiwOOHOGP/1+nZyWBil9Y2XNEDzg=
-github.com/pquerna/otp v1.4.0/go.mod h1:dkJfzwRKNiegxyNb54X/3fLwhCynbMspSyWKnvi1AEg=
+github.com/pquerna/otp v1.5.0 h1:NMMR+WrmaqXU4EzdGJEE1aUUI0AMRzsp96fFFWNPwxs=
+github.com/pquerna/otp v1.5.0/go.mod h1:dkJfzwRKNiegxyNb54X/3fLwhCynbMspSyWKnvi1AEg=
 github.com/prashantv/gostub v1.1.0 h1:BTyx3RfQjRHnUWaGF9oQos79AlQ5k8WNktv7VGvVH4g=
 github.com/prashantv/gostub v1.1.0/go.mod h1:A5zLQHz7ieHGG7is6LLXLz7I8+3LZzsrV0P1IAHhP5U=
 github.com/prometheus/client_golang v0.8.0/go.mod h1:7SWBe2y4D6OKWSNQJUaRYU/AaXPKyh/dDVn+NZz0KFw=
