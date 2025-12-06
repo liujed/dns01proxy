@@ -2023,6 +2023,59 @@ builds:
   - nobadger
   - nomysql
   - nopgx
+- id: "namecheap"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/namecheap
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
 - id: "nanelo"
   env:
   - CGO_ENABLED=0
@@ -3496,6 +3549,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: namecheap
+    ids:
+    - namecheap
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_namecheap_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: nanelo
     ids:
     - nanelo
@@ -3811,7 +3879,7 @@ release:
     | hetzner | `v1.0.0` | [`github.com/caddy-dns/hetzner`](https://github.com/caddy-dns/hetzner) | [📖](https://caddyserver.com/docs/modules/dns.providers.hetzner) |
     | huaweicloud | `v1.0.0` | [`github.com/caddy-dns/huaweicloud`](https://github.com/caddy-dns/huaweicloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.huaweicloud) |
     | infomaniak | `v1.0.2` | [`github.com/caddy-dns/infomaniak`](https://github.com/caddy-dns/infomaniak) | [📖](https://caddyserver.com/docs/modules/dns.providers.infomaniak) |
-    | inwx | `v0.4.0` | [`github.com/caddy-dns/inwx`](https://github.com/caddy-dns/inwx) | [📖](https://caddyserver.com/docs/modules/dns.providers.inwx) |
+    | inwx | `v0.4.1` | [`github.com/caddy-dns/inwx`](https://github.com/caddy-dns/inwx) | [📖](https://caddyserver.com/docs/modules/dns.providers.inwx) |
     | ionos | `v1.2.0` | [`github.com/caddy-dns/ionos`](https://github.com/caddy-dns/ionos) | [📖](https://caddyserver.com/docs/modules/dns.providers.ionos) |
     | linode | `v0.8.0` | [`github.com/caddy-dns/linode`](https://github.com/caddy-dns/linode) | [📖](https://caddyserver.com/docs/modules/dns.providers.linode) |
     | loopia | `v1.0.0` | [`github.com/caddy-dns/loopia`](https://github.com/caddy-dns/loopia) | [📖](https://caddyserver.com/docs/modules/dns.providers.loopia) |
@@ -3820,6 +3888,7 @@ release:
     | metaname | `v0.3.1` | [`github.com/caddy-dns/metaname`](https://github.com/caddy-dns/metaname) | [📖](https://caddyserver.com/docs/modules/dns.providers.metaname) |
     | mijnhost | `v1.1.0` | [`github.com/caddy-dns/mijnhost`](https://github.com/caddy-dns/mijnhost) | [📖](https://caddyserver.com/docs/modules/dns.providers.mijnhost) |
     | mythicbeasts | `v1.0.2` | [`github.com/caddy-dns/mythicbeasts`](https://github.com/caddy-dns/mythicbeasts) | [📖](https://caddyserver.com/docs/modules/dns.providers.mythicbeasts) |
+    | namecheap | `v1.0.0` | [`github.com/caddy-dns/namecheap`](https://github.com/caddy-dns/namecheap) | [📖](https://caddyserver.com/docs/modules/dns.providers.namecheap) |
     | nanelo | `v0.2.0` | [`github.com/caddy-dns/nanelo`](https://github.com/caddy-dns/nanelo) | [📖](https://caddyserver.com/docs/modules/dns.providers.nanelo) |
     | netcup | `v1.0.0` | [`github.com/caddy-dns/netcup`](https://github.com/caddy-dns/netcup) | [📖](https://caddyserver.com/docs/modules/dns.providers.netcup) |
     | netlify | `v1.2.0` | [`github.com/caddy-dns/netlify`](https://github.com/caddy-dns/netlify) | [📖](https://caddyserver.com/docs/modules/dns.providers.netlify) |
@@ -3834,7 +3903,7 @@ release:
     | simplydotcom | `v1.0.0-beta2` | [`github.com/caddy-dns/simplydotcom`](https://github.com/caddy-dns/simplydotcom) | [📖](https://caddyserver.com/docs/modules/dns.providers.simplydotcom) |
     | spaceship | `v1.0.0` | [`github.com/caddy-dns/spaceship`](https://github.com/caddy-dns/spaceship) | [📖](https://caddyserver.com/docs/modules/dns.providers.spaceship) |
     | tencentcloud | `v0.4.3` | [`github.com/caddy-dns/tencentcloud`](https://github.com/caddy-dns/tencentcloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.tencentcloud) |
-    | transip | `v0.0.0-20251031100338-2dbf19b35a3f` | [`github.com/caddy-dns/transip`](https://github.com/caddy-dns/transip) | [📖](https://caddyserver.com/docs/modules/dns.providers.transip) |
+    | transip | `v0.0.0-20251123124043-2a8fd975eb91` | [`github.com/caddy-dns/transip`](https://github.com/caddy-dns/transip) | [📖](https://caddyserver.com/docs/modules/dns.providers.transip) |
     | vultr | `v0.0.0-20250723121531-55bf3e9768be` | [`github.com/caddy-dns/vultr`](https://github.com/caddy-dns/vultr) | [📖](https://caddyserver.com/docs/modules/dns.providers.vultr) |
     | westcn | `v1.0.0` | [`github.com/caddy-dns/westcn`](https://github.com/caddy-dns/westcn) | [📖](https://caddyserver.com/docs/modules/dns.providers.westcn) |
 

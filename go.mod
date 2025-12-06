@@ -32,7 +32,7 @@ require (
 	github.com/caddy-dns/hetzner v1.0.0
 	github.com/caddy-dns/huaweicloud v1.0.0
 	github.com/caddy-dns/infomaniak v1.0.2
-	github.com/caddy-dns/inwx v0.4.0
+	github.com/caddy-dns/inwx v0.4.1
 	github.com/caddy-dns/ionos v1.2.0
 	github.com/caddy-dns/linode v0.8.0
 	github.com/caddy-dns/loopia v1.0.0
@@ -41,6 +41,7 @@ require (
 	github.com/caddy-dns/metaname v0.3.1
 	github.com/caddy-dns/mijnhost v1.1.0
 	github.com/caddy-dns/mythicbeasts v1.0.2
+	github.com/caddy-dns/namecheap v1.0.0
 	github.com/caddy-dns/nanelo v0.2.0
 	github.com/caddy-dns/netcup v1.0.0
 	github.com/caddy-dns/netlify v1.2.0
@@ -55,7 +56,7 @@ require (
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
 	github.com/caddy-dns/spaceship v1.0.0
 	github.com/caddy-dns/tencentcloud v0.4.3
-	github.com/caddy-dns/transip v0.0.0-20251031100338-2dbf19b35a3f
+	github.com/caddy-dns/transip v0.0.0-20251123124043-2a8fd975eb91
 	github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be
 	github.com/caddy-dns/westcn v1.0.0
 	github.com/caddyserver/caddy/v2 v2.10.2
@@ -103,7 +104,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.39.0 // indirect
 	github.com/aws/smithy-go v1.23.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/boombuler/barcode v1.0.1 // indirect
+	github.com/boombuler/barcode v1.0.2 // indirect
 	github.com/caddyserver/certmagic v0.25.0 // indirect
 	github.com/caddyserver/zerossl v0.1.3 // indirect
 	github.com/ccoveille/go-safecast/v2 v2.0.0 // indirect
@@ -189,7 +190,7 @@ require (
 	github.com/libdns/hetzner v1.0.0 // indirect
 	github.com/libdns/huaweicloud v1.0.0 // indirect
 	github.com/libdns/infomaniak v0.2.0 // indirect
-	github.com/libdns/inwx v0.3.0 // indirect
+	github.com/libdns/inwx v0.3.1 // indirect
 	github.com/libdns/ionos v1.2.0 // indirect
 	github.com/libdns/libdns v1.1.1 // indirect
 	github.com/libdns/linode v0.5.0 // indirect
@@ -199,6 +200,7 @@ require (
 	github.com/libdns/metaname v0.4.1 // indirect
 	github.com/libdns/mijnhost v1.1.3 // indirect
 	github.com/libdns/mythicbeasts v1.0.2 // indirect
+	github.com/libdns/namecheap v1.0.0 // indirect
 	github.com/libdns/nanelo v1.1.0 // indirect
 	github.com/libdns/netcup v1.0.0 // indirect
 	github.com/libdns/netlify v1.2.0 // indirect
@@ -213,7 +215,7 @@ require (
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
 	github.com/libdns/tencentcloud v1.4.3 // indirect
-	github.com/libdns/transip v1.0.2 // indirect
+	github.com/libdns/transip v1.0.3 // indirect
 	github.com/libdns/vultr/v2 v2.0.4 // indirect
 	github.com/libdns/westcn v1.0.2 // indirect
 	github.com/linode/linodego v1.56.0 // indirect
@@ -235,11 +237,11 @@ require (
 	github.com/netlify/open-api/v2 v2.40.0 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/ovh/go-ovh v1.7.0 // indirect
-	github.com/pbergman/provider v1.0.1 // indirect
+	github.com/pbergman/provider v1.0.2 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pquerna/otp v1.4.0 // indirect
+	github.com/pquerna/otp v1.5.0 // indirect
 	github.com/prometheus/client_golang v1.23.2 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
 	github.com/prometheus/common v0.67.2 // indirect
