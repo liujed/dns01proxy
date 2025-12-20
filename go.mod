@@ -17,7 +17,7 @@ require (
 	github.com/caddy-dns/directadmin v0.4.2
 	github.com/caddy-dns/dnsimple v0.0.0-20251013133129-f2b8c697a318
 	github.com/caddy-dns/dode v0.2.0
-	github.com/caddy-dns/domainnameshop v0.2.1
+	github.com/caddy-dns/domainnameshop v0.2.2
 	github.com/caddy-dns/duckdns v0.5.0
 	github.com/caddy-dns/dynu v1.0.0
 	github.com/caddy-dns/dynv6 v0.0.0-20251101220214-71fad600afb2
@@ -175,7 +175,7 @@ require (
 	github.com/libdns/directadmin v0.4.2 // indirect
 	github.com/libdns/dnsimple v0.4.2 // indirect
 	github.com/libdns/dode v0.2.0 // indirect
-	github.com/libdns/domainnameshop v0.2.1 // indirect
+	github.com/libdns/domainnameshop v0.2.2 // indirect
 	github.com/libdns/duckdns v0.3.0 // indirect
 	github.com/libdns/dynu v1.0.0 // indirect
 	github.com/libdns/dynv6 v1.1.1 // indirect

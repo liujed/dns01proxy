@@ -229,8 +229,8 @@ github.com/caddy-dns/dnsimple v0.0.0-20251013133129-f2b8c697a318 h1:Yvd5iFQGxnaf
 github.com/caddy-dns/dnsimple v0.0.0-20251013133129-f2b8c697a318/go.mod h1:v31gTDqWob0ngzW86ctv8CHK6Sdrp6bDoiOP45HU2UY=
 github.com/caddy-dns/dode v0.2.0 h1:kd2p5Jg7ieCKu8L7vCPEf/ChftJl0CS4A9PsaE7g6Tk=
 github.com/caddy-dns/dode v0.2.0/go.mod h1:kNkIotcX2K0iUK9mTqnl+iQVkHuilazmVXjdwEXJpp8=
-github.com/caddy-dns/domainnameshop v0.2.1 h1:U3joNdy+1JjjmSrRZLc3r2T8gapdrYDcQTTicvJRrqk=
-github.com/caddy-dns/domainnameshop v0.2.1/go.mod h1:VcDadkObJLIKLBbJEFp27YBVHuCTRmnkP2hWOrcf4Qo=
+github.com/caddy-dns/domainnameshop v0.2.2 h1:03UYiVlfM+f2N4oVylpjrLBP0MyzvraaKYj/pBQAOW0=
+github.com/caddy-dns/domainnameshop v0.2.2/go.mod h1:VOdjh60Gf69Ib2sEXF95VYhUQRlnztONbYLdw2UIkyI=
 github.com/caddy-dns/duckdns v0.5.0 h1:XD2xNOzsMZpYTiaXWpJE2i3iWfMucIs8lE+QvuuRjYk=
 github.com/caddy-dns/duckdns v0.5.0/go.mod h1:h+OP22+TarY/S+GWj1Ry/+ZSnNEV2oLOuX5iSRUdim0=
 github.com/caddy-dns/dynu v1.0.0 h1:5qHBDSYzXPxLEc0I4i4KLCtrUf16zxgXW8MEgQWjImQ=
@@ -916,8 +916,8 @@ github.com/libdns/dnsimple v0.4.2 h1:v4kFiq+4a5Xc1KVanI0xfrqpgXZzmsqGBcaQjVGn5sk
 github.com/libdns/dnsimple v0.4.2/go.mod h1:6mOTsiuhL+5wKIjjGL0OuAANOivXZJiIvPEaQuEc7iQ=
 github.com/libdns/dode v0.2.0 h1:gczxTxXe/usCU3tw183qY5GL/fUdEeMmMntOMHmb+qw=
 github.com/libdns/dode v0.2.0/go.mod h1:MHbKUEtrvVUzVRqKFRmQH7D6Yzv7AfhCek2ZryxSVwA=
-github.com/libdns/domainnameshop v0.2.1 h1:L+obRZCHx5Wxz2f0jSrffZqiBz07sA1Z+JHb/2D0a0E=
-github.com/libdns/domainnameshop v0.2.1/go.mod h1:9A3zVeYWwRdnTvYWAW7QayV840knMH+v9GNasKaeB+s=
+github.com/libdns/domainnameshop v0.2.2 h1:J2pZ1XOkvubRyJ5bx7U58YqdA1X9+MsffTL3VRt/etE=
+github.com/libdns/domainnameshop v0.2.2/go.mod h1:oUmMqr8oq/sgYHdsMi/x7vl2ohqM0b8pPjxpd2n3vM8=
 github.com/libdns/duckdns v0.3.0 h1:YsNlEDrA/F6dOjOCPewS9wqA9OKE5Rduk5eVpAPdcQA=
 github.com/libdns/duckdns v0.3.0/go.mod h1:vYP8yqVE55XmLSj0LM3T2i4GO0tCyepXggsJvMwGwws=
 github.com/libdns/dynu v1.0.0 h1:u/awzTO0+EUElTkw+dNNAx/57uc1FXUtt4tpZnXBiTE=
