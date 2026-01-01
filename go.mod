@@ -1,6 +1,6 @@
 module github.com/liujed/dns01proxy
 
-go 1.25.1
+go 1.25.5
 
 require (
 	github.com/caddy-dns/acmedns v0.6.0
@@ -15,9 +15,9 @@ require (
 	github.com/caddy-dns/desec v1.0.1
 	github.com/caddy-dns/digitalocean v0.0.0-20250606074528-04bde2867106
 	github.com/caddy-dns/directadmin v0.4.2
-	github.com/caddy-dns/dnsimple v0.0.0-20251013133129-f2b8c697a318
+	github.com/caddy-dns/dnsimple v0.0.0-20251214142352-69317c3989f0
 	github.com/caddy-dns/dode v0.2.0
-	github.com/caddy-dns/domainnameshop v0.2.1
+	github.com/caddy-dns/domainnameshop v0.2.2
 	github.com/caddy-dns/duckdns v0.5.0
 	github.com/caddy-dns/dynu v1.0.0
 	github.com/caddy-dns/dynv6 v0.0.0-20251101220214-71fad600afb2
@@ -55,9 +55,11 @@ require (
 	github.com/caddy-dns/scaleway v0.1.1
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
 	github.com/caddy-dns/spaceship v1.0.0
+	github.com/caddy-dns/tecnocratica v0.1.0
 	github.com/caddy-dns/tencentcloud v0.4.3
 	github.com/caddy-dns/transip v0.0.0-20251123124043-2a8fd975eb91
 	github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be
+	github.com/caddy-dns/websupport v0.0.0-20251211090312-5da3f800ce77
 	github.com/caddy-dns/westcn v1.0.0
 	github.com/caddyserver/caddy/v2 v2.10.2
 	github.com/google/go-github/v72 v72.0.0
@@ -175,7 +177,7 @@ require (
 	github.com/libdns/directadmin v0.4.2 // indirect
 	github.com/libdns/dnsimple v0.4.2 // indirect
 	github.com/libdns/dode v0.2.0 // indirect
-	github.com/libdns/domainnameshop v0.2.1 // indirect
+	github.com/libdns/domainnameshop v0.2.2 // indirect
 	github.com/libdns/duckdns v0.3.0 // indirect
 	github.com/libdns/dynu v1.0.0 // indirect
 	github.com/libdns/dynv6 v1.1.1 // indirect
@@ -214,9 +216,11 @@ require (
 	github.com/libdns/scaleway v0.2.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
+	github.com/libdns/tecnocratica v0.1.0 // indirect
 	github.com/libdns/tencentcloud v1.4.3 // indirect
 	github.com/libdns/transip v1.0.3 // indirect
 	github.com/libdns/vultr/v2 v2.0.4 // indirect
+	github.com/libdns/websupport v1.0.0 // indirect
 	github.com/libdns/westcn v1.0.2 // indirect
 	github.com/linode/linodego v1.56.0 // indirect
 	github.com/luadns/luadns-go v0.3.0 // indirect
