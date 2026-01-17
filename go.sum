@@ -306,8 +306,8 @@ github.com/caddy-dns/simplydotcom v1.0.0-beta2 h1:aDEY2dnNS3pOkOpUdaf/reSI826uvB
 github.com/caddy-dns/simplydotcom v1.0.0-beta2/go.mod h1:tah+2oxQ4whyGCxxKC6JjY5FFalc9cMAu3zggPZ8Ono=
 github.com/caddy-dns/spaceship v1.0.0 h1:tgH5V9Z7yFO1da6Kb8f21hTfQ0JxS3WiCgBHqBykr6w=
 github.com/caddy-dns/spaceship v1.0.0/go.mod h1:cfjwcy5/3A1PlL6xAqtDWkWKjykHOyhC0mvVU1jIEPU=
-github.com/caddy-dns/tecnocratica v0.1.0 h1:Y2DIT6stZOy9Ir6QrAkoZ1d7Y9+YfPyuWOvZ96GRmyA=
-github.com/caddy-dns/tecnocratica v0.1.0/go.mod h1:J5wSG+vYJ1LnAvlxChroqz/pjEN4yyNx+kHMRLcglRo=
+github.com/caddy-dns/tecnocratica v0.1.5 h1:VBzeozHsjQmt/bSfVS5E5g4jhlMqpbbmwmAtz7wpBBY=
+github.com/caddy-dns/tecnocratica v0.1.5/go.mod h1:5JsbO5gktOqzsx6V3dX/nUngByledVnoeNs9UIAefmM=
 github.com/caddy-dns/tencentcloud v0.4.3 h1:cN4S6No8bvxmp4DaoI1PCZ7NqzXMP+VNHrmJ63R4+Co=
 github.com/caddy-dns/tencentcloud v0.4.3/go.mod h1:luQaLalADC8E1KVVSdUUi1g4GrPe+9D/Xc4q6ubXUEA=
 github.com/caddy-dns/transip v0.0.0-20251123124043-2a8fd975eb91 h1:KK7LkTeIIk8Yk8Ov7u5/G/zEKr4LXy3hICpilbjjU6o=
@@ -1003,8 +1003,8 @@ github.com/libdns/simplydotcom v1.0.0-beta2 h1:XfV5MFHC0B0OkR12Et43gWnN8Kx31EI7y
 github.com/libdns/simplydotcom v1.0.0-beta2/go.mod h1:/Kmymu7kjcPe6mKVAzEIlzpsS4BePl0/s0AKCzPz/GM=
 github.com/libdns/spaceship v1.0.0 h1:v+O5e4mNyfns/H73nrM3+bYpIc4y1nuxv3dgBcCtJII=
 github.com/libdns/spaceship v1.0.0/go.mod h1:jNt+tmiQRPE8iY8mtriyPuT3+G+AEFr29C1uVcx3hd8=
-github.com/libdns/tecnocratica v0.1.0 h1:dvex0ahRCdl8LUbN/KXSkqqOugbkOht/jyaqaVaIjUY=
-github.com/libdns/tecnocratica v0.1.0/go.mod h1:z7Edr2V48QmwRcKQO3Q55U78zXPzSwHDg8TwlJNA6kI=
+github.com/libdns/tecnocratica v0.1.5 h1:k2f0jORQEA25MVI9D2/Lpm6WyKhh/jo/J1C7isxL9U4=
+github.com/libdns/tecnocratica v0.1.5/go.mod h1:otFveUNewf21kHCyOZhyIhzgRKeTc3luljJjdCmBRJA=
 github.com/libdns/tencentcloud v1.4.3 h1:xJHYLL1TdPeOtUr6Bu6dHTd1TU6/VFm7BFc2EAzAlvc=
 github.com/libdns/tencentcloud v1.4.3/go.mod h1:Be9gY3tDa12DuAPU79RV9NZIcjY6qg5s7zKPsP26yAM=
 github.com/libdns/transip v1.0.3 h1:gTnkhuKiruXL+y101626u7c5wvHp1Tp4w9JIV42fJcQ=
