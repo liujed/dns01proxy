@@ -5,7 +5,7 @@ go 1.25.5
 require (
 	github.com/caddy-dns/acmedns v0.6.0
 	github.com/caddy-dns/acmeproxy v1.1.1
-	github.com/caddy-dns/alidns v1.0.26
+	github.com/caddy-dns/alidns v1.0.27
 	github.com/caddy-dns/all-inkl v0.2.0
 	github.com/caddy-dns/azure v0.6.0
 	github.com/caddy-dns/bunny v1.2.0
@@ -165,7 +165,7 @@ require (
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/libdns/acmedns v0.5.0 // indirect
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd // indirect
-	github.com/libdns/alidns v1.0.4-libdns.v1.beta1 // indirect
+	github.com/libdns/alidns v1.0.6-beta.3 // indirect
 	github.com/libdns/all-inkl v0.0.0-20251120145607-3d857407353b // indirect
 	github.com/libdns/azure v0.5.0 // indirect
 	github.com/libdns/bunny v1.4.0 // indirect
