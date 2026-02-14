@@ -214,8 +214,8 @@ github.com/caddy-dns/azure v0.6.0 h1:eC7ygPRce7w6/YKvBOW29ZBY4jo8JcqqBPPURpMRB3U
 github.com/caddy-dns/azure v0.6.0/go.mod h1:MDGPquqnOfDmopRD2W+66VBgbqMqhVuE2q0blYpW0dc=
 github.com/caddy-dns/bunny v1.2.0 h1:xnfRrqIeLYtQmOtitY+EtopIHCnVr+xqFxc7w28PLkM=
 github.com/caddy-dns/bunny v1.2.0/go.mod h1:yOQ1941/USWHaf5UZf8ig5V0EiGM+RiIQA29QVAFGRQ=
-github.com/caddy-dns/cloudflare v0.2.2 h1:JxMnwOAtmDXVpi3A4hnsjm2kOg5ip9vz1c3fdbHctlU=
-github.com/caddy-dns/cloudflare v0.2.2/go.mod h1:Rge8GoKEa65RIUd1GQ9DmOmnjD9FMztz5yiaKvf351E=
+github.com/caddy-dns/cloudflare v0.2.3 h1:4JOrCP/9ivaMyNmZiJtBjHo0pTtxczZT0nB3sQ9G608=
+github.com/caddy-dns/cloudflare v0.2.3/go.mod h1:Rge8GoKEa65RIUd1GQ9DmOmnjD9FMztz5yiaKvf351E=
 github.com/caddy-dns/cloudns v1.1.0 h1:XhMroE7TSpxAfoB1PvgawM/+PvINn71qry9YRTrp5TM=
 github.com/caddy-dns/cloudns v1.1.0/go.mod h1:8NGSywobTQrFRpwoBD6KNYvFT259/FvGDy7K6qhihKQ=
 github.com/caddy-dns/conoha v0.1.0 h1:iLwxCIaIiyeQsyyhKij42NlwwA6/P4IAYQt4hRB4iew=

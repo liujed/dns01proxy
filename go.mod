@@ -9,7 +9,7 @@ require (
 	github.com/caddy-dns/all-inkl v0.2.0
 	github.com/caddy-dns/azure v0.6.0
 	github.com/caddy-dns/bunny v1.2.0
-	github.com/caddy-dns/cloudflare v0.2.2
+	github.com/caddy-dns/cloudflare v0.2.3
 	github.com/caddy-dns/cloudns v1.1.0
 	github.com/caddy-dns/conoha v0.1.0
 	github.com/caddy-dns/desec v1.0.1
