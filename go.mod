@@ -1,6 +1,6 @@
 module github.com/liujed/dns01proxy
 
-go 1.25.5
+go 1.26.0
 
 require (
 	github.com/caddy-dns/acmedns v0.6.0
