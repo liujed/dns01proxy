@@ -5,14 +5,16 @@ go 1.26.0
 require (
 	github.com/caddy-dns/acmedns v0.6.0
 	github.com/caddy-dns/acmeproxy v1.1.1
-	github.com/caddy-dns/alidns v1.0.26
+	github.com/caddy-dns/alidns v1.0.28
 	github.com/caddy-dns/all-inkl v0.2.0
+	github.com/caddy-dns/arvancloud v0.1.0
 	github.com/caddy-dns/azure v0.6.0
+	github.com/caddy-dns/bluecat v0.1.1
 	github.com/caddy-dns/bunny v1.2.0
-	github.com/caddy-dns/cloudflare v0.2.2
+	github.com/caddy-dns/cloudflare v0.2.3
 	github.com/caddy-dns/cloudns v1.1.0
 	github.com/caddy-dns/conoha v0.1.0
-	github.com/caddy-dns/desec v1.0.1
+	github.com/caddy-dns/desec v1.1.0
 	github.com/caddy-dns/digitalocean v0.0.0-20250606074528-04bde2867106
 	github.com/caddy-dns/directadmin v0.4.2
 	github.com/caddy-dns/dnsimple v0.0.0-20251214142352-69317c3989f0
@@ -22,7 +24,7 @@ require (
 	github.com/caddy-dns/dynu v1.0.0
 	github.com/caddy-dns/dynv6 v0.0.0-20251101220214-71fad600afb2
 	github.com/caddy-dns/easydns v1.1.1
-	github.com/caddy-dns/edgeone v1.0.1
+	github.com/caddy-dns/edgeone v1.0.2
 	github.com/caddy-dns/gandi v1.1.0
 	github.com/caddy-dns/gcore v0.0.0-20250618083722-4ebfce0e46b0
 	github.com/caddy-dns/glesys v1.0.0
@@ -30,7 +32,7 @@ require (
 	github.com/caddy-dns/googleclouddns v1.1.0
 	github.com/caddy-dns/he v1.2.1
 	github.com/caddy-dns/hetzner v1.0.0
-	github.com/caddy-dns/huaweicloud v1.0.0
+	github.com/caddy-dns/huaweicloud v1.0.1
 	github.com/caddy-dns/infomaniak v1.0.2
 	github.com/caddy-dns/inwx v0.4.1
 	github.com/caddy-dns/ionos v1.2.0
@@ -39,9 +41,10 @@ require (
 	github.com/caddy-dns/luadns v0.1.0
 	github.com/caddy-dns/mailinabox v1.0.0
 	github.com/caddy-dns/metaname v0.3.1
-	github.com/caddy-dns/mijnhost v1.1.0
-	github.com/caddy-dns/mythicbeasts v1.0.2
+	github.com/caddy-dns/mijnhost v1.2.1
+	github.com/caddy-dns/mythicbeasts v1.0.3
 	github.com/caddy-dns/namecheap v1.0.0
+	github.com/caddy-dns/namesilo v0.0.0-20260219111433-e646346d8db8
 	github.com/caddy-dns/nanelo v0.2.0
 	github.com/caddy-dns/netcup v1.0.0
 	github.com/caddy-dns/netlify v1.2.0
@@ -55,11 +58,14 @@ require (
 	github.com/caddy-dns/scaleway v0.1.1
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
 	github.com/caddy-dns/spaceship v1.0.0
-	github.com/caddy-dns/tecnocratica v0.1.0
+	github.com/caddy-dns/tecnocratica v0.1.5
 	github.com/caddy-dns/tencentcloud v0.4.3
-	github.com/caddy-dns/transip v0.0.0-20251123124043-2a8fd975eb91
+	github.com/caddy-dns/transip v0.0.0-20260205122818-9b8f83754ff7
+	github.com/caddy-dns/unifi v1.0.1
+	github.com/caddy-dns/volcengine v0.0.1
 	github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be
 	github.com/caddy-dns/websupport v0.0.0-20251211090312-5da3f800ce77
+	github.com/caddy-dns/wedos v1.0.4
 	github.com/caddy-dns/westcn v1.0.0
 	github.com/caddyserver/caddy/v2 v2.11.1
 	github.com/google/go-github/v72 v72.0.0
@@ -166,14 +172,16 @@ require (
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/libdns/acmedns v0.5.0 // indirect
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd // indirect
-	github.com/libdns/alidns v1.0.4-libdns.v1.beta1 // indirect
+	github.com/libdns/alidns v1.0.6 // indirect
 	github.com/libdns/all-inkl v0.0.0-20251120145607-3d857407353b // indirect
+	github.com/libdns/arvancloud v0.1.0 // indirect
 	github.com/libdns/azure v0.5.0 // indirect
+	github.com/libdns/bluecat v0.1.4 // indirect
 	github.com/libdns/bunny v1.4.0 // indirect
 	github.com/libdns/cloudflare v0.2.2 // indirect
 	github.com/libdns/cloudns v1.1.0 // indirect
 	github.com/libdns/conoha v0.1.1 // indirect
-	github.com/libdns/desec v1.0.1 // indirect
+	github.com/libdns/desec v1.1.0 // indirect
 	github.com/libdns/digitalocean v0.0.0-20250606071607-dfa7af5c2e31 // indirect
 	github.com/libdns/directadmin v0.4.2 // indirect
 	github.com/libdns/dnsimple v0.4.2 // indirect
@@ -183,7 +191,7 @@ require (
 	github.com/libdns/dynu v1.0.0 // indirect
 	github.com/libdns/dynv6 v1.1.1 // indirect
 	github.com/libdns/easydns v1.1.1 // indirect
-	github.com/libdns/edgeone v1.0.1 // indirect
+	github.com/libdns/edgeone v1.0.2 // indirect
 	github.com/libdns/gandi v1.1.0 // indirect
 	github.com/libdns/gcore v0.0.0-20250427050847-9964da923833 // indirect
 	github.com/libdns/glesys v1.0.0 // indirect
@@ -191,7 +199,7 @@ require (
 	github.com/libdns/googleclouddns v1.2.0 // indirect
 	github.com/libdns/he v1.2.1 // indirect
 	github.com/libdns/hetzner v1.0.0 // indirect
-	github.com/libdns/huaweicloud v1.0.0 // indirect
+	github.com/libdns/huaweicloud v1.0.1 // indirect
 	github.com/libdns/infomaniak v0.2.0 // indirect
 	github.com/libdns/inwx v0.3.1 // indirect
 	github.com/libdns/ionos v1.2.0 // indirect
@@ -201,9 +209,10 @@ require (
 	github.com/libdns/luadns v0.2.0 // indirect
 	github.com/libdns/mailinabox v1.0.0 // indirect
 	github.com/libdns/metaname v0.4.1 // indirect
-	github.com/libdns/mijnhost v1.1.3 // indirect
-	github.com/libdns/mythicbeasts v1.0.2 // indirect
+	github.com/libdns/mijnhost v1.2.1 // indirect
+	github.com/libdns/mythicbeasts v1.0.4 // indirect
 	github.com/libdns/namecheap v1.0.0 // indirect
+	github.com/libdns/namesilo v1.0.0 // indirect
 	github.com/libdns/nanelo v1.1.0 // indirect
 	github.com/libdns/netcup v1.0.0 // indirect
 	github.com/libdns/netlify v1.2.0 // indirect
@@ -217,11 +226,14 @@ require (
 	github.com/libdns/scaleway v0.2.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
-	github.com/libdns/tecnocratica v0.1.0 // indirect
+	github.com/libdns/tecnocratica v0.1.5 // indirect
 	github.com/libdns/tencentcloud v1.4.3 // indirect
-	github.com/libdns/transip v1.0.3 // indirect
+	github.com/libdns/transip v1.1.2 // indirect
+	github.com/libdns/unifi v1.0.0 // indirect
+	github.com/libdns/volcengine v0.0.1 // indirect
 	github.com/libdns/vultr/v2 v2.0.4 // indirect
 	github.com/libdns/websupport v1.0.0 // indirect
+	github.com/libdns/wedos v1.0.4 // indirect
 	github.com/libdns/westcn v1.0.2 // indirect
 	github.com/linode/linodego v1.56.0 // indirect
 	github.com/luadns/luadns-go v0.3.0 // indirect
@@ -242,7 +254,7 @@ require (
 	github.com/netlify/open-api/v2 v2.40.0 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/ovh/go-ovh v1.7.0 // indirect
-	github.com/pbergman/provider v1.0.2 // indirect
+	github.com/pbergman/provider v1.1.1 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/pkg/errors v0.9.1 // indirect

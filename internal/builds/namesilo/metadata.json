@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/namesilo",
+  "go_mod_path": "github.com/caddy-dns/namesilo",
+  "go_mod_version": "v0.0.0-20260219111433-e646346d8db8",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.namesilo"
+}

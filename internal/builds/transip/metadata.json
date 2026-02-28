@@ -1,6 +1,6 @@
 {
   "project_url": "https://github.com/caddy-dns/transip",
   "go_mod_path": "github.com/caddy-dns/transip",
-  "go_mod_version": "v0.0.0-20251123124043-2a8fd975eb91",
+  "go_mod_version": "v0.0.0-20260205122818-9b8f83754ff7",
   "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.transip"
 }

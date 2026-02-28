@@ -46,6 +46,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -99,6 +101,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -152,6 +156,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -205,6 +211,63 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "arvancloud"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/arvancloud
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -258,6 +321,63 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "bluecat"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/bluecat
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -311,6 +431,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -364,6 +486,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -417,6 +541,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -470,6 +596,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -523,6 +651,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -576,6 +706,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -629,6 +761,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -682,6 +816,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -735,6 +871,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -788,6 +926,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -841,6 +981,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -894,6 +1036,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -947,6 +1091,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1000,6 +1146,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1053,6 +1201,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1106,6 +1256,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1159,6 +1311,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1212,6 +1366,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1265,6 +1421,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1318,6 +1476,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1371,6 +1531,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1424,6 +1586,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1477,6 +1641,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1530,6 +1696,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1583,6 +1751,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1636,6 +1806,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1689,6 +1861,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1742,6 +1916,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1795,6 +1971,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1848,6 +2026,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1901,6 +2081,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -1954,6 +2136,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2007,6 +2191,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2060,6 +2246,63 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "namesilo"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/namesilo
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2113,6 +2356,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2166,6 +2411,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2219,6 +2466,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2272,6 +2521,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2325,6 +2576,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2378,6 +2631,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2431,6 +2686,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2484,6 +2741,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2537,6 +2796,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2590,6 +2851,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2643,6 +2906,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2696,6 +2961,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2749,6 +3016,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2802,6 +3071,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2855,6 +3126,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2908,6 +3181,118 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "unifi"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/unifi
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "volcengine"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/volcengine
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -2961,6 +3346,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -3014,6 +3401,63 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "wedos"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/wedos
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -3067,6 +3511,8 @@ builds:
       goarch: s390x
     - goos: windows
       goarch: riscv64
+    - goos: windows
+      goarch: arm
     - goos: freebsd
       goarch: ppc64le
     - goos: freebsd
@@ -3145,6 +3591,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: arvancloud
+    ids:
+    - arvancloud
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_arvancloud_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: azure
     ids:
     - azure
@@ -3155,6 +3616,21 @@ archives:
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_azure_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: bluecat
+    ids:
+    - bluecat
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_bluecat_
       {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
       {{- .Arch }}
       {{- with .Arm }}v{{ . }}{{ end }}
@@ -3670,6 +4146,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: namesilo
+    ids:
+    - namesilo
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_namesilo_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: nanelo
     ids:
     - nanelo
@@ -3910,6 +4401,36 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: unifi
+    ids:
+    - unifi
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_unifi_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: volcengine
+    ids:
+    - volcengine
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_volcengine_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: vultr
     ids:
     - vultr
@@ -3935,6 +4456,21 @@ archives:
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_websupport_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: wedos
+    ids:
+    - wedos
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_wedos_
       {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
       {{- .Arch }}
       {{- with .Arm }}v{{ . }}{{ end }}
@@ -3988,14 +4524,16 @@ release:
     | :--- | :------ | :----- | :--: |
     | acmedns | `v0.6.0` | [`github.com/caddy-dns/acmedns`](https://github.com/caddy-dns/acmedns) | [📖](https://caddyserver.com/docs/modules/dns.providers.acmedns) |
     | acmeproxy | `v1.1.1` | [`github.com/caddy-dns/acmeproxy`](https://github.com/caddy-dns/acmeproxy) | [📖](https://caddyserver.com/docs/modules/dns.providers.acmeproxy) |
-    | alidns | `v1.0.26` | [`github.com/caddy-dns/alidns`](https://github.com/caddy-dns/alidns) | [📖](https://caddyserver.com/docs/modules/dns.providers.alidns) |
+    | alidns | `v1.0.28` | [`github.com/caddy-dns/alidns`](https://github.com/caddy-dns/alidns) | [📖](https://caddyserver.com/docs/modules/dns.providers.alidns) |
     | all-inkl | `v0.2.0` | [`github.com/caddy-dns/all-inkl`](https://github.com/caddy-dns/all-inkl) | [📖](https://caddyserver.com/docs/modules/dns.providers.all-inkl) |
+    | arvancloud | `v0.1.0` | [`github.com/caddy-dns/arvancloud`](https://github.com/caddy-dns/arvancloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.arvancloud) |
     | azure | `v0.6.0` | [`github.com/caddy-dns/azure`](https://github.com/caddy-dns/azure) | [📖](https://caddyserver.com/docs/modules/dns.providers.azure) |
+    | bluecat | `v0.1.1` | [`github.com/caddy-dns/bluecat`](https://github.com/caddy-dns/bluecat) | [📖](https://caddyserver.com/docs/modules/dns.providers.bluecat) |
     | bunny | `v1.2.0` | [`github.com/caddy-dns/bunny`](https://github.com/caddy-dns/bunny) | [📖](https://caddyserver.com/docs/modules/dns.providers.bunny) |
-    | cloudflare | `v0.2.2` | [`github.com/caddy-dns/cloudflare`](https://github.com/caddy-dns/cloudflare) | [📖](https://caddyserver.com/docs/modules/dns.providers.cloudflare) |
+    | cloudflare | `v0.2.3` | [`github.com/caddy-dns/cloudflare`](https://github.com/caddy-dns/cloudflare) | [📖](https://caddyserver.com/docs/modules/dns.providers.cloudflare) |
     | cloudns | `v1.1.0` | [`github.com/caddy-dns/cloudns`](https://github.com/caddy-dns/cloudns) | [📖](https://caddyserver.com/docs/modules/dns.providers.cloudns) |
     | conoha | `v0.1.0` | [`github.com/caddy-dns/conoha`](https://github.com/caddy-dns/conoha) | [📖](https://caddyserver.com/docs/modules/dns.providers.conoha) |
-    | desec | `v1.0.1` | [`github.com/caddy-dns/desec`](https://github.com/caddy-dns/desec) | [📖](https://caddyserver.com/docs/modules/dns.providers.desec) |
+    | desec | `v1.1.0` | [`github.com/caddy-dns/desec`](https://github.com/caddy-dns/desec) | [📖](https://caddyserver.com/docs/modules/dns.providers.desec) |
     | digitalocean | `v0.0.0-20250606074528-04bde2867106` | [`github.com/caddy-dns/digitalocean`](https://github.com/caddy-dns/digitalocean) | [📖](https://caddyserver.com/docs/modules/dns.providers.digitalocean) |
     | directadmin | `v0.4.2` | [`github.com/caddy-dns/directadmin`](https://github.com/caddy-dns/directadmin) | [📖](https://caddyserver.com/docs/modules/dns.providers.directadmin) |
     | dnsimple | `v0.0.0-20251214142352-69317c3989f0` | [`github.com/caddy-dns/dnsimple`](https://github.com/caddy-dns/dnsimple) | [📖](https://caddyserver.com/docs/modules/dns.providers.dnsimple) |
@@ -4005,7 +4543,7 @@ release:
     | dynu | `v1.0.0` | [`github.com/caddy-dns/dynu`](https://github.com/caddy-dns/dynu) | [📖](https://caddyserver.com/docs/modules/dns.providers.dynu) |
     | dynv6 | `v0.0.0-20251101220214-71fad600afb2` | [`github.com/caddy-dns/dynv6`](https://github.com/caddy-dns/dynv6) | [📖](https://caddyserver.com/docs/modules/dns.providers.dynv6) |
     | easydns | `v1.1.1` | [`github.com/caddy-dns/easydns`](https://github.com/caddy-dns/easydns) | [📖](https://caddyserver.com/docs/modules/dns.providers.easydns) |
-    | edgeone | `v1.0.1` | [`github.com/caddy-dns/edgeone`](https://github.com/caddy-dns/edgeone) | [📖](https://caddyserver.com/docs/modules/dns.providers.edgeone) |
+    | edgeone | `v1.0.2` | [`github.com/caddy-dns/edgeone`](https://github.com/caddy-dns/edgeone) | [📖](https://caddyserver.com/docs/modules/dns.providers.edgeone) |
     | gandi | `v1.1.0` | [`github.com/caddy-dns/gandi`](https://github.com/caddy-dns/gandi) | [📖](https://caddyserver.com/docs/modules/dns.providers.gandi) |
     | gcore | `v0.0.0-20250618083722-4ebfce0e46b0` | [`github.com/caddy-dns/gcore`](https://github.com/caddy-dns/gcore) | [📖](https://caddyserver.com/docs/modules/dns.providers.gcore) |
     | glesys | `v1.0.0` | [`github.com/caddy-dns/glesys`](https://github.com/caddy-dns/glesys) | [📖](https://caddyserver.com/docs/modules/dns.providers.glesys) |
@@ -4013,7 +4551,7 @@ release:
     | googleclouddns | `v1.1.0` | [`github.com/caddy-dns/googleclouddns`](https://github.com/caddy-dns/googleclouddns) | [📖](https://caddyserver.com/docs/modules/dns.providers.googleclouddns) |
     | he | `v1.2.1` | [`github.com/caddy-dns/he`](https://github.com/caddy-dns/he) | [📖](https://caddyserver.com/docs/modules/dns.providers.he) |
     | hetzner | `v1.0.0` | [`github.com/caddy-dns/hetzner`](https://github.com/caddy-dns/hetzner) | [📖](https://caddyserver.com/docs/modules/dns.providers.hetzner) |
-    | huaweicloud | `v1.0.0` | [`github.com/caddy-dns/huaweicloud`](https://github.com/caddy-dns/huaweicloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.huaweicloud) |
+    | huaweicloud | `v1.0.1` | [`github.com/caddy-dns/huaweicloud`](https://github.com/caddy-dns/huaweicloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.huaweicloud) |
     | infomaniak | `v1.0.2` | [`github.com/caddy-dns/infomaniak`](https://github.com/caddy-dns/infomaniak) | [📖](https://caddyserver.com/docs/modules/dns.providers.infomaniak) |
     | inwx | `v0.4.1` | [`github.com/caddy-dns/inwx`](https://github.com/caddy-dns/inwx) | [📖](https://caddyserver.com/docs/modules/dns.providers.inwx) |
     | ionos | `v1.2.0` | [`github.com/caddy-dns/ionos`](https://github.com/caddy-dns/ionos) | [📖](https://caddyserver.com/docs/modules/dns.providers.ionos) |
@@ -4022,9 +4560,10 @@ release:
     | luadns | `v0.1.0` | [`github.com/caddy-dns/luadns`](https://github.com/caddy-dns/luadns) | [📖](https://caddyserver.com/docs/modules/dns.providers.luadns) |
     | mailinabox | `v1.0.0` | [`github.com/caddy-dns/mailinabox`](https://github.com/caddy-dns/mailinabox) | [📖](https://caddyserver.com/docs/modules/dns.providers.mailinabox) |
     | metaname | `v0.3.1` | [`github.com/caddy-dns/metaname`](https://github.com/caddy-dns/metaname) | [📖](https://caddyserver.com/docs/modules/dns.providers.metaname) |
-    | mijnhost | `v1.1.0` | [`github.com/caddy-dns/mijnhost`](https://github.com/caddy-dns/mijnhost) | [📖](https://caddyserver.com/docs/modules/dns.providers.mijnhost) |
-    | mythicbeasts | `v1.0.2` | [`github.com/caddy-dns/mythicbeasts`](https://github.com/caddy-dns/mythicbeasts) | [📖](https://caddyserver.com/docs/modules/dns.providers.mythicbeasts) |
+    | mijnhost | `v1.2.1` | [`github.com/caddy-dns/mijnhost`](https://github.com/caddy-dns/mijnhost) | [📖](https://caddyserver.com/docs/modules/dns.providers.mijnhost) |
+    | mythicbeasts | `v1.0.3` | [`github.com/caddy-dns/mythicbeasts`](https://github.com/caddy-dns/mythicbeasts) | [📖](https://caddyserver.com/docs/modules/dns.providers.mythicbeasts) |
     | namecheap | `v1.0.0` | [`github.com/caddy-dns/namecheap`](https://github.com/caddy-dns/namecheap) | [📖](https://caddyserver.com/docs/modules/dns.providers.namecheap) |
+    | namesilo | `v0.0.0-20260219111433-e646346d8db8` | [`github.com/caddy-dns/namesilo`](https://github.com/caddy-dns/namesilo) | [📖](https://caddyserver.com/docs/modules/dns.providers.namesilo) |
     | nanelo | `v0.2.0` | [`github.com/caddy-dns/nanelo`](https://github.com/caddy-dns/nanelo) | [📖](https://caddyserver.com/docs/modules/dns.providers.nanelo) |
     | netcup | `v1.0.0` | [`github.com/caddy-dns/netcup`](https://github.com/caddy-dns/netcup) | [📖](https://caddyserver.com/docs/modules/dns.providers.netcup) |
     | netlify | `v1.2.0` | [`github.com/caddy-dns/netlify`](https://github.com/caddy-dns/netlify) | [📖](https://caddyserver.com/docs/modules/dns.providers.netlify) |
@@ -4038,11 +4577,14 @@ release:
     | scaleway | `v0.1.1` | [`github.com/caddy-dns/scaleway`](https://github.com/caddy-dns/scaleway) | [📖](https://caddyserver.com/docs/modules/dns.providers.scaleway) |
     | simplydotcom | `v1.0.0-beta2` | [`github.com/caddy-dns/simplydotcom`](https://github.com/caddy-dns/simplydotcom) | [📖](https://caddyserver.com/docs/modules/dns.providers.simplydotcom) |
     | spaceship | `v1.0.0` | [`github.com/caddy-dns/spaceship`](https://github.com/caddy-dns/spaceship) | [📖](https://caddyserver.com/docs/modules/dns.providers.spaceship) |
-    | tecnocratica | `v0.1.0` | [`github.com/caddy-dns/tecnocratica`](https://github.com/caddy-dns/tecnocratica) | [📖](https://caddyserver.com/docs/modules/dns.providers.tecnocratica) |
+    | tecnocratica | `v0.1.5` | [`github.com/caddy-dns/tecnocratica`](https://github.com/caddy-dns/tecnocratica) | [📖](https://caddyserver.com/docs/modules/dns.providers.tecnocratica) |
     | tencentcloud | `v0.4.3` | [`github.com/caddy-dns/tencentcloud`](https://github.com/caddy-dns/tencentcloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.tencentcloud) |
-    | transip | `v0.0.0-20251123124043-2a8fd975eb91` | [`github.com/caddy-dns/transip`](https://github.com/caddy-dns/transip) | [📖](https://caddyserver.com/docs/modules/dns.providers.transip) |
+    | transip | `v0.0.0-20260205122818-9b8f83754ff7` | [`github.com/caddy-dns/transip`](https://github.com/caddy-dns/transip) | [📖](https://caddyserver.com/docs/modules/dns.providers.transip) |
+    | unifi | `v1.0.1` | [`github.com/caddy-dns/unifi`](https://github.com/caddy-dns/unifi) | [📖](https://caddyserver.com/docs/modules/dns.providers.unifi) |
+    | volcengine | `v0.0.1` | [`github.com/caddy-dns/volcengine`](https://github.com/caddy-dns/volcengine) | [📖](https://caddyserver.com/docs/modules/dns.providers.volcengine) |
     | vultr | `v0.0.0-20250723121531-55bf3e9768be` | [`github.com/caddy-dns/vultr`](https://github.com/caddy-dns/vultr) | [📖](https://caddyserver.com/docs/modules/dns.providers.vultr) |
     | websupport | `v0.0.0-20251211090312-5da3f800ce77` | [`github.com/caddy-dns/websupport`](https://github.com/caddy-dns/websupport) | [📖](https://caddyserver.com/docs/modules/dns.providers.websupport) |
+    | wedos | `v1.0.4` | [`github.com/caddy-dns/wedos`](https://github.com/caddy-dns/wedos) | [📖](https://caddyserver.com/docs/modules/dns.providers.wedos) |
     | westcn | `v1.0.0` | [`github.com/caddy-dns/westcn`](https://github.com/caddy-dns/westcn) | [📖](https://caddyserver.com/docs/modules/dns.providers.westcn) |
 
 changelog:
