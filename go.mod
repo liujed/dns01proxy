@@ -28,7 +28,7 @@ require (
 	github.com/caddy-dns/gandi v1.1.0
 	github.com/caddy-dns/gcore v0.0.0-20250618083722-4ebfce0e46b0
 	github.com/caddy-dns/glesys v1.0.0
-	github.com/caddy-dns/godaddy v1.1.1
+	github.com/caddy-dns/godaddy v1.2.0
 	github.com/caddy-dns/googleclouddns v1.1.0
 	github.com/caddy-dns/he v1.2.1
 	github.com/caddy-dns/hetzner v1.0.0
