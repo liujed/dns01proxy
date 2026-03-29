@@ -1,6 +1,6 @@
 {
   "project_url": "https://github.com/caddy-dns/dnsimple",
   "go_mod_path": "github.com/caddy-dns/dnsimple",
-  "go_mod_version": "v0.0.0-20251214142352-69317c3989f0",
+  "go_mod_version": "v0.0.0-20260303131243-0433343c5610",
   "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.dnsimple"
 }
