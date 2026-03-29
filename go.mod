@@ -19,7 +19,7 @@ require (
 	github.com/caddy-dns/directadmin v0.4.2
 	github.com/caddy-dns/dnsimple v0.0.0-20251214142352-69317c3989f0
 	github.com/caddy-dns/dode v0.2.0
-	github.com/caddy-dns/domainnameshop v0.2.2
+	github.com/caddy-dns/domainnameshop v0.2.3
 	github.com/caddy-dns/duckdns v0.5.0
 	github.com/caddy-dns/dynu v1.0.0
 	github.com/caddy-dns/dynv6 v0.0.0-20251101220214-71fad600afb2
