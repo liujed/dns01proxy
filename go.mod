@@ -6,7 +6,7 @@ require (
 	github.com/caddy-dns/acmedns v0.6.0
 	github.com/caddy-dns/acmeproxy v1.1.1
 	github.com/caddy-dns/alidns v1.0.28
-	github.com/caddy-dns/all-inkl v0.2.0
+	github.com/caddy-dns/all-inkl v0.2.4
 	github.com/caddy-dns/arvancloud v0.1.0
 	github.com/caddy-dns/azure v0.6.0
 	github.com/caddy-dns/bluecat v0.1.1
@@ -173,7 +173,7 @@ require (
 	github.com/libdns/acmedns v0.5.0 // indirect
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd // indirect
 	github.com/libdns/alidns v1.0.6 // indirect
-	github.com/libdns/all-inkl v0.0.0-20251120145607-3d857407353b // indirect
+	github.com/libdns/all-inkl v0.2.4 // indirect
 	github.com/libdns/arvancloud v0.1.0 // indirect
 	github.com/libdns/azure v0.5.0 // indirect
 	github.com/libdns/bluecat v0.1.4 // indirect
