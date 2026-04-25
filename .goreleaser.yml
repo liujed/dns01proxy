@@ -1604,6 +1604,61 @@ builds:
   - nobadger
   - nomysql
   - nopgx
+- id: "httpnet"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/httpnet
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
 - id: "huaweicloud"
   env:
   - CGO_ENABLED=0
@@ -3089,6 +3144,61 @@ builds:
   - nobadger
   - nomysql
   - nopgx
+- id: "servercow"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/servercow
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
 - id: "simplydotcom"
   env:
   - CGO_ENABLED=0
@@ -3314,6 +3424,61 @@ builds:
   - CGO_ENABLED=0
   - GO111MODULE=on
   main: ./internal/builds/thelittlehost
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "timeweb"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/timeweb
   binary: dns01proxy
   goos:
   - darwin
@@ -4186,6 +4351,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: httpnet
+    ids:
+    - httpnet
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_httpnet_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: huaweicloud
     ids:
     - huaweicloud
@@ -4591,6 +4771,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: servercow
+    ids:
+    - servercow
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_servercow_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: simplydotcom
     ids:
     - simplydotcom
@@ -4661,6 +4856,21 @@ archives:
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_thelittlehost_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: timeweb
+    ids:
+    - timeweb
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_timeweb_
       {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
       {{- .Arch }}
       {{- with .Arm }}v{{ . }}{{ end }}
@@ -4829,8 +5039,9 @@ release:
     | glesys | `v1.0.0` | [`github.com/caddy-dns/glesys`](https://github.com/caddy-dns/glesys) | [📖](https://caddyserver.com/docs/modules/dns.providers.glesys) |
     | godaddy | `v1.2.0` | [`github.com/caddy-dns/godaddy`](https://github.com/caddy-dns/godaddy) | [📖](https://caddyserver.com/docs/modules/dns.providers.godaddy) |
     | googleclouddns | `v1.1.0` | [`github.com/caddy-dns/googleclouddns`](https://github.com/caddy-dns/googleclouddns) | [📖](https://caddyserver.com/docs/modules/dns.providers.googleclouddns) |
-    | he | `v1.2.1` | [`github.com/caddy-dns/he`](https://github.com/caddy-dns/he) | [📖](https://caddyserver.com/docs/modules/dns.providers.he) |
+    | he | `v1.2.2` | [`github.com/caddy-dns/he`](https://github.com/caddy-dns/he) | [📖](https://caddyserver.com/docs/modules/dns.providers.he) |
     | hetzner | `v1.0.0` | [`github.com/caddy-dns/hetzner`](https://github.com/caddy-dns/hetzner) | [📖](https://caddyserver.com/docs/modules/dns.providers.hetzner) |
+    | httpnet | `v0.0.0-20260424163022-7e438d79be37` | [`github.com/caddy-dns/httpnet`](https://github.com/caddy-dns/httpnet) | [📖](https://caddyserver.com/docs/modules/dns.providers.httpnet) |
     | huaweicloud | `v1.0.1` | [`github.com/caddy-dns/huaweicloud`](https://github.com/caddy-dns/huaweicloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.huaweicloud) |
     | infomaniak | `v1.0.2` | [`github.com/caddy-dns/infomaniak`](https://github.com/caddy-dns/infomaniak) | [📖](https://caddyserver.com/docs/modules/dns.providers.infomaniak) |
     | inwx | `v0.4.1` | [`github.com/caddy-dns/inwx`](https://github.com/caddy-dns/inwx) | [📖](https://caddyserver.com/docs/modules/dns.providers.inwx) |
@@ -4858,13 +5069,15 @@ release:
     | rfc2136 | `v1.0.0` | [`github.com/caddy-dns/rfc2136`](https://github.com/caddy-dns/rfc2136) | [📖](https://caddyserver.com/docs/modules/dns.providers.rfc2136) |
     | route53 | `v1.6.0` | [`github.com/caddy-dns/route53`](https://github.com/caddy-dns/route53) | [📖](https://caddyserver.com/docs/modules/dns.providers.route53) |
     | scaleway | `v0.1.1` | [`github.com/caddy-dns/scaleway`](https://github.com/caddy-dns/scaleway) | [📖](https://caddyserver.com/docs/modules/dns.providers.scaleway) |
+    | servercow | `v0.0.0-20260420085529-48781691f65a` | [`github.com/caddy-dns/servercow`](https://github.com/caddy-dns/servercow) | [📖](https://caddyserver.com/docs/modules/dns.providers.servercow) |
     | simplydotcom | `v1.0.0-beta2` | [`github.com/caddy-dns/simplydotcom`](https://github.com/caddy-dns/simplydotcom) | [📖](https://caddyserver.com/docs/modules/dns.providers.simplydotcom) |
     | spaceship | `v1.0.0` | [`github.com/caddy-dns/spaceship`](https://github.com/caddy-dns/spaceship) | [📖](https://caddyserver.com/docs/modules/dns.providers.spaceship) |
     | tecnocratica | `v0.1.5` | [`github.com/caddy-dns/tecnocratica`](https://github.com/caddy-dns/tecnocratica) | [📖](https://caddyserver.com/docs/modules/dns.providers.tecnocratica) |
     | tencentcloud | `v0.4.3` | [`github.com/caddy-dns/tencentcloud`](https://github.com/caddy-dns/tencentcloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.tencentcloud) |
     | thelittlehost | `v1.0.3` | [`github.com/caddy-dns/thelittlehost`](https://github.com/caddy-dns/thelittlehost) | [📖](https://caddyserver.com/docs/modules/dns.providers.thelittlehost) |
+    | timeweb | `v1.0.1` | [`github.com/caddy-dns/timeweb`](https://github.com/caddy-dns/timeweb) | [📖](https://caddyserver.com/docs/modules/dns.providers.timeweb) |
     | transip | `v0.0.0-20260205122818-9b8f83754ff7` | [`github.com/caddy-dns/transip`](https://github.com/caddy-dns/transip) | [📖](https://caddyserver.com/docs/modules/dns.providers.transip) |
-    | unifi | `v1.0.2` | [`github.com/caddy-dns/unifi`](https://github.com/caddy-dns/unifi) | [📖](https://caddyserver.com/docs/modules/dns.providers.unifi) |
+    | unifi | `v1.0.3` | [`github.com/caddy-dns/unifi`](https://github.com/caddy-dns/unifi) | [📖](https://caddyserver.com/docs/modules/dns.providers.unifi) |
     | volcengine | `v0.0.1` | [`github.com/caddy-dns/volcengine`](https://github.com/caddy-dns/volcengine) | [📖](https://caddyserver.com/docs/modules/dns.providers.volcengine) |
     | vultr | `v0.0.0-20250723121531-55bf3e9768be` | [`github.com/caddy-dns/vultr`](https://github.com/caddy-dns/vultr) | [📖](https://caddyserver.com/docs/modules/dns.providers.vultr) |
     | websupport | `v0.0.0-20251211090312-5da3f800ce77` | [`github.com/caddy-dns/websupport`](https://github.com/caddy-dns/websupport) | [📖](https://caddyserver.com/docs/modules/dns.providers.websupport) |

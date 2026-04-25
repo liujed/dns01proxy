@@ -1,6 +1,6 @@
 module github.com/liujed/dns01proxy
 
-go 1.26.0
+go 1.26.1
 
 require (
 	github.com/caddy-dns/acmedns v0.6.0
@@ -30,8 +30,9 @@ require (
 	github.com/caddy-dns/glesys v1.0.0
 	github.com/caddy-dns/godaddy v1.2.0
 	github.com/caddy-dns/googleclouddns v1.1.0
-	github.com/caddy-dns/he v1.2.1
+	github.com/caddy-dns/he v1.2.2
 	github.com/caddy-dns/hetzner v1.0.0
+	github.com/caddy-dns/httpnet v0.0.0-20260424163022-7e438d79be37
 	github.com/caddy-dns/huaweicloud v1.0.1
 	github.com/caddy-dns/infomaniak v1.0.2
 	github.com/caddy-dns/inwx v0.4.1
@@ -59,13 +60,15 @@ require (
 	github.com/caddy-dns/rfc2136 v1.0.0
 	github.com/caddy-dns/route53 v1.6.0
 	github.com/caddy-dns/scaleway v0.1.1
+	github.com/caddy-dns/servercow v0.0.0-20260420085529-48781691f65a
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
 	github.com/caddy-dns/spaceship v1.0.0
 	github.com/caddy-dns/tecnocratica v0.1.5
 	github.com/caddy-dns/tencentcloud v0.4.3
 	github.com/caddy-dns/thelittlehost v1.0.3
+	github.com/caddy-dns/timeweb v1.0.1
 	github.com/caddy-dns/transip v0.0.0-20260205122818-9b8f83754ff7
-	github.com/caddy-dns/unifi v1.0.2
+	github.com/caddy-dns/unifi v1.0.3
 	github.com/caddy-dns/volcengine v0.0.1
 	github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be
 	github.com/caddy-dns/websupport v0.0.0-20251211090312-5da3f800ce77
@@ -201,8 +204,9 @@ require (
 	github.com/libdns/glesys v1.0.0 // indirect
 	github.com/libdns/godaddy v1.1.0 // indirect
 	github.com/libdns/googleclouddns v1.2.0 // indirect
-	github.com/libdns/he v1.2.1 // indirect
+	github.com/libdns/he v1.2.2 // indirect
 	github.com/libdns/hetzner v1.0.0 // indirect
+	github.com/libdns/httpnet v1.0.0 // indirect
 	github.com/libdns/huaweicloud v1.0.1 // indirect
 	github.com/libdns/infomaniak v0.2.0 // indirect
 	github.com/libdns/inwx v0.3.1 // indirect
@@ -231,13 +235,15 @@ require (
 	github.com/libdns/rfc2136 v1.0.0 // indirect
 	github.com/libdns/route53 v1.6.0 // indirect
 	github.com/libdns/scaleway v0.2.0 // indirect
+	github.com/libdns/servercow v0.1.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
 	github.com/libdns/tecnocratica v0.1.5 // indirect
 	github.com/libdns/tencentcloud v1.4.3 // indirect
 	github.com/libdns/thelittlehost v1.0.1 // indirect
+	github.com/libdns/timeweb v1.1.1 // indirect
 	github.com/libdns/transip v1.1.2 // indirect
-	github.com/libdns/unifi v1.0.0 // indirect
+	github.com/libdns/unifi v1.1.0 // indirect
 	github.com/libdns/volcengine v0.0.1 // indirect
 	github.com/libdns/vultr/v2 v2.0.4 // indirect
 	github.com/libdns/websupport v1.0.0 // indirect

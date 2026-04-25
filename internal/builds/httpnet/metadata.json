@@ -1,0 +1,6 @@
+{
+  "project_url": "https://github.com/caddy-dns/httpnet",
+  "go_mod_path": "github.com/caddy-dns/httpnet",
+  "go_mod_version": "v0.0.0-20260424163022-7e438d79be37",
+  "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.httpnet"
+}
