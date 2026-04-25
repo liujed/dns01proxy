@@ -331,8 +331,8 @@ github.com/caddy-dns/thelittlehost v1.0.3 h1:OYuAS0rdI/uhiUYfMrYVdSFNXgC6RQmxIP7
 github.com/caddy-dns/thelittlehost v1.0.3/go.mod h1:81OsQ07buDuwDE3ybPYiEKhyjUy7y8Mz+sl9g8nuicU=
 github.com/caddy-dns/transip v0.0.0-20260205122818-9b8f83754ff7 h1:Sw/Ndz5QOX61wnY/7MktkwF6j93s7YnhZv0w82r0UYQ=
 github.com/caddy-dns/transip v0.0.0-20260205122818-9b8f83754ff7/go.mod h1:ogUwsuv3XTUeyf0jnQ4hFJlBxfdicLs7O7UV5cJZpi8=
-github.com/caddy-dns/unifi v1.0.2 h1:eAzeStzKLjaXnIBYvopNTagSp0OteVcg4QlVULFf/Zw=
-github.com/caddy-dns/unifi v1.0.2/go.mod h1:PtCtyQUzM/gAZu2UQRemdGWhUF+U5OSAAvXNQ/Wyu5s=
+github.com/caddy-dns/unifi v1.0.3 h1:2VyMsnwF5T7T8zlX7OvmDgyV44MovzwG7YZZF5NgBZk=
+github.com/caddy-dns/unifi v1.0.3/go.mod h1:5k0ZyZT13kO+yoIYEpQZgw/z+okzxocaTaD3VWjlGJU=
 github.com/caddy-dns/volcengine v0.0.1 h1:Kppi8q4svqvZKL12PvpRnG0KaOJcS/Htc5iCg0513sw=
 github.com/caddy-dns/volcengine v0.0.1/go.mod h1:YNusk/5s31ZS1LAcLPcSxk8EI9iipVI7gSPHfwKbFh8=
 github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be h1:2jxSZsIBOf/USA8h5JJavKhVWaEfFZYJT4lDjqNKtnI=
@@ -1052,8 +1052,8 @@ github.com/libdns/thelittlehost v1.0.1 h1:bw66iNamYxlOKXAYNh7bFSvBEzAT4fJO82kl4v
 github.com/libdns/thelittlehost v1.0.1/go.mod h1:z4xyltZnzAtKJ80gHZkzmswYQN3g1UoNmlpI2jaY9sQ=
 github.com/libdns/transip v1.1.2 h1:aWbVCLaR+Yru3ERC8yjOa26pdbZ8aQtxXrJK+vxwI6I=
 github.com/libdns/transip v1.1.2/go.mod h1:cDcMPtC4Qw2jvGZVkSyCIlRGIaQafSq9QVqST927KBM=
-github.com/libdns/unifi v1.0.0 h1:4JUbWjMpxqZsllJpmPza+Om+BCWNt4Nktf/EX1f94y0=
-github.com/libdns/unifi v1.0.0/go.mod h1:cC1B7R9LVqfRUzTT4SUIvQYD5bRpZ6gb/XFnW/+vUxE=
+github.com/libdns/unifi v1.1.0 h1:3NoSXUB3wATKO1kjazJrq6pt/Eh7SOZH1gHp4U3VWEM=
+github.com/libdns/unifi v1.1.0/go.mod h1:cC1B7R9LVqfRUzTT4SUIvQYD5bRpZ6gb/XFnW/+vUxE=
 github.com/libdns/volcengine v0.0.1 h1:xQF/yYtx7SU+b1MACg6HoK8h3hj2u+PNmZpbppaNnX0=
 github.com/libdns/volcengine v0.0.1/go.mod h1:UiPtvLK9LHWsgX0EGF9OLu77YUjOgcnCpPINKRzgoLw=
 github.com/libdns/vultr/v2 v2.0.4 h1:4V1OSiUnYvFfpFBicdM27JEnAF0D694cmmQ3AyNqobA=
