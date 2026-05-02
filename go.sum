@@ -317,8 +317,8 @@ github.com/caddy-dns/regfish v0.0.0-20260304102646-e8c40e7e99ad h1:efi+SZJkn83Kh
 github.com/caddy-dns/regfish v0.0.0-20260304102646-e8c40e7e99ad/go.mod h1:M7aTUfxgjWIbfpQzxJ9XAEjXGyky1uEg3tBELLcklzQ=
 github.com/caddy-dns/rfc2136 v1.0.0 h1:UIug15TcfTGJqC5V02oWiaPlGdwYR2/x4E+3pqXHnLc=
 github.com/caddy-dns/rfc2136 v1.0.0/go.mod h1:eX1nUtdTYvPvYOkqdJihEKB6Y30oqrSb7yTnTRbiM7A=
-github.com/caddy-dns/route53 v1.6.0 h1:QevgBx/ErQAHhRpw4fLYiMkBbHjFDRz1Rb+d5GwJIig=
-github.com/caddy-dns/route53 v1.6.0/go.mod h1:aGF/zOJeIYqhDNiMhTL6AWYJ1QkXdy2lcENNtzaOjig=
+github.com/caddy-dns/route53 v1.6.2 h1:yFna82ibRXsNIaHQdiSx6IlCExoHf2Y/hSwyv4vQLvs=
+github.com/caddy-dns/route53 v1.6.2/go.mod h1:O+CWJ900StomFP9cfhm+IWTUF1+LPtfysAfSAave2LQ=
 github.com/caddy-dns/scaleway v0.1.1 h1:lOXn+Rrg0zbmFwKCKpmPbGdJt1wsLXM/aF6ujkQeWwY=
 github.com/caddy-dns/scaleway v0.1.1/go.mod h1:n0Dvgyh1TMZpj3q7ZfnJpgCbG54NTdPyuK9CqxNW/+4=
 github.com/caddy-dns/servercow v0.0.0-20260420085529-48781691f65a h1:t7Vp6WSLwKwuLPB2QviNAmznrZDqx/+n57SVZgQTbgs=
@@ -1044,8 +1044,8 @@ github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca h1:AaWgdHpTh5C4LHA1
 github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca/go.mod h1:QgDBSE2UsduJmL5+VWgQIuax2bXO8JaJ+ETZbykPQwo=
 github.com/libdns/rfc2136 v1.0.0 h1:hy+cCMdBULFYNKh/S0feVe2zWRhEZ74lTshdbXABIoY=
 github.com/libdns/rfc2136 v1.0.0/go.mod h1:H216T2WTCGpsvPaoIVVe6Y26hdZT5RcsBqwIKE4l1iY=
-github.com/libdns/route53 v1.6.0 h1:1fZcoCIxagfftw9GBhIqZ2rumEiB0K58n11X7ko2DOg=
-github.com/libdns/route53 v1.6.0/go.mod h1:7QGcw/2J0VxcVwHsPYpuo1I6IJLHy77bbOvi1BVK3eE=
+github.com/libdns/route53 v1.6.2 h1:unPlpgC2InQ/xrql5NOwCmFS9vZrRx8lH1WUo8/rjk8=
+github.com/libdns/route53 v1.6.2/go.mod h1:7QGcw/2J0VxcVwHsPYpuo1I6IJLHy77bbOvi1BVK3eE=
 github.com/libdns/scaleway v0.2.0 h1:ptOPvfhnjxyKPzm/ScY/z3vEAopPaJo/25/Q3XYtPs8=
 github.com/libdns/scaleway v0.2.0/go.mod h1:wMx2gsHgzj2oSpUdqZeXEngAElpfupXJBqgWvyQZNlI=
 github.com/libdns/servercow v0.1.0 h1:XCF5dg9qpx5G/jdQooBLiByFnkG8ApFf3oXlmhvcsP8=
