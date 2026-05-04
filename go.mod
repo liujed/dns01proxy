@@ -5,11 +5,11 @@ go 1.26.1
 require (
 	github.com/caddy-dns/acmedns v0.6.0
 	github.com/caddy-dns/acmeproxy v1.1.1
-	github.com/caddy-dns/alidns v1.0.28
+	github.com/caddy-dns/alidns v1.0.29
 	github.com/caddy-dns/all-inkl v0.2.4
 	github.com/caddy-dns/arvancloud v0.1.0
 	github.com/caddy-dns/azure v0.6.0
-	github.com/caddy-dns/bluecat v0.1.1
+	github.com/caddy-dns/bluecat v0.1.2
 	github.com/caddy-dns/bunny v1.2.0
 	github.com/caddy-dns/cloudflare v0.2.4
 	github.com/caddy-dns/cloudns v1.1.0
@@ -55,10 +55,11 @@ require (
 	github.com/caddy-dns/ovh v1.1.0
 	github.com/caddy-dns/porkbun v0.3.1
 	github.com/caddy-dns/powerdns v1.0.2
+	github.com/caddy-dns/pph v0.0.1
 	github.com/caddy-dns/regery v1.1.0
 	github.com/caddy-dns/regfish v0.0.0-20260304102646-e8c40e7e99ad
 	github.com/caddy-dns/rfc2136 v1.0.0
-	github.com/caddy-dns/route53 v1.6.0
+	github.com/caddy-dns/route53 v1.6.2
 	github.com/caddy-dns/scaleway v0.1.1
 	github.com/caddy-dns/servercow v0.0.0-20260420085529-48781691f65a
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
@@ -124,6 +125,7 @@ require (
 	github.com/caddyserver/certmagic v0.25.3 // indirect
 	github.com/caddyserver/zerossl v0.1.5 // indirect
 	github.com/ccoveille/go-safecast/v2 v2.0.0 // indirect
+	github.com/cellebyte/go-pph v0.0.2 // indirect
 	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
@@ -179,11 +181,11 @@ require (
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/libdns/acmedns v0.5.0 // indirect
 	github.com/libdns/acmeproxy v0.0.0-20250423082816-f8e0a6620ddd // indirect
-	github.com/libdns/alidns v1.0.6 // indirect
+	github.com/libdns/alidns v1.0.7 // indirect
 	github.com/libdns/all-inkl v0.2.4 // indirect
 	github.com/libdns/arvancloud v0.1.0 // indirect
 	github.com/libdns/azure v0.5.0 // indirect
-	github.com/libdns/bluecat v0.1.4 // indirect
+	github.com/libdns/bluecat v0.1.5 // indirect
 	github.com/libdns/bunny v1.4.0 // indirect
 	github.com/libdns/cloudflare v0.2.2 // indirect
 	github.com/libdns/cloudns v1.1.0 // indirect
@@ -230,10 +232,11 @@ require (
 	github.com/libdns/ovh v1.1.0 // indirect
 	github.com/libdns/porkbun v1.0.1 // indirect
 	github.com/libdns/powerdns v0.1.4 // indirect
+	github.com/libdns/pph v0.0.2 // indirect
 	github.com/libdns/regery v1.1.0 // indirect
 	github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca // indirect
 	github.com/libdns/rfc2136 v1.0.0 // indirect
-	github.com/libdns/route53 v1.6.0 // indirect
+	github.com/libdns/route53 v1.6.2 // indirect
 	github.com/libdns/scaleway v0.2.0 // indirect
 	github.com/libdns/servercow v0.1.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
