@@ -77,7 +77,7 @@ require (
 	github.com/caddy-dns/westcn v1.0.0
 	github.com/caddyserver/caddy/v2 v2.11.2
 	github.com/google/go-github/v72 v72.0.0
-	github.com/liujed/caddy-dns01proxy v0.1.15
+	github.com/liujed/caddy-dns01proxy v0.1.16
 	github.com/liujed/goutil v0.0.0
 	github.com/spf13/cobra v1.10.2
 )
@@ -317,7 +317,7 @@ require (
 	go.step.sm/crypto v0.77.1 // indirect
 	go.uber.org/automaxprocs v1.6.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	go.uber.org/zap v1.27.1 // indirect
+	go.uber.org/zap v1.28.0 // indirect
 	go.uber.org/zap/exp v0.3.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
