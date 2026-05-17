@@ -5103,7 +5103,7 @@ release:
     | dynu | `v1.0.0` | [`github.com/caddy-dns/dynu`](https://github.com/caddy-dns/dynu) | [📖](https://caddyserver.com/docs/modules/dns.providers.dynu) |
     | dynv6 | `v0.0.0-20251101220214-71fad600afb2` | [`github.com/caddy-dns/dynv6`](https://github.com/caddy-dns/dynv6) | [📖](https://caddyserver.com/docs/modules/dns.providers.dynv6) |
     | easydns | `v1.1.1` | [`github.com/caddy-dns/easydns`](https://github.com/caddy-dns/easydns) | [📖](https://caddyserver.com/docs/modules/dns.providers.easydns) |
-    | edgeone | `v1.0.2` | [`github.com/caddy-dns/edgeone`](https://github.com/caddy-dns/edgeone) | [📖](https://caddyserver.com/docs/modules/dns.providers.edgeone) |
+    | edgeone | `v1.0.3` | [`github.com/caddy-dns/edgeone`](https://github.com/caddy-dns/edgeone) | [📖](https://caddyserver.com/docs/modules/dns.providers.edgeone) |
     | gandi | `v1.1.0` | [`github.com/caddy-dns/gandi`](https://github.com/caddy-dns/gandi) | [📖](https://caddyserver.com/docs/modules/dns.providers.gandi) |
     | gcore | `v0.0.0-20250618083722-4ebfce0e46b0` | [`github.com/caddy-dns/gcore`](https://github.com/caddy-dns/gcore) | [📖](https://caddyserver.com/docs/modules/dns.providers.gcore) |
     | glesys | `v1.0.0` | [`github.com/caddy-dns/glesys`](https://github.com/caddy-dns/glesys) | [📖](https://caddyserver.com/docs/modules/dns.providers.glesys) |
@@ -5148,7 +5148,7 @@ release:
     | thelittlehost | `v1.0.3` | [`github.com/caddy-dns/thelittlehost`](https://github.com/caddy-dns/thelittlehost) | [📖](https://caddyserver.com/docs/modules/dns.providers.thelittlehost) |
     | timeweb | `v1.0.1` | [`github.com/caddy-dns/timeweb`](https://github.com/caddy-dns/timeweb) | [📖](https://caddyserver.com/docs/modules/dns.providers.timeweb) |
     | transip | `v0.0.0-20260205122818-9b8f83754ff7` | [`github.com/caddy-dns/transip`](https://github.com/caddy-dns/transip) | [📖](https://caddyserver.com/docs/modules/dns.providers.transip) |
-    | unifi | `v1.0.3` | [`github.com/caddy-dns/unifi`](https://github.com/caddy-dns/unifi) | [📖](https://caddyserver.com/docs/modules/dns.providers.unifi) |
+    | unifi | `v1.0.4` | [`github.com/caddy-dns/unifi`](https://github.com/caddy-dns/unifi) | [📖](https://caddyserver.com/docs/modules/dns.providers.unifi) |
     | volcengine | `v0.0.1` | [`github.com/caddy-dns/volcengine`](https://github.com/caddy-dns/volcengine) | [📖](https://caddyserver.com/docs/modules/dns.providers.volcengine) |
     | vultr | `v0.0.0-20250723121531-55bf3e9768be` | [`github.com/caddy-dns/vultr`](https://github.com/caddy-dns/vultr) | [📖](https://caddyserver.com/docs/modules/dns.providers.vultr) |
     | websupport | `v0.0.0-20251211090312-5da3f800ce77` | [`github.com/caddy-dns/websupport`](https://github.com/caddy-dns/websupport) | [📖](https://caddyserver.com/docs/modules/dns.providers.websupport) |
