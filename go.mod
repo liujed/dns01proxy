@@ -43,7 +43,7 @@ require (
 	github.com/caddy-dns/mailinabox v1.0.0
 	github.com/caddy-dns/metaname v0.3.1
 	github.com/caddy-dns/mijnhost v1.2.1
-	github.com/caddy-dns/mythicbeasts v1.0.3
+	github.com/caddy-dns/mythicbeasts v1.0.5
 	github.com/caddy-dns/namecheap v1.0.0
 	github.com/caddy-dns/namesilo v0.0.0-20260219111433-e646346d8db8
 	github.com/caddy-dns/nanelo v0.2.0
@@ -222,7 +222,7 @@ require (
 	github.com/libdns/mailinabox v1.0.0 // indirect
 	github.com/libdns/metaname v0.4.1 // indirect
 	github.com/libdns/mijnhost v1.2.1 // indirect
-	github.com/libdns/mythicbeasts v1.0.4 // indirect
+	github.com/libdns/mythicbeasts v1.0.6 // indirect
 	github.com/libdns/namecheap v1.0.0 // indirect
 	github.com/libdns/namesilo v1.0.0 // indirect
 	github.com/libdns/nanelo v1.1.0 // indirect
