@@ -219,8 +219,8 @@ github.com/caddy-dns/arvancloud v0.1.0 h1:ogyObAQKtraEIRi81CDvgYcVGCYz/7j6j/g+qm
 github.com/caddy-dns/arvancloud v0.1.0/go.mod h1:9doxghiXOA5SvIYIX7XXsDsZQ9wSbHnsYuF7Cq8QzvQ=
 github.com/caddy-dns/azure v0.6.0 h1:eC7ygPRce7w6/YKvBOW29ZBY4jo8JcqqBPPURpMRB3U=
 github.com/caddy-dns/azure v0.6.0/go.mod h1:MDGPquqnOfDmopRD2W+66VBgbqMqhVuE2q0blYpW0dc=
-github.com/caddy-dns/bluecat v0.1.2 h1:C3VEKRtyY9/J5bgbeaj3pnN9hMemAKCVvSVd1zR8EPA=
-github.com/caddy-dns/bluecat v0.1.2/go.mod h1:6YzQKfFW4nOZS8UKLgyFmA5rnzshcsdr7OuQv0psVtA=
+github.com/caddy-dns/bluecat v0.1.3 h1:3R7eEGAaW1kLQhTzpQECav2GVUuLt4XFqSZmNDHiz2Y=
+github.com/caddy-dns/bluecat v0.1.3/go.mod h1:6YzQKfFW4nOZS8UKLgyFmA5rnzshcsdr7OuQv0psVtA=
 github.com/caddy-dns/bunny v1.2.0 h1:xnfRrqIeLYtQmOtitY+EtopIHCnVr+xqFxc7w28PLkM=
 github.com/caddy-dns/bunny v1.2.0/go.mod h1:yOQ1941/USWHaf5UZf8ig5V0EiGM+RiIQA29QVAFGRQ=
 github.com/caddy-dns/cloudflare v0.2.4 h1:h51SY6+JeevBcPtQ6xZxGRakYzbGiOXeJCFowQj/bGg=
