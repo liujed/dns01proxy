@@ -60,7 +60,7 @@ require (
 	github.com/caddy-dns/regfish v0.0.0-20260304102646-e8c40e7e99ad
 	github.com/caddy-dns/rfc2136 v1.0.0
 	github.com/caddy-dns/route53 v1.6.2
-	github.com/caddy-dns/scaleway v0.1.1
+	github.com/caddy-dns/scaleway v0.2.1
 	github.com/caddy-dns/servercow v0.0.0-20260420085529-48781691f65a
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
 	github.com/caddy-dns/spaceship v1.0.0
@@ -239,7 +239,7 @@ require (
 	github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca // indirect
 	github.com/libdns/rfc2136 v1.0.0 // indirect
 	github.com/libdns/route53 v1.6.2 // indirect
-	github.com/libdns/scaleway v0.2.0 // indirect
+	github.com/libdns/scaleway v0.3.1 // indirect
 	github.com/libdns/servercow v0.1.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
@@ -288,7 +288,7 @@ require (
 	github.com/regfish/regfish-dnsapi-go v0.1.1 // indirect
 	github.com/rs/xid v1.6.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.33 // indirect
+	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.36 // indirect
 	github.com/shopspring/decimal v1.4.0 // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	github.com/slackhq/nebula v1.10.3 // indirect
