@@ -3,7 +3,7 @@ module github.com/liujed/dns01proxy
 go 1.26.1
 
 require (
-	github.com/caddy-dns/acmedns v0.6.0
+	github.com/caddy-dns/acmedns v0.7.0
 	github.com/caddy-dns/acmeproxy v1.1.1
 	github.com/caddy-dns/alidns v1.0.29
 	github.com/caddy-dns/all-inkl v0.2.4

@@ -207,8 +207,8 @@ github.com/boombuler/barcode v1.0.2 h1:79yrbttoZrLGkL/oOI8hBrUKucwOL0oOjUgEguGMc
 github.com/boombuler/barcode v1.0.2/go.mod h1:paBWMcWSl3LHKBqUq+rly7CNSldXjb2rDl3JlRe0mD8=
 github.com/bradfitz/go-smtpd v0.0.0-20170404230938-deb6d6237625/go.mod h1:HYsPBTaaSFSlLx/70C2HPIMNZpVV8+vt/A+FMnYP11g=
 github.com/buger/jsonparser v0.0.0-20181115193947-bf1c66bbce23/go.mod h1:bbYlZJ7hK1yFx9hf58LP0zeX7UjIGs20ufpu3evjr+s=
-github.com/caddy-dns/acmedns v0.6.0 h1:Bm8bJbe4Vm8B/ukw/QWFvOrzEjOQduDGlctSkQXDxH8=
-github.com/caddy-dns/acmedns v0.6.0/go.mod h1:ggGhjWHIZNoqXZymONNf4YRIZLu0OYMz88ZWkzaLO2s=
+github.com/caddy-dns/acmedns v0.7.0 h1:zlsnz+IXdek9ACGpCPkGK4QIGGQOnudnqBNFjwPi2YM=
+github.com/caddy-dns/acmedns v0.7.0/go.mod h1:ggGhjWHIZNoqXZymONNf4YRIZLu0OYMz88ZWkzaLO2s=
 github.com/caddy-dns/acmeproxy v1.1.1 h1:plQM/m9AcF/mZvIDTFODrEnUngd+kgz2mBzkCkOr75w=
 github.com/caddy-dns/acmeproxy v1.1.1/go.mod h1:JDVcu+T6ZNTQ3pSCL1kSR8c6D33W2ntG9dvUqP3EczM=
 github.com/caddy-dns/alidns v1.0.29 h1:HkpuwXML66ZMAqVOEil8FOEAslQGGCtCT/YHjqzo/q4=
