@@ -2704,6 +2704,61 @@ builds:
   - nobadger
   - nomysql
   - nopgx
+- id: "oraclecloud"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/oraclecloud
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
 - id: "ovh"
   env:
   - CGO_ENABLED=0
@@ -3149,6 +3204,61 @@ builds:
   - CGO_ENABLED=0
   - GO111MODULE=on
   main: ./internal/builds/scaleway
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "selectel"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/selectel
   binary: dns01proxy
   goos:
   - darwin
@@ -4706,6 +4816,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: oraclecloud
+    ids:
+    - oraclecloud
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_oraclecloud_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: ovh
     ids:
     - ovh
@@ -4836,6 +4961,21 @@ archives:
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_scaleway_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: selectel
+    ids:
+    - selectel
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_selectel_
       {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
       {{- .Arch }}
       {{- with .Arm }}v{{ . }}{{ end }}
@@ -5082,13 +5222,13 @@ release:
 
     | Name | Version | Source | Docs |
     | :--- | :------ | :----- | :--: |
-    | acmedns | `v0.6.0` | [`github.com/caddy-dns/acmedns`](https://github.com/caddy-dns/acmedns) | [📖](https://caddyserver.com/docs/modules/dns.providers.acmedns) |
+    | acmedns | `v0.7.0` | [`github.com/caddy-dns/acmedns`](https://github.com/caddy-dns/acmedns) | [📖](https://caddyserver.com/docs/modules/dns.providers.acmedns) |
     | acmeproxy | `v1.1.1` | [`github.com/caddy-dns/acmeproxy`](https://github.com/caddy-dns/acmeproxy) | [📖](https://caddyserver.com/docs/modules/dns.providers.acmeproxy) |
     | alidns | `v1.0.29` | [`github.com/caddy-dns/alidns`](https://github.com/caddy-dns/alidns) | [📖](https://caddyserver.com/docs/modules/dns.providers.alidns) |
     | all-inkl | `v0.2.4` | [`github.com/caddy-dns/all-inkl`](https://github.com/caddy-dns/all-inkl) | [📖](https://caddyserver.com/docs/modules/dns.providers.all-inkl) |
     | arvancloud | `v0.1.0` | [`github.com/caddy-dns/arvancloud`](https://github.com/caddy-dns/arvancloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.arvancloud) |
     | azure | `v0.6.0` | [`github.com/caddy-dns/azure`](https://github.com/caddy-dns/azure) | [📖](https://caddyserver.com/docs/modules/dns.providers.azure) |
-    | bluecat | `v0.1.2` | [`github.com/caddy-dns/bluecat`](https://github.com/caddy-dns/bluecat) | [📖](https://caddyserver.com/docs/modules/dns.providers.bluecat) |
+    | bluecat | `v0.1.3` | [`github.com/caddy-dns/bluecat`](https://github.com/caddy-dns/bluecat) | [📖](https://caddyserver.com/docs/modules/dns.providers.bluecat) |
     | bunny | `v1.2.0` | [`github.com/caddy-dns/bunny`](https://github.com/caddy-dns/bunny) | [📖](https://caddyserver.com/docs/modules/dns.providers.bunny) |
     | cloudflare | `v0.2.4` | [`github.com/caddy-dns/cloudflare`](https://github.com/caddy-dns/cloudflare) | [📖](https://caddyserver.com/docs/modules/dns.providers.cloudflare) |
     | cloudns | `v1.1.0` | [`github.com/caddy-dns/cloudns`](https://github.com/caddy-dns/cloudns) | [📖](https://caddyserver.com/docs/modules/dns.providers.cloudns) |
@@ -5117,12 +5257,12 @@ release:
     | inwx | `v0.4.1` | [`github.com/caddy-dns/inwx`](https://github.com/caddy-dns/inwx) | [📖](https://caddyserver.com/docs/modules/dns.providers.inwx) |
     | ionos | `v1.2.0` | [`github.com/caddy-dns/ionos`](https://github.com/caddy-dns/ionos) | [📖](https://caddyserver.com/docs/modules/dns.providers.ionos) |
     | linode | `v0.8.0` | [`github.com/caddy-dns/linode`](https://github.com/caddy-dns/linode) | [📖](https://caddyserver.com/docs/modules/dns.providers.linode) |
-    | loopia | `v1.0.0` | [`github.com/caddy-dns/loopia`](https://github.com/caddy-dns/loopia) | [📖](https://caddyserver.com/docs/modules/dns.providers.loopia) |
+    | loopia | `v1.0.1` | [`github.com/caddy-dns/loopia`](https://github.com/caddy-dns/loopia) | [📖](https://caddyserver.com/docs/modules/dns.providers.loopia) |
     | luadns | `v0.1.0` | [`github.com/caddy-dns/luadns`](https://github.com/caddy-dns/luadns) | [📖](https://caddyserver.com/docs/modules/dns.providers.luadns) |
     | mailinabox | `v1.0.0` | [`github.com/caddy-dns/mailinabox`](https://github.com/caddy-dns/mailinabox) | [📖](https://caddyserver.com/docs/modules/dns.providers.mailinabox) |
     | metaname | `v0.3.1` | [`github.com/caddy-dns/metaname`](https://github.com/caddy-dns/metaname) | [📖](https://caddyserver.com/docs/modules/dns.providers.metaname) |
     | mijnhost | `v1.2.1` | [`github.com/caddy-dns/mijnhost`](https://github.com/caddy-dns/mijnhost) | [📖](https://caddyserver.com/docs/modules/dns.providers.mijnhost) |
-    | mythicbeasts | `v1.0.3` | [`github.com/caddy-dns/mythicbeasts`](https://github.com/caddy-dns/mythicbeasts) | [📖](https://caddyserver.com/docs/modules/dns.providers.mythicbeasts) |
+    | mythicbeasts | `v1.0.5` | [`github.com/caddy-dns/mythicbeasts`](https://github.com/caddy-dns/mythicbeasts) | [📖](https://caddyserver.com/docs/modules/dns.providers.mythicbeasts) |
     | namecheap | `v1.0.0` | [`github.com/caddy-dns/namecheap`](https://github.com/caddy-dns/namecheap) | [📖](https://caddyserver.com/docs/modules/dns.providers.namecheap) |
     | namesilo | `v0.0.0-20260219111433-e646346d8db8` | [`github.com/caddy-dns/namesilo`](https://github.com/caddy-dns/namesilo) | [📖](https://caddyserver.com/docs/modules/dns.providers.namesilo) |
     | nanelo | `v0.2.0` | [`github.com/caddy-dns/nanelo`](https://github.com/caddy-dns/nanelo) | [📖](https://caddyserver.com/docs/modules/dns.providers.nanelo) |
@@ -5131,15 +5271,17 @@ release:
     | netnod | `v1.0.0` | [`github.com/caddy-dns/netnod`](https://github.com/caddy-dns/netnod) | [📖](https://caddyserver.com/docs/modules/dns.providers.netnod) |
     | nfsn | `v1.0.0` | [`github.com/caddy-dns/nfsn`](https://github.com/caddy-dns/nfsn) | [📖](https://caddyserver.com/docs/modules/dns.providers.nfsn) |
     | njalla | `v0.0.0-20250823094507-f709141f1fe6` | [`github.com/caddy-dns/njalla`](https://github.com/caddy-dns/njalla) | [📖](https://caddyserver.com/docs/modules/dns.providers.njalla) |
+    | oraclecloud | `v1.0.1` | [`github.com/caddy-dns/oraclecloud`](https://github.com/caddy-dns/oraclecloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.oraclecloud) |
     | ovh | `v1.1.0` | [`github.com/caddy-dns/ovh`](https://github.com/caddy-dns/ovh) | [📖](https://caddyserver.com/docs/modules/dns.providers.ovh) |
     | porkbun | `v0.3.1` | [`github.com/caddy-dns/porkbun`](https://github.com/caddy-dns/porkbun) | [📖](https://caddyserver.com/docs/modules/dns.providers.porkbun) |
     | powerdns | `v1.0.2` | [`github.com/caddy-dns/powerdns`](https://github.com/caddy-dns/powerdns) | [📖](https://caddyserver.com/docs/modules/dns.providers.powerdns) |
-    | pph | `v0.0.1` | [`github.com/caddy-dns/pph`](https://github.com/caddy-dns/pph) | [📖](https://caddyserver.com/docs/modules/dns.providers.pph) |
+    | pph | `v0.0.3` | [`github.com/caddy-dns/pph`](https://github.com/caddy-dns/pph) | [📖](https://caddyserver.com/docs/modules/dns.providers.pph) |
     | regery | `v1.1.0` | [`github.com/caddy-dns/regery`](https://github.com/caddy-dns/regery) | [📖](https://caddyserver.com/docs/modules/dns.providers.regery) |
     | regfish | `v0.0.0-20260304102646-e8c40e7e99ad` | [`github.com/caddy-dns/regfish`](https://github.com/caddy-dns/regfish) | [📖](https://caddyserver.com/docs/modules/dns.providers.regfish) |
     | rfc2136 | `v1.0.0` | [`github.com/caddy-dns/rfc2136`](https://github.com/caddy-dns/rfc2136) | [📖](https://caddyserver.com/docs/modules/dns.providers.rfc2136) |
     | route53 | `v1.6.2` | [`github.com/caddy-dns/route53`](https://github.com/caddy-dns/route53) | [📖](https://caddyserver.com/docs/modules/dns.providers.route53) |
-    | scaleway | `v0.1.1` | [`github.com/caddy-dns/scaleway`](https://github.com/caddy-dns/scaleway) | [📖](https://caddyserver.com/docs/modules/dns.providers.scaleway) |
+    | scaleway | `v0.2.2` | [`github.com/caddy-dns/scaleway`](https://github.com/caddy-dns/scaleway) | [📖](https://caddyserver.com/docs/modules/dns.providers.scaleway) |
+    | selectel | `v1.1.0` | [`github.com/caddy-dns/selectel`](https://github.com/caddy-dns/selectel) | [📖](https://caddyserver.com/docs/modules/dns.providers.selectel) |
     | servercow | `v0.0.0-20260420085529-48781691f65a` | [`github.com/caddy-dns/servercow`](https://github.com/caddy-dns/servercow) | [📖](https://caddyserver.com/docs/modules/dns.providers.servercow) |
     | simplydotcom | `v1.0.0-beta2` | [`github.com/caddy-dns/simplydotcom`](https://github.com/caddy-dns/simplydotcom) | [📖](https://caddyserver.com/docs/modules/dns.providers.simplydotcom) |
     | spaceship | `v1.0.0` | [`github.com/caddy-dns/spaceship`](https://github.com/caddy-dns/spaceship) | [📖](https://caddyserver.com/docs/modules/dns.providers.spaceship) |
@@ -5148,7 +5290,7 @@ release:
     | thelittlehost | `v1.0.3` | [`github.com/caddy-dns/thelittlehost`](https://github.com/caddy-dns/thelittlehost) | [📖](https://caddyserver.com/docs/modules/dns.providers.thelittlehost) |
     | timeweb | `v1.0.1` | [`github.com/caddy-dns/timeweb`](https://github.com/caddy-dns/timeweb) | [📖](https://caddyserver.com/docs/modules/dns.providers.timeweb) |
     | transip | `v0.0.0-20260205122818-9b8f83754ff7` | [`github.com/caddy-dns/transip`](https://github.com/caddy-dns/transip) | [📖](https://caddyserver.com/docs/modules/dns.providers.transip) |
-    | unifi | `v1.0.4` | [`github.com/caddy-dns/unifi`](https://github.com/caddy-dns/unifi) | [📖](https://caddyserver.com/docs/modules/dns.providers.unifi) |
+    | unifi | `v1.0.5` | [`github.com/caddy-dns/unifi`](https://github.com/caddy-dns/unifi) | [📖](https://caddyserver.com/docs/modules/dns.providers.unifi) |
     | volcengine | `v0.0.1` | [`github.com/caddy-dns/volcengine`](https://github.com/caddy-dns/volcengine) | [📖](https://caddyserver.com/docs/modules/dns.providers.volcengine) |
     | vultr | `v0.0.0-20250723121531-55bf3e9768be` | [`github.com/caddy-dns/vultr`](https://github.com/caddy-dns/vultr) | [📖](https://caddyserver.com/docs/modules/dns.providers.vultr) |
     | websupport | `v0.0.0-20251211090312-5da3f800ce77` | [`github.com/caddy-dns/websupport`](https://github.com/caddy-dns/websupport) | [📖](https://caddyserver.com/docs/modules/dns.providers.websupport) |

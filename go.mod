@@ -3,13 +3,13 @@ module github.com/liujed/dns01proxy
 go 1.26.1
 
 require (
-	github.com/caddy-dns/acmedns v0.6.0
+	github.com/caddy-dns/acmedns v0.7.0
 	github.com/caddy-dns/acmeproxy v1.1.1
 	github.com/caddy-dns/alidns v1.0.29
 	github.com/caddy-dns/all-inkl v0.2.4
 	github.com/caddy-dns/arvancloud v0.1.0
 	github.com/caddy-dns/azure v0.6.0
-	github.com/caddy-dns/bluecat v0.1.2
+	github.com/caddy-dns/bluecat v0.1.3
 	github.com/caddy-dns/bunny v1.2.0
 	github.com/caddy-dns/cloudflare v0.2.4
 	github.com/caddy-dns/cloudns v1.1.0
@@ -38,12 +38,12 @@ require (
 	github.com/caddy-dns/inwx v0.4.1
 	github.com/caddy-dns/ionos v1.2.0
 	github.com/caddy-dns/linode v0.8.0
-	github.com/caddy-dns/loopia v1.0.0
+	github.com/caddy-dns/loopia v1.0.1
 	github.com/caddy-dns/luadns v0.1.0
 	github.com/caddy-dns/mailinabox v1.0.0
 	github.com/caddy-dns/metaname v0.3.1
 	github.com/caddy-dns/mijnhost v1.2.1
-	github.com/caddy-dns/mythicbeasts v1.0.3
+	github.com/caddy-dns/mythicbeasts v1.0.5
 	github.com/caddy-dns/namecheap v1.0.0
 	github.com/caddy-dns/namesilo v0.0.0-20260219111433-e646346d8db8
 	github.com/caddy-dns/nanelo v0.2.0
@@ -52,15 +52,17 @@ require (
 	github.com/caddy-dns/netnod v1.0.0
 	github.com/caddy-dns/nfsn v1.0.0
 	github.com/caddy-dns/njalla v0.0.0-20250823094507-f709141f1fe6
+	github.com/caddy-dns/oraclecloud v1.0.1
 	github.com/caddy-dns/ovh v1.1.0
 	github.com/caddy-dns/porkbun v0.3.1
 	github.com/caddy-dns/powerdns v1.0.2
-	github.com/caddy-dns/pph v0.0.1
+	github.com/caddy-dns/pph v0.0.3
 	github.com/caddy-dns/regery v1.1.0
 	github.com/caddy-dns/regfish v0.0.0-20260304102646-e8c40e7e99ad
 	github.com/caddy-dns/rfc2136 v1.0.0
 	github.com/caddy-dns/route53 v1.6.2
-	github.com/caddy-dns/scaleway v0.1.1
+	github.com/caddy-dns/scaleway v0.2.2
+	github.com/caddy-dns/selectel v1.1.0
 	github.com/caddy-dns/servercow v0.0.0-20260420085529-48781691f65a
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
 	github.com/caddy-dns/spaceship v1.0.0
@@ -69,7 +71,7 @@ require (
 	github.com/caddy-dns/thelittlehost v1.0.3
 	github.com/caddy-dns/timeweb v1.0.1
 	github.com/caddy-dns/transip v0.0.0-20260205122818-9b8f83754ff7
-	github.com/caddy-dns/unifi v1.0.4
+	github.com/caddy-dns/unifi v1.0.5
 	github.com/caddy-dns/volcengine v0.0.1
 	github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be
 	github.com/caddy-dns/websupport v0.0.0-20251211090312-5da3f800ce77
@@ -158,7 +160,8 @@ require (
 	github.com/go-openapi/validate v0.22.1 // indirect
 	github.com/go-resty/resty/v2 v2.16.5 // indirect
 	github.com/go-sql-driver/mysql v1.9.3 // indirect
-	github.com/golang-jwt/jwt/v5 v5.3.0 // indirect
+	github.com/gofrs/flock v0.12.1 // indirect
+	github.com/golang-jwt/jwt/v5 v5.3.1 // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/cel-go v0.28.1 // indirect
@@ -217,12 +220,12 @@ require (
 	github.com/libdns/ionos v1.2.0 // indirect
 	github.com/libdns/libdns v1.1.1 // indirect
 	github.com/libdns/linode v0.5.0 // indirect
-	github.com/libdns/loopia v1.0.0 // indirect
+	github.com/libdns/loopia v1.0.1 // indirect
 	github.com/libdns/luadns v0.2.0 // indirect
 	github.com/libdns/mailinabox v1.0.0 // indirect
 	github.com/libdns/metaname v0.4.1 // indirect
 	github.com/libdns/mijnhost v1.2.1 // indirect
-	github.com/libdns/mythicbeasts v1.0.4 // indirect
+	github.com/libdns/mythicbeasts v1.0.6 // indirect
 	github.com/libdns/namecheap v1.0.0 // indirect
 	github.com/libdns/namesilo v1.0.0 // indirect
 	github.com/libdns/nanelo v1.1.0 // indirect
@@ -231,15 +234,17 @@ require (
 	github.com/libdns/netnod v1.0.0 // indirect
 	github.com/libdns/nfsn v1.0.0 // indirect
 	github.com/libdns/njalla v0.0.0-20250815081032-a55a87a8f20f // indirect
+	github.com/libdns/oraclecloud v1.1.2 // indirect
 	github.com/libdns/ovh v1.1.0 // indirect
 	github.com/libdns/porkbun v1.0.1 // indirect
 	github.com/libdns/powerdns v0.1.4 // indirect
-	github.com/libdns/pph v0.0.2 // indirect
+	github.com/libdns/pph v0.0.3 // indirect
 	github.com/libdns/regery v1.1.0 // indirect
 	github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca // indirect
 	github.com/libdns/rfc2136 v1.0.0 // indirect
 	github.com/libdns/route53 v1.6.2 // indirect
-	github.com/libdns/scaleway v0.2.0 // indirect
+	github.com/libdns/scaleway v0.3.1 // indirect
+	github.com/libdns/selectel v1.1.0 // indirect
 	github.com/libdns/servercow v0.1.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
@@ -272,6 +277,7 @@ require (
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/netlify/open-api/v2 v2.40.0 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
+	github.com/oracle/oci-go-sdk/v65 v65.109.2 // indirect
 	github.com/ovh/go-ovh v1.7.0 // indirect
 	github.com/pbergman/provider v1.1.1 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
@@ -280,15 +286,15 @@ require (
 	github.com/pquerna/otp v1.5.0 // indirect
 	github.com/prometheus/client_golang v1.23.2 // indirect
 	github.com/prometheus/client_model v0.6.2 // indirect
-	github.com/prometheus/common v0.67.5 // indirect
+	github.com/prometheus/common v0.68.1 // indirect
 	github.com/prometheus/otlptranslator v1.0.0 // indirect
 	github.com/prometheus/procfs v0.20.1 // indirect
 	github.com/quic-go/qpack v0.6.0 // indirect
-	github.com/quic-go/quic-go v0.59.1 // indirect
+	github.com/quic-go/quic-go v0.60.0 // indirect
 	github.com/regfish/regfish-dnsapi-go v0.1.1 // indirect
 	github.com/rs/xid v1.6.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.33 // indirect
+	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.36 // indirect
 	github.com/shopspring/decimal v1.4.0 // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	github.com/slackhq/nebula v1.10.3 // indirect
@@ -299,6 +305,7 @@ require (
 	github.com/smallstep/pkcs7 v0.2.1 // indirect
 	github.com/smallstep/scep v0.0.0-20250318231241-a25cabb69492 // indirect
 	github.com/smallstep/truststore v0.13.0 // indirect
+	github.com/sony/gobreaker v0.5.0 // indirect
 	github.com/spf13/cast v1.7.0 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/tailscale/go-winio v0.0.0-20231025203758-c4f33415bf55 // indirect
@@ -309,6 +316,7 @@ require (
 	github.com/tidwall/pretty v1.2.0 // indirect
 	github.com/urfave/cli v1.22.17 // indirect
 	github.com/vultr/govultr/v3 v3.21.1 // indirect
+	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
 	github.com/zeebo/blake3 v0.2.4 // indirect
 	go.etcd.io/bbolt v1.4.3 // indirect
 	go.mongodb.org/mongo-driver v1.12.1 // indirect
@@ -340,20 +348,19 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.28.0 // indirect
 	go.uber.org/zap/exp v0.3.0 // indirect
-	go.yaml.in/yaml/v2 v2.4.4 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
-	golang.org/x/crypto v0.52.0 // indirect
+	golang.org/x/crypto v0.53.0 // indirect
 	golang.org/x/crypto/x509roots/fallback v0.0.0-20260213171211-a408498e5541 // indirect
 	golang.org/x/exp v0.0.0-20251023183803-a4bb9ffd2546 // indirect
-	golang.org/x/mod v0.35.0 // indirect
+	golang.org/x/mod v0.37.0 // indirect
 	golang.org/x/net v0.55.0 // indirect
 	golang.org/x/oauth2 v0.36.0 // indirect
-	golang.org/x/sync v0.20.0 // indirect
-	golang.org/x/sys v0.45.0 // indirect
-	golang.org/x/term v0.43.0 // indirect
-	golang.org/x/text v0.37.0 // indirect
+	golang.org/x/sync v0.21.0 // indirect
+	golang.org/x/sys v0.46.0 // indirect
+	golang.org/x/term v0.44.0 // indirect
+	golang.org/x/text v0.38.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
-	golang.org/x/tools v0.44.0 // indirect
+	golang.org/x/tools v0.45.0 // indirect
 	google.golang.org/api v0.277.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260406210006-6f92a3bedf2d // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260427160629-7cedc36a6bc4 // indirect
