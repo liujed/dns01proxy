@@ -62,7 +62,7 @@ require (
 	github.com/caddy-dns/rfc2136 v1.0.0
 	github.com/caddy-dns/route53 v1.6.2
 	github.com/caddy-dns/scaleway v0.2.2
-	github.com/caddy-dns/selectel v1.1.0
+	github.com/caddy-dns/selectel v1.2.0
 	github.com/caddy-dns/servercow v0.0.0-20260420085529-48781691f65a
 	github.com/caddy-dns/simplydotcom v1.0.0-beta2
 	github.com/caddy-dns/spaceship v1.0.0
@@ -244,7 +244,7 @@ require (
 	github.com/libdns/rfc2136 v1.0.0 // indirect
 	github.com/libdns/route53 v1.6.2 // indirect
 	github.com/libdns/scaleway v0.3.1 // indirect
-	github.com/libdns/selectel v1.1.0 // indirect
+	github.com/libdns/selectel v1.2.0 // indirect
 	github.com/libdns/servercow v0.1.0 // indirect
 	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
