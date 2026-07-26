@@ -79,7 +79,7 @@ require (
 	github.com/caddy-dns/westcn v1.0.0
 	github.com/caddyserver/caddy/v2 v2.11.4
 	github.com/google/go-github/v72 v72.0.0
-	github.com/liujed/caddy-dns01proxy v0.1.18
+	github.com/liujed/caddy-dns01proxy v0.1.19
 	github.com/liujed/goutil v0.0.0
 	github.com/spf13/cobra v1.10.2
 )
@@ -124,7 +124,7 @@ require (
 	github.com/aws/smithy-go v1.25.1 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/boombuler/barcode v1.0.2 // indirect
-	github.com/caddyserver/certmagic v0.25.3 // indirect
+	github.com/caddyserver/certmagic v0.25.4 // indirect
 	github.com/caddyserver/zerossl v0.1.5 // indirect
 	github.com/ccoveille/go-safecast/v2 v2.0.0 // indirect
 	github.com/cellebyte/go-pph v0.0.2 // indirect
@@ -362,9 +362,9 @@ require (
 	golang.org/x/time v0.15.0 // indirect
 	golang.org/x/tools v0.45.0 // indirect
 	google.golang.org/api v0.277.0 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20260406210006-6f92a3bedf2d // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20260414002931-afd174a4e478 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260427160629-7cedc36a6bc4 // indirect
-	google.golang.org/grpc v1.81.0 // indirect
+	google.golang.org/grpc v1.82.1 // indirect
 	google.golang.org/grpc/cmd/protoc-gen-go-grpc v1.5.1 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
