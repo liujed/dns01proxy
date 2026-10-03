@@ -834,6 +834,61 @@ builds:
   - nobadger
   - nomysql
   - nopgx
+- id: "dnsmadeeasy"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/dnsmadeeasy
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
 - id: "dode"
   env:
   - CGO_ENABLED=0
@@ -1169,6 +1224,116 @@ builds:
   - CGO_ENABLED=0
   - GO111MODULE=on
   main: ./internal/builds/edgeone
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "ednsde"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/ednsde
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "enum"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/enum
   binary: dns01proxy
   goos:
   - darwin
@@ -1879,6 +2044,61 @@ builds:
   - nobadger
   - nomysql
   - nopgx
+- id: "liara"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/liara
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
 - id: "linode"
   env:
   - CGO_ENABLED=0
@@ -2159,6 +2379,61 @@ builds:
   - CGO_ENABLED=0
   - GO111MODULE=on
   main: ./internal/builds/mijnhost
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "mittwald"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/mittwald
   binary: dns01proxy
   goos:
   - darwin
@@ -4416,6 +4691,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: dnsmadeeasy
+    ids:
+    - dnsmadeeasy
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_dnsmadeeasy_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: dode
     ids:
     - dode
@@ -4516,6 +4806,36 @@ archives:
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_edgeone_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: ednsde
+    ids:
+    - ednsde
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_ednsde_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: enum
+    ids:
+    - enum
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_enum_
       {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
       {{- .Arch }}
       {{- with .Arm }}v{{ . }}{{ end }}
@@ -4701,6 +5021,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: liara
+    ids:
+    - liara
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_liara_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: linode
     ids:
     - linode
@@ -4786,6 +5121,21 @@ archives:
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_mijnhost_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: mittwald
+    ids:
+    - mittwald
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_mittwald_
       {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
       {{- .Arch }}
       {{- with .Arm }}v{{ . }}{{ end }}
@@ -5368,7 +5718,7 @@ release:
     | all-inkl | `v0.2.5` | [`github.com/caddy-dns/all-inkl`](https://github.com/caddy-dns/all-inkl) | [📖](https://caddyserver.com/docs/modules/dns.providers.all-inkl) |
     | arvancloud | `v0.1.0` | [`github.com/caddy-dns/arvancloud`](https://github.com/caddy-dns/arvancloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.arvancloud) |
     | azure | `v0.6.0` | [`github.com/caddy-dns/azure`](https://github.com/caddy-dns/azure) | [📖](https://caddyserver.com/docs/modules/dns.providers.azure) |
-    | bluecat | `v0.1.3` | [`github.com/caddy-dns/bluecat`](https://github.com/caddy-dns/bluecat) | [📖](https://caddyserver.com/docs/modules/dns.providers.bluecat) |
+    | bluecat | `v0.1.6` | [`github.com/caddy-dns/bluecat`](https://github.com/caddy-dns/bluecat) | [📖](https://caddyserver.com/docs/modules/dns.providers.bluecat) |
     | bunny | `v1.2.0` | [`github.com/caddy-dns/bunny`](https://github.com/caddy-dns/bunny) | [📖](https://caddyserver.com/docs/modules/dns.providers.bunny) |
     | cloudflare | `v0.2.4` | [`github.com/caddy-dns/cloudflare`](https://github.com/caddy-dns/cloudflare) | [📖](https://caddyserver.com/docs/modules/dns.providers.cloudflare) |
     | cloudns | `v1.2.0` | [`github.com/caddy-dns/cloudns`](https://github.com/caddy-dns/cloudns) | [📖](https://caddyserver.com/docs/modules/dns.providers.cloudns) |
@@ -5377,6 +5727,7 @@ release:
     | digitalocean | `v0.0.0-20250606074528-04bde2867106` | [`github.com/caddy-dns/digitalocean`](https://github.com/caddy-dns/digitalocean) | [📖](https://caddyserver.com/docs/modules/dns.providers.digitalocean) |
     | directadmin | `v0.4.2` | [`github.com/caddy-dns/directadmin`](https://github.com/caddy-dns/directadmin) | [📖](https://caddyserver.com/docs/modules/dns.providers.directadmin) |
     | dnsimple | `v0.0.0-20260303131243-0433343c5610` | [`github.com/caddy-dns/dnsimple`](https://github.com/caddy-dns/dnsimple) | [📖](https://caddyserver.com/docs/modules/dns.providers.dnsimple) |
+    | dnsmadeeasy | `v1.2.0` | [`github.com/caddy-dns/dnsmadeeasy`](https://github.com/caddy-dns/dnsmadeeasy) | [📖](https://caddyserver.com/docs/modules/dns.providers.dnsmadeeasy) |
     | dode | `v0.2.0` | [`github.com/caddy-dns/dode`](https://github.com/caddy-dns/dode) | [📖](https://caddyserver.com/docs/modules/dns.providers.dode) |
     | domainnameshop | `v0.2.3` | [`github.com/caddy-dns/domainnameshop`](https://github.com/caddy-dns/domainnameshop) | [📖](https://caddyserver.com/docs/modules/dns.providers.domainnameshop) |
     | duckdns | `v0.5.0` | [`github.com/caddy-dns/duckdns`](https://github.com/caddy-dns/duckdns) | [📖](https://caddyserver.com/docs/modules/dns.providers.duckdns) |
@@ -5384,6 +5735,8 @@ release:
     | dynv6 | `v0.0.0-20251101220214-71fad600afb2` | [`github.com/caddy-dns/dynv6`](https://github.com/caddy-dns/dynv6) | [📖](https://caddyserver.com/docs/modules/dns.providers.dynv6) |
     | easydns | `v1.1.1` | [`github.com/caddy-dns/easydns`](https://github.com/caddy-dns/easydns) | [📖](https://caddyserver.com/docs/modules/dns.providers.easydns) |
     | edgeone | `v1.0.3` | [`github.com/caddy-dns/edgeone`](https://github.com/caddy-dns/edgeone) | [📖](https://caddyserver.com/docs/modules/dns.providers.edgeone) |
+    | ednsde | `v1.0.2` | [`github.com/caddy-dns/ednsde`](https://github.com/caddy-dns/ednsde) | [📖](https://caddyserver.com/docs/modules/dns.providers.ednsde) |
+    | enum | `v1.0.0` | [`github.com/caddy-dns/enum`](https://github.com/caddy-dns/enum) | [📖](https://caddyserver.com/docs/modules/dns.providers.enum) |
     | gandi | `v1.1.0` | [`github.com/caddy-dns/gandi`](https://github.com/caddy-dns/gandi) | [📖](https://caddyserver.com/docs/modules/dns.providers.gandi) |
     | gcore | `v0.0.0-20250618083722-4ebfce0e46b0` | [`github.com/caddy-dns/gcore`](https://github.com/caddy-dns/gcore) | [📖](https://caddyserver.com/docs/modules/dns.providers.gcore) |
     | glesys | `v1.0.0` | [`github.com/caddy-dns/glesys`](https://github.com/caddy-dns/glesys) | [📖](https://caddyserver.com/docs/modules/dns.providers.glesys) |
@@ -5396,12 +5749,14 @@ release:
     | infomaniak | `v1.0.2` | [`github.com/caddy-dns/infomaniak`](https://github.com/caddy-dns/infomaniak) | [📖](https://caddyserver.com/docs/modules/dns.providers.infomaniak) |
     | inwx | `v0.4.1` | [`github.com/caddy-dns/inwx`](https://github.com/caddy-dns/inwx) | [📖](https://caddyserver.com/docs/modules/dns.providers.inwx) |
     | ionos | `v1.2.0` | [`github.com/caddy-dns/ionos`](https://github.com/caddy-dns/ionos) | [📖](https://caddyserver.com/docs/modules/dns.providers.ionos) |
+    | liara | `v0.0.0-20260826065757-6754fe2d3249` | [`github.com/caddy-dns/liara`](https://github.com/caddy-dns/liara) | [📖](https://caddyserver.com/docs/modules/dns.providers.liara) |
     | linode | `v0.8.0` | [`github.com/caddy-dns/linode`](https://github.com/caddy-dns/linode) | [📖](https://caddyserver.com/docs/modules/dns.providers.linode) |
     | loopia | `v1.0.1` | [`github.com/caddy-dns/loopia`](https://github.com/caddy-dns/loopia) | [📖](https://caddyserver.com/docs/modules/dns.providers.loopia) |
     | luadns | `v0.1.0` | [`github.com/caddy-dns/luadns`](https://github.com/caddy-dns/luadns) | [📖](https://caddyserver.com/docs/modules/dns.providers.luadns) |
     | mailinabox | `v1.0.0` | [`github.com/caddy-dns/mailinabox`](https://github.com/caddy-dns/mailinabox) | [📖](https://caddyserver.com/docs/modules/dns.providers.mailinabox) |
     | metaname | `v0.3.1` | [`github.com/caddy-dns/metaname`](https://github.com/caddy-dns/metaname) | [📖](https://caddyserver.com/docs/modules/dns.providers.metaname) |
     | mijnhost | `v1.2.1` | [`github.com/caddy-dns/mijnhost`](https://github.com/caddy-dns/mijnhost) | [📖](https://caddyserver.com/docs/modules/dns.providers.mijnhost) |
+    | mittwald | `v0.1.0` | [`github.com/caddy-dns/mittwald`](https://github.com/caddy-dns/mittwald) | [📖](https://caddyserver.com/docs/modules/dns.providers.mittwald) |
     | mythicbeasts | `v1.0.5` | [`github.com/caddy-dns/mythicbeasts`](https://github.com/caddy-dns/mythicbeasts) | [📖](https://caddyserver.com/docs/modules/dns.providers.mythicbeasts) |
     | namecheap | `v1.0.0` | [`github.com/caddy-dns/namecheap`](https://github.com/caddy-dns/namecheap) | [📖](https://caddyserver.com/docs/modules/dns.providers.namecheap) |
     | namesilo | `v0.0.0-20260219111433-e646346d8db8` | [`github.com/caddy-dns/namesilo`](https://github.com/caddy-dns/namesilo) | [📖](https://caddyserver.com/docs/modules/dns.providers.namesilo) |
@@ -5411,7 +5766,7 @@ release:
     | netlify | `v1.2.0` | [`github.com/caddy-dns/netlify`](https://github.com/caddy-dns/netlify) | [📖](https://caddyserver.com/docs/modules/dns.providers.netlify) |
     | netnod | `v1.0.0` | [`github.com/caddy-dns/netnod`](https://github.com/caddy-dns/netnod) | [📖](https://caddyserver.com/docs/modules/dns.providers.netnod) |
     | nfsn | `v1.0.0` | [`github.com/caddy-dns/nfsn`](https://github.com/caddy-dns/nfsn) | [📖](https://caddyserver.com/docs/modules/dns.providers.nfsn) |
-    | njalla | `v0.0.0-20250823094507-f709141f1fe6` | [`github.com/caddy-dns/njalla`](https://github.com/caddy-dns/njalla) | [📖](https://caddyserver.com/docs/modules/dns.providers.njalla) |
+    | njalla | `v1.0.0` | [`github.com/caddy-dns/njalla`](https://github.com/caddy-dns/njalla) | [📖](https://caddyserver.com/docs/modules/dns.providers.njalla) |
     | oraclecloud | `v1.0.1` | [`github.com/caddy-dns/oraclecloud`](https://github.com/caddy-dns/oraclecloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.oraclecloud) |
     | ovh | `v1.1.0` | [`github.com/caddy-dns/ovh`](https://github.com/caddy-dns/ovh) | [📖](https://caddyserver.com/docs/modules/dns.providers.ovh) |
     | parspack | `v0.1.0` | [`github.com/caddy-dns/parspack`](https://github.com/caddy-dns/parspack) | [📖](https://caddyserver.com/docs/modules/dns.providers.parspack) |
