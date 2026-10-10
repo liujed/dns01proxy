@@ -9,7 +9,7 @@ require (
 	github.com/caddy-dns/all-inkl v0.2.5
 	github.com/caddy-dns/arvancloud v0.1.0
 	github.com/caddy-dns/azure v0.6.0
-	github.com/caddy-dns/bluecat v0.1.6
+	github.com/caddy-dns/bluecat v0.1.7
 	github.com/caddy-dns/bunny v1.2.0
 	github.com/caddy-dns/cloudflare v0.2.4
 	github.com/caddy-dns/cloudns v1.2.0
@@ -213,7 +213,7 @@ require (
 	github.com/libdns/all-inkl v0.2.5 // indirect
 	github.com/libdns/arvancloud v0.1.0 // indirect
 	github.com/libdns/azure v0.5.0 // indirect
-	github.com/libdns/bluecat v0.1.7 // indirect
+	github.com/libdns/bluecat v0.1.8 // indirect
 	github.com/libdns/bunny v1.4.0 // indirect
 	github.com/libdns/cloudflare v0.2.2 // indirect
 	github.com/libdns/cloudns v1.2.0 // indirect
