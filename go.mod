@@ -78,7 +78,7 @@ require (
 	github.com/caddy-dns/thelittlehost v1.0.3
 	github.com/caddy-dns/timeweb v1.0.1
 	github.com/caddy-dns/transip v0.0.0-20260205122818-9b8f83754ff7
-	github.com/caddy-dns/unifi v1.0.5
+	github.com/caddy-dns/unifi v1.0.6
 	github.com/caddy-dns/volcengine v0.0.1
 	github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be
 	github.com/caddy-dns/websupport v0.0.0-20251211090312-5da3f800ce77

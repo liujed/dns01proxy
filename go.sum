@@ -364,8 +364,8 @@ github.com/caddy-dns/timeweb v1.0.1 h1:vH3f82jRpdZrDsTYpUiwlWVPuueW/2eGN9BpUD7Qx
 github.com/caddy-dns/timeweb v1.0.1/go.mod h1:XDJIbABIyWdjFioY15SDtd9vBOuS0l0jKzIvwWoQLk4=
 github.com/caddy-dns/transip v0.0.0-20260205122818-9b8f83754ff7 h1:Sw/Ndz5QOX61wnY/7MktkwF6j93s7YnhZv0w82r0UYQ=
 github.com/caddy-dns/transip v0.0.0-20260205122818-9b8f83754ff7/go.mod h1:ogUwsuv3XTUeyf0jnQ4hFJlBxfdicLs7O7UV5cJZpi8=
-github.com/caddy-dns/unifi v1.0.5 h1:KBh2Mzp6oCpwvyMYg8VCTb+riwqel2MB6FLU1sK6pHU=
-github.com/caddy-dns/unifi v1.0.5/go.mod h1:M8alr6N9eidJsGcB6U4RpsJgtjOknthSQy9nSjBwIAQ=
+github.com/caddy-dns/unifi v1.0.6 h1:b6V8gqFUfDoq808WfEcVu/ApO5rPEFnLsSh9eLiRJdM=
+github.com/caddy-dns/unifi v1.0.6/go.mod h1:wCMs52yjtfxgEux8SX2q9xuvrmCLmZz7GBlcEC99FuI=
 github.com/caddy-dns/volcengine v0.0.1 h1:Kppi8q4svqvZKL12PvpRnG0KaOJcS/Htc5iCg0513sw=
 github.com/caddy-dns/volcengine v0.0.1/go.mod h1:YNusk/5s31ZS1LAcLPcSxk8EI9iipVI7gSPHfwKbFh8=
 github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be h1:2jxSZsIBOf/USA8h5JJavKhVWaEfFZYJT4lDjqNKtnI=
