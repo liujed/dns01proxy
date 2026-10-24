@@ -28,7 +28,7 @@ require (
 	github.com/caddy-dns/edgeone v1.0.3
 	github.com/caddy-dns/ednsde v1.0.2
 	github.com/caddy-dns/enum v1.0.0
-	github.com/caddy-dns/gandi v1.1.0
+	github.com/caddy-dns/gandi v1.2.1
 	github.com/caddy-dns/gcore v0.0.0-20250618083722-4ebfce0e46b0
 	github.com/caddy-dns/glesys v1.0.0
 	github.com/caddy-dns/godaddy v1.2.0
@@ -232,7 +232,7 @@ require (
 	github.com/libdns/edgeone v1.0.3 // indirect
 	github.com/libdns/ednsde v1.0.2 // indirect
 	github.com/libdns/enum v1.0.0 // indirect
-	github.com/libdns/gandi v1.1.0 // indirect
+	github.com/libdns/gandi v1.2.1 // indirect
 	github.com/libdns/gcore v0.0.0-20250427050847-9964da923833 // indirect
 	github.com/libdns/glesys v1.0.0 // indirect
 	github.com/libdns/godaddy v1.1.0 // indirect
