@@ -39,7 +39,7 @@ require (
 	github.com/caddy-dns/huaweicloud v1.0.1
 	github.com/caddy-dns/infomaniak v1.0.2
 	github.com/caddy-dns/inwx v0.4.1
-	github.com/caddy-dns/ionos v1.2.0
+	github.com/caddy-dns/ionos v1.3.0
 	github.com/caddy-dns/liara v0.0.0-20260826065757-6754fe2d3249
 	github.com/caddy-dns/linode v0.8.0
 	github.com/caddy-dns/loopia v1.0.1
@@ -243,7 +243,7 @@ require (
 	github.com/libdns/huaweicloud v1.0.1 // indirect
 	github.com/libdns/infomaniak v0.2.0 // indirect
 	github.com/libdns/inwx v0.3.1 // indirect
-	github.com/libdns/ionos v1.2.0 // indirect
+	github.com/libdns/ionos v1.3.0 // indirect
 	github.com/libdns/liara v0.1.1 // indirect
 	github.com/libdns/libdns v1.2.0-alpha.1 // indirect
 	github.com/libdns/linode v0.5.0 // indirect

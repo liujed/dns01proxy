@@ -286,8 +286,8 @@ github.com/caddy-dns/infomaniak v1.0.2 h1:CjZ14Lf+8P0VzU2uUMCXSBM1q7grFGPa+1CgAA
 github.com/caddy-dns/infomaniak v1.0.2/go.mod h1:EEbfSyC7RHzvYpG3YMLenZZRssq0n/SJ2iQvuWqNmLg=
 github.com/caddy-dns/inwx v0.4.1 h1:xarYyeCCj1dfrM1U69Nno7GstrTNHlFKzKZKKdBGrKs=
 github.com/caddy-dns/inwx v0.4.1/go.mod h1:5Xpi42yYojkisGfLuT8ajDl5JdRcZQqeToI+n/vl6kw=
-github.com/caddy-dns/ionos v1.2.0 h1:3cX4QnoNS49AJLGAqCOz70sUorsBJCuxleegLguk11E=
-github.com/caddy-dns/ionos v1.2.0/go.mod h1:bUHqIsAjgauVCct0nbcFHAiZHswVAxgaI0aj+zoVPUA=
+github.com/caddy-dns/ionos v1.3.0 h1:gc+cmA4JevWCisW46BgcQ/FJVROtcosBLQHg9fuYxCs=
+github.com/caddy-dns/ionos v1.3.0/go.mod h1:9D1+5GgD62AB+bOPW+xFIHECCKpsN7noXRA951GjTzU=
 github.com/caddy-dns/liara v0.0.0-20260826065757-6754fe2d3249 h1:oKY0Ij2NPSHPDsTRXIoDPJfmdV5UHGc0m8lpvwDD/ok=
 github.com/caddy-dns/liara v0.0.0-20260826065757-6754fe2d3249/go.mod h1:ILI3AZGdCT0uSEnO9P6aOuAZLMek8PRdpxTqb3rQ+fQ=
 github.com/caddy-dns/linode v0.8.0 h1:e6lzkrYu1A5X4RuAFT0och0DOYwSYbPIgLhjteTkrKk=
@@ -1057,8 +1057,8 @@ github.com/libdns/infomaniak v0.2.0 h1:TC3jP68Tnw4sAi87r1xNY4fPF5Cs5SPGbEkTWvXCm
 github.com/libdns/infomaniak v0.2.0/go.mod h1:2RTkgFMLv45OPE8dwgFZKn4PKzECdVADdHdkIcbUZWE=
 github.com/libdns/inwx v0.3.1 h1:AZXlqU36Hl7RTRZf2xawxfwZ9Y120Xl0ZIozs7gsccU=
 github.com/libdns/inwx v0.3.1/go.mod h1:kUBDmTXFGY8BqpHRJOWQ+GYfFnJOeejKeJHhnVliUb8=
-github.com/libdns/ionos v1.2.0 h1:FQ2xQTBfsjc7aMArRBBCs9l48Squt76GHXbxDsqOKgw=
-github.com/libdns/ionos v1.2.0/go.mod h1:g/JYno/+VXdujTGPBDMDeCfeLF0PJyJynsCrFu+2EFQ=
+github.com/libdns/ionos v1.3.0 h1:kkBthBg6Pd+fI8WljMKP+Sa/L7ciPr4OGevH9M9jW34=
+github.com/libdns/ionos v1.3.0/go.mod h1:+noOfaNMuaNOtsBNVHmOcRDfNKiTCflj8+TfPJF2gLw=
 github.com/libdns/liara v0.1.1 h1:bZyU1ISFatx+JpJbtL6TUrMsb5Ro5mQipJRCHBb2JYM=
 github.com/libdns/liara v0.1.1/go.mod h1:QReCulnUJ1dSzir91BaG453lk/SmvHXyIZ9gc0Yz87I=
 github.com/libdns/libdns v0.2.0/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSObbb40=
