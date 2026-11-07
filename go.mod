@@ -9,10 +9,11 @@ require (
 	github.com/caddy-dns/all-inkl v0.2.5
 	github.com/caddy-dns/arvancloud v0.1.0
 	github.com/caddy-dns/azure v0.6.0
-	github.com/caddy-dns/bluecat v0.1.6
+	github.com/caddy-dns/bluecat v0.1.7
 	github.com/caddy-dns/bunny v1.2.0
 	github.com/caddy-dns/cloudflare v0.2.4
 	github.com/caddy-dns/cloudns v1.2.0
+	github.com/caddy-dns/connbyte v0.1.1
 	github.com/caddy-dns/conoha v0.1.0
 	github.com/caddy-dns/desec v1.1.0
 	github.com/caddy-dns/digitalocean v0.0.0-20250606074528-04bde2867106
@@ -28,18 +29,19 @@ require (
 	github.com/caddy-dns/edgeone v1.0.3
 	github.com/caddy-dns/ednsde v1.0.2
 	github.com/caddy-dns/enum v1.0.0
-	github.com/caddy-dns/gandi v1.1.0
+	github.com/caddy-dns/gandi v1.2.1
 	github.com/caddy-dns/gcore v0.0.0-20250618083722-4ebfce0e46b0
 	github.com/caddy-dns/glesys v1.0.0
 	github.com/caddy-dns/godaddy v1.2.0
 	github.com/caddy-dns/googleclouddns v1.1.0
 	github.com/caddy-dns/he v1.2.2
 	github.com/caddy-dns/hetzner v1.0.0
+	github.com/caddy-dns/hosterby v1.0.1
 	github.com/caddy-dns/httpnet v0.0.0-20260424163022-7e438d79be37
 	github.com/caddy-dns/huaweicloud v1.0.1
 	github.com/caddy-dns/infomaniak v1.0.2
 	github.com/caddy-dns/inwx v0.4.1
-	github.com/caddy-dns/ionos v1.2.0
+	github.com/caddy-dns/ionos v1.3.0
 	github.com/caddy-dns/liara v0.0.0-20260826065757-6754fe2d3249
 	github.com/caddy-dns/linode v0.8.0
 	github.com/caddy-dns/loopia v1.0.1
@@ -70,15 +72,15 @@ require (
 	github.com/caddy-dns/route53 v1.6.2
 	github.com/caddy-dns/scaleway v0.2.2
 	github.com/caddy-dns/selectel v1.2.0
-	github.com/caddy-dns/servercow v0.0.0-20260420085529-48781691f65a
-	github.com/caddy-dns/simplydotcom v1.0.0-beta2
+	github.com/caddy-dns/servercow v0.0.0-20261012170046-bb6031161c02
+	github.com/caddy-dns/simplydotcom v1.1.0
 	github.com/caddy-dns/spaceship v1.0.0
 	github.com/caddy-dns/tecnocratica v0.1.5
 	github.com/caddy-dns/tencentcloud v0.4.3
 	github.com/caddy-dns/thelittlehost v1.0.3
 	github.com/caddy-dns/timeweb v1.0.1
 	github.com/caddy-dns/transip v0.0.0-20260205122818-9b8f83754ff7
-	github.com/caddy-dns/unifi v1.0.5
+	github.com/caddy-dns/unifi v1.0.6
 	github.com/caddy-dns/volcengine v0.0.1
 	github.com/caddy-dns/vultr v0.0.0-20250723121531-55bf3e9768be
 	github.com/caddy-dns/websupport v0.0.0-20251211090312-5da3f800ce77
@@ -213,10 +215,11 @@ require (
 	github.com/libdns/all-inkl v0.2.5 // indirect
 	github.com/libdns/arvancloud v0.1.0 // indirect
 	github.com/libdns/azure v0.5.0 // indirect
-	github.com/libdns/bluecat v0.1.7 // indirect
+	github.com/libdns/bluecat v0.1.8 // indirect
 	github.com/libdns/bunny v1.4.0 // indirect
 	github.com/libdns/cloudflare v0.2.2 // indirect
 	github.com/libdns/cloudns v1.2.0 // indirect
+	github.com/libdns/connbyte v0.1.1 // indirect
 	github.com/libdns/conoha v0.1.1 // indirect
 	github.com/libdns/desec v1.1.0 // indirect
 	github.com/libdns/digitalocean v0.0.0-20250606071607-dfa7af5c2e31 // indirect
@@ -232,18 +235,19 @@ require (
 	github.com/libdns/edgeone v1.0.3 // indirect
 	github.com/libdns/ednsde v1.0.2 // indirect
 	github.com/libdns/enum v1.0.0 // indirect
-	github.com/libdns/gandi v1.1.0 // indirect
+	github.com/libdns/gandi v1.2.1 // indirect
 	github.com/libdns/gcore v0.0.0-20250427050847-9964da923833 // indirect
 	github.com/libdns/glesys v1.0.0 // indirect
 	github.com/libdns/godaddy v1.1.0 // indirect
 	github.com/libdns/googleclouddns v1.2.0 // indirect
 	github.com/libdns/he v1.2.2 // indirect
 	github.com/libdns/hetzner v1.0.0 // indirect
+	github.com/libdns/hosterby v1.0.1 // indirect
 	github.com/libdns/httpnet v1.0.0 // indirect
 	github.com/libdns/huaweicloud v1.0.1 // indirect
 	github.com/libdns/infomaniak v0.2.0 // indirect
 	github.com/libdns/inwx v0.3.1 // indirect
-	github.com/libdns/ionos v1.2.0 // indirect
+	github.com/libdns/ionos v1.3.0 // indirect
 	github.com/libdns/liara v0.1.1 // indirect
 	github.com/libdns/libdns v1.2.0-alpha.1 // indirect
 	github.com/libdns/linode v0.5.0 // indirect
@@ -275,8 +279,8 @@ require (
 	github.com/libdns/route53 v1.6.2 // indirect
 	github.com/libdns/scaleway v0.3.1 // indirect
 	github.com/libdns/selectel v1.2.0 // indirect
-	github.com/libdns/servercow v0.1.0 // indirect
-	github.com/libdns/simplydotcom v1.0.0-beta2 // indirect
+	github.com/libdns/servercow v0.2.0 // indirect
+	github.com/libdns/simplydotcom v1.1.0 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
 	github.com/libdns/tecnocratica v0.1.5 // indirect
 	github.com/libdns/tencentcloud v1.4.3 // indirect
