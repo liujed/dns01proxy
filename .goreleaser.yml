@@ -339,6 +339,61 @@ builds:
   - nobadger
   - nomysql
   - nopgx
+- id: "binarylane"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/binarylane
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
 - id: "bluecat"
   env:
   - CGO_ENABLED=0
@@ -949,6 +1004,61 @@ builds:
   - CGO_ENABLED=0
   - GO111MODULE=on
   main: ./internal/builds/dode
+  binary: dns01proxy
+  goos:
+  - darwin
+  - linux
+  - windows
+  - freebsd
+  goarch:
+  - amd64
+#  - arm
+  - arm64
+#  - s390x
+#  - ppc64le
+#  - riscv64
+#  goarm:
+#  - "5"
+#  - "6"
+#  - "7"
+  ignore:
+    - goos: darwin
+      goarch: arm
+    - goos: darwin
+      goarch: ppc64le
+    - goos: darwin
+      goarch: s390x
+    - goos: darwin
+      goarch: riscv64
+    - goos: windows
+      goarch: ppc64le
+    - goos: windows
+      goarch: s390x
+    - goos: windows
+      goarch: riscv64
+    - goos: windows
+      goarch: arm
+    - goos: freebsd
+      goarch: ppc64le
+    - goos: freebsd
+      goarch: s390x
+    - goos: freebsd
+      goarch: riscv64
+    - goos: freebsd
+      goarch: arm
+      goarm: "5"
+  flags:
+  - -trimpath
+  - -mod=readonly
+  tags:
+  - nobadger
+  - nomysql
+  - nopgx
+- id: "domainchief"
+  env:
+  - CGO_ENABLED=0
+  - GO111MODULE=on
+  main: ./internal/builds/domainchief
   binary: dns01proxy
   goos:
   - darwin
@@ -4666,6 +4776,21 @@ archives:
       {{- with .Arm }}v{{ . }}{{ end }}
       {{- with .Mips }}_{{ . }}{{ end }}
       {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: binarylane
+    ids:
+    - binarylane
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_binarylane_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
   - id: bluecat
     ids:
     - bluecat
@@ -4841,6 +4966,21 @@ archives:
     name_template: >-
       {{ .ProjectName }}_
       {{- .Version }}_dode_
+      {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
+      {{- .Arch }}
+      {{- with .Arm }}v{{ . }}{{ end }}
+      {{- with .Mips }}_{{ . }}{{ end }}
+      {{- if not (eq .Amd64 "v1") }}{{ .Amd64 }}{{ end }}
+  - id: domainchief
+    ids:
+    - domainchief
+    format_overrides:
+      - goos: windows
+        formats: zip
+    wrap_in_directory: true
+    name_template: >-
+      {{ .ProjectName }}_
+      {{- .Version }}_domainchief_
       {{- if eq .Os "darwin" }}mac{{ else }}{{ .Os }}{{ end }}_
       {{- .Arch }}
       {{- with .Arm }}v{{ . }}{{ end }}
@@ -5858,6 +5998,7 @@ release:
     | all-inkl | `v0.2.5` | [`github.com/caddy-dns/all-inkl`](https://github.com/caddy-dns/all-inkl) | [📖](https://caddyserver.com/docs/modules/dns.providers.all-inkl) |
     | arvancloud | `v0.1.0` | [`github.com/caddy-dns/arvancloud`](https://github.com/caddy-dns/arvancloud) | [📖](https://caddyserver.com/docs/modules/dns.providers.arvancloud) |
     | azure | `v0.6.0` | [`github.com/caddy-dns/azure`](https://github.com/caddy-dns/azure) | [📖](https://caddyserver.com/docs/modules/dns.providers.azure) |
+    | binarylane | `v0.1.0` | [`github.com/caddy-dns/binarylane`](https://github.com/caddy-dns/binarylane) | [📖](https://caddyserver.com/docs/modules/dns.providers.binarylane) |
     | bluecat | `v0.1.7` | [`github.com/caddy-dns/bluecat`](https://github.com/caddy-dns/bluecat) | [📖](https://caddyserver.com/docs/modules/dns.providers.bluecat) |
     | bunny | `v1.2.0` | [`github.com/caddy-dns/bunny`](https://github.com/caddy-dns/bunny) | [📖](https://caddyserver.com/docs/modules/dns.providers.bunny) |
     | cloudflare | `v0.2.4` | [`github.com/caddy-dns/cloudflare`](https://github.com/caddy-dns/cloudflare) | [📖](https://caddyserver.com/docs/modules/dns.providers.cloudflare) |
@@ -5870,6 +6011,7 @@ release:
     | dnsimple | `v0.0.0-20260303131243-0433343c5610` | [`github.com/caddy-dns/dnsimple`](https://github.com/caddy-dns/dnsimple) | [📖](https://caddyserver.com/docs/modules/dns.providers.dnsimple) |
     | dnsmadeeasy | `v1.2.0` | [`github.com/caddy-dns/dnsmadeeasy`](https://github.com/caddy-dns/dnsmadeeasy) | [📖](https://caddyserver.com/docs/modules/dns.providers.dnsmadeeasy) |
     | dode | `v0.2.0` | [`github.com/caddy-dns/dode`](https://github.com/caddy-dns/dode) | [📖](https://caddyserver.com/docs/modules/dns.providers.dode) |
+    | domainchief | `v0.2.0` | [`github.com/caddy-dns/domainchief`](https://github.com/caddy-dns/domainchief) | [📖](https://caddyserver.com/docs/modules/dns.providers.domainchief) |
     | domainnameshop | `v0.2.3` | [`github.com/caddy-dns/domainnameshop`](https://github.com/caddy-dns/domainnameshop) | [📖](https://caddyserver.com/docs/modules/dns.providers.domainnameshop) |
     | duckdns | `v0.5.0` | [`github.com/caddy-dns/duckdns`](https://github.com/caddy-dns/duckdns) | [📖](https://caddyserver.com/docs/modules/dns.providers.duckdns) |
     | dynu | `v1.0.0` | [`github.com/caddy-dns/dynu`](https://github.com/caddy-dns/dynu) | [📖](https://caddyserver.com/docs/modules/dns.providers.dynu) |
@@ -5918,10 +6060,10 @@ release:
     | regery | `v1.1.0` | [`github.com/caddy-dns/regery`](https://github.com/caddy-dns/regery) | [📖](https://caddyserver.com/docs/modules/dns.providers.regery) |
     | regfish | `v0.0.0-20260304102646-e8c40e7e99ad` | [`github.com/caddy-dns/regfish`](https://github.com/caddy-dns/regfish) | [📖](https://caddyserver.com/docs/modules/dns.providers.regfish) |
     | rfc2136 | `v1.0.0` | [`github.com/caddy-dns/rfc2136`](https://github.com/caddy-dns/rfc2136) | [📖](https://caddyserver.com/docs/modules/dns.providers.rfc2136) |
-    | route53 | `v1.6.2` | [`github.com/caddy-dns/route53`](https://github.com/caddy-dns/route53) | [📖](https://caddyserver.com/docs/modules/dns.providers.route53) |
+    | route53 | `v1.6.3` | [`github.com/caddy-dns/route53`](https://github.com/caddy-dns/route53) | [📖](https://caddyserver.com/docs/modules/dns.providers.route53) |
     | scaleway | `v0.2.2` | [`github.com/caddy-dns/scaleway`](https://github.com/caddy-dns/scaleway) | [📖](https://caddyserver.com/docs/modules/dns.providers.scaleway) |
     | selectel | `v1.2.0` | [`github.com/caddy-dns/selectel`](https://github.com/caddy-dns/selectel) | [📖](https://caddyserver.com/docs/modules/dns.providers.selectel) |
-    | servercow | `v0.0.0-20261012170046-bb6031161c02` | [`github.com/caddy-dns/servercow`](https://github.com/caddy-dns/servercow) | [📖](https://caddyserver.com/docs/modules/dns.providers.servercow) |
+    | servercow | `v0.3.0` | [`github.com/caddy-dns/servercow`](https://github.com/caddy-dns/servercow) | [📖](https://caddyserver.com/docs/modules/dns.providers.servercow) |
     | simplydotcom | `v1.1.0` | [`github.com/caddy-dns/simplydotcom`](https://github.com/caddy-dns/simplydotcom) | [📖](https://caddyserver.com/docs/modules/dns.providers.simplydotcom) |
     | spaceship | `v1.0.0` | [`github.com/caddy-dns/spaceship`](https://github.com/caddy-dns/spaceship) | [📖](https://caddyserver.com/docs/modules/dns.providers.spaceship) |
     | tecnocratica | `v0.1.5` | [`github.com/caddy-dns/tecnocratica`](https://github.com/caddy-dns/tecnocratica) | [📖](https://caddyserver.com/docs/modules/dns.providers.tecnocratica) |

@@ -9,6 +9,7 @@ require (
 	github.com/caddy-dns/all-inkl v0.2.5
 	github.com/caddy-dns/arvancloud v0.1.0
 	github.com/caddy-dns/azure v0.6.0
+	github.com/caddy-dns/binarylane v0.1.0
 	github.com/caddy-dns/bluecat v0.1.7
 	github.com/caddy-dns/bunny v1.2.0
 	github.com/caddy-dns/cloudflare v0.2.4
@@ -21,6 +22,7 @@ require (
 	github.com/caddy-dns/dnsimple v0.0.0-20260303131243-0433343c5610
 	github.com/caddy-dns/dnsmadeeasy v1.2.0
 	github.com/caddy-dns/dode v0.2.0
+	github.com/caddy-dns/domainchief v0.2.0
 	github.com/caddy-dns/domainnameshop v0.2.3
 	github.com/caddy-dns/duckdns v0.5.0
 	github.com/caddy-dns/dynu v1.0.0
@@ -69,10 +71,10 @@ require (
 	github.com/caddy-dns/regery v1.1.0
 	github.com/caddy-dns/regfish v0.0.0-20260304102646-e8c40e7e99ad
 	github.com/caddy-dns/rfc2136 v1.0.0
-	github.com/caddy-dns/route53 v1.6.2
+	github.com/caddy-dns/route53 v1.6.3
 	github.com/caddy-dns/scaleway v0.2.2
 	github.com/caddy-dns/selectel v1.2.0
-	github.com/caddy-dns/servercow v0.0.0-20261012170046-bb6031161c02
+	github.com/caddy-dns/servercow v0.3.0
 	github.com/caddy-dns/simplydotcom v1.1.0
 	github.com/caddy-dns/spaceship v1.0.0
 	github.com/caddy-dns/tecnocratica v0.1.5
@@ -118,21 +120,21 @@ require (
 	github.com/andybalholm/cascadia v1.3.4 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.1 // indirect
 	github.com/aryann/difflib v0.0.0-20210328193216-ff5ff6dc229b // indirect
-	github.com/aws/aws-sdk-go-v2 v1.47.0 // indirect
-	github.com/aws/aws-sdk-go-v2/config v1.33.4 // indirect
-	github.com/aws/aws-sdk-go-v2/credentials v1.20.4 // indirect
-	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.20.0 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.5.3 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.8.3 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/v4a v1.5.3 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.19 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.14.3 // indirect
-	github.com/aws/aws-sdk-go-v2/service/route53 v1.58.3 // indirect
-	github.com/aws/aws-sdk-go-v2/service/signin v1.10.0 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sso v1.38.0 // indirect
-	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.43.0 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sts v1.50.0 // indirect
-	github.com/aws/smithy-go v1.28.1 // indirect
+	github.com/aws/aws-sdk-go-v2 v1.48.0 // indirect
+	github.com/aws/aws-sdk-go-v2/config v1.33.18 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.21.0 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.20.9 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.5.12 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.8.12 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/v4a v1.5.12 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.25 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.14.12 // indirect
+	github.com/aws/aws-sdk-go-v2/service/route53 v1.70.10 // indirect
+	github.com/aws/aws-sdk-go-v2/service/signin v1.13.1 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.39.5 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.44.5 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.52.0 // indirect
+	github.com/aws/smithy-go v1.28.9 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bits-and-blooms/bitset v1.25.0 // indirect
 	github.com/boombuler/barcode v1.0.2 // indirect
@@ -215,6 +217,7 @@ require (
 	github.com/libdns/all-inkl v0.2.5 // indirect
 	github.com/libdns/arvancloud v0.1.0 // indirect
 	github.com/libdns/azure v0.5.0 // indirect
+	github.com/libdns/binarylane v0.1.0 // indirect
 	github.com/libdns/bluecat v0.1.8 // indirect
 	github.com/libdns/bunny v1.4.0 // indirect
 	github.com/libdns/cloudflare v0.2.2 // indirect
@@ -227,6 +230,7 @@ require (
 	github.com/libdns/dnsimple v0.5.0 // indirect
 	github.com/libdns/dnsmadeeasy v1.2.1 // indirect
 	github.com/libdns/dode v0.2.0 // indirect
+	github.com/libdns/domainchief v0.2.0 // indirect
 	github.com/libdns/domainnameshop v0.2.2 // indirect
 	github.com/libdns/duckdns v0.3.0 // indirect
 	github.com/libdns/dynu v1.0.0 // indirect
@@ -276,10 +280,10 @@ require (
 	github.com/libdns/regery v1.1.0 // indirect
 	github.com/libdns/regfish v0.0.0-20250710113612-8b64bd89b1ca // indirect
 	github.com/libdns/rfc2136 v1.0.0 // indirect
-	github.com/libdns/route53 v1.6.2 // indirect
+	github.com/libdns/route53 v1.6.3 // indirect
 	github.com/libdns/scaleway v0.3.1 // indirect
 	github.com/libdns/selectel v1.2.0 // indirect
-	github.com/libdns/servercow v0.2.0 // indirect
+	github.com/libdns/servercow v0.3.0 // indirect
 	github.com/libdns/simplydotcom v1.1.0 // indirect
 	github.com/libdns/spaceship v1.0.0 // indirect
 	github.com/libdns/tecnocratica v0.1.5 // indirect

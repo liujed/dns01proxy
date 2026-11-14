@@ -1,6 +1,6 @@
 {
   "project_url": "https://github.com/caddy-dns/servercow",
   "go_mod_path": "github.com/caddy-dns/servercow",
-  "go_mod_version": "v0.0.0-20261012170046-bb6031161c02",
+  "go_mod_version": "v0.3.0",
   "caddy_doc_url": "https://caddyserver.com/docs/modules/dns.providers.servercow"
 }
