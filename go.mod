@@ -86,7 +86,7 @@ require (
 	github.com/caddy-dns/websupport v0.0.0-20251211090312-5da3f800ce77
 	github.com/caddy-dns/wedos v1.0.4
 	github.com/caddy-dns/westcn v1.0.0
-	github.com/caddyserver/caddy/v2 v2.11.8
+	github.com/caddyserver/caddy/v2 v2.11.9
 	github.com/google/go-github/v72 v72.0.0
 	github.com/liujed/caddy-dns01proxy v0.1.22
 	github.com/liujed/goutil v0.0.0

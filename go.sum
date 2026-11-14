@@ -381,8 +381,8 @@ github.com/caddy-dns/wedos v1.0.4/go.mod h1:xRxMVAwe5IuomXjjfuzKsZBPT++r7YRT4XBp
 github.com/caddy-dns/westcn v1.0.0 h1:/D9Tu6tfQ0+O0wdDnuFWv8dxbUVuNDte5CujyOsbgBU=
 github.com/caddy-dns/westcn v1.0.0/go.mod h1:U5CiUeIf29yY4lekQoNbvj2V+BtsCOQi8QzGFTAXAbo=
 github.com/caddyserver/caddy/v2 v2.4.1/go.mod h1:pVJidKm47Cc5VDUrd2VQPSp/d1DzNj2mjg4FQouWEJM=
-github.com/caddyserver/caddy/v2 v2.11.8 h1:E2pv1BoZ5bJaWqFkU6QvLa21iGAX8bDzlEQG4dDQ/Vc=
-github.com/caddyserver/caddy/v2 v2.11.8/go.mod h1:r8BAzVRMkDEgSi6ckDR57rxeGvylYFeGZZZ8ut7N5hQ=
+github.com/caddyserver/caddy/v2 v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=
+github.com/caddyserver/caddy/v2 v2.11.9/go.mod h1:jctG0eTy0tC4ST/Q7GIPKIfxox7mhSCtcwlwF82HLVM=
 github.com/caddyserver/certmagic v0.13.1/go.mod h1:+zhQtEgLOyXRA/KRduHXNhGGdTeqRM4ePj8eBGD/2CQ=
 github.com/caddyserver/certmagic v0.25.6 h1:vHMtFSLKTa6kuZz6w0SnRMpQ388tSkww8ye355BgAM4=
 github.com/caddyserver/certmagic v0.25.6/go.mod h1:xq6cRNimqW+Tv91XNc5lNHs2XYTsLhQhYiH01H4AySs=
