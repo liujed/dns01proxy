@@ -381,8 +381,8 @@ github.com/caddy-dns/wedos v1.0.4/go.mod h1:xRxMVAwe5IuomXjjfuzKsZBPT++r7YRT4XBp
 github.com/caddy-dns/westcn v1.0.0 h1:/D9Tu6tfQ0+O0wdDnuFWv8dxbUVuNDte5CujyOsbgBU=
 github.com/caddy-dns/westcn v1.0.0/go.mod h1:U5CiUeIf29yY4lekQoNbvj2V+BtsCOQi8QzGFTAXAbo=
 github.com/caddyserver/caddy/v2 v2.4.1/go.mod h1:pVJidKm47Cc5VDUrd2VQPSp/d1DzNj2mjg4FQouWEJM=
-github.com/caddyserver/caddy/v2 v2.11.8 h1:E2pv1BoZ5bJaWqFkU6QvLa21iGAX8bDzlEQG4dDQ/Vc=
-github.com/caddyserver/caddy/v2 v2.11.8/go.mod h1:r8BAzVRMkDEgSi6ckDR57rxeGvylYFeGZZZ8ut7N5hQ=
+github.com/caddyserver/caddy/v2 v2.11.9 h1:bhZtcRKQOq0fuLvEgCdPYvUxXyGn9kzjG4lh2332DTE=
+github.com/caddyserver/caddy/v2 v2.11.9/go.mod h1:jctG0eTy0tC4ST/Q7GIPKIfxox7mhSCtcwlwF82HLVM=
 github.com/caddyserver/certmagic v0.13.1/go.mod h1:+zhQtEgLOyXRA/KRduHXNhGGdTeqRM4ePj8eBGD/2CQ=
 github.com/caddyserver/certmagic v0.25.6 h1:vHMtFSLKTa6kuZz6w0SnRMpQ388tSkww8ye355BgAM4=
 github.com/caddyserver/certmagic v0.25.6/go.mod h1:xq6cRNimqW+Tv91XNc5lNHs2XYTsLhQhYiH01H4AySs=
@@ -1165,8 +1165,8 @@ github.com/lightstep/lightstep-tracer-common/golang/gogo v0.0.0-20190605223551-b
 github.com/lightstep/lightstep-tracer-go v0.18.1/go.mod h1:jlF1pusYV4pidLvZ+XD0UBX0ZE6WURAspgAczcDHrL4=
 github.com/linode/linodego v1.56.0 h1:WO2ztR6/hdfqCIeZnC8DyYb+AXnuWOl4FB/qqK6T5HE=
 github.com/linode/linodego v1.56.0/go.mod h1:W5+QH6nCppgi5gud/b16uAKOzTtfuwzjOHEFA7bKOd0=
-github.com/liujed/caddy-dns01proxy v0.1.22 h1:czvd5bZTxKKma6eq6048A4YDvDxd4y+Cj18+lp2lhIY=
-github.com/liujed/caddy-dns01proxy v0.1.22/go.mod h1:roORHlgxWtFfOSB8sBjm+OGdTd5T6lHj8sDlTQL/BS4=
+github.com/liujed/caddy-dns01proxy v0.1.23 h1:gUrhxxTU8DFAWb3ddRhni6nrg1mlopRZDoavNivsQaE=
+github.com/liujed/caddy-dns01proxy v0.1.23/go.mod h1:10d16HEM1tPwmLkp0aSFhxlUWA8r4wJEz1m8uY1DW3M=
 github.com/liujed/goutil v0.0.0 h1:2436TO9/CPSpL/M6Uih4Nt7B20NFQ0wwegoFnTgBC14=
 github.com/liujed/goutil v0.0.0/go.mod h1:dpiiIGi/qurLl5eG5TWq/eViVTAcWubEPPgbXA49w8A=
 github.com/logrusorgru/aurora v0.0.0-20181002194514-a7b3b318ed4e/go.mod h1:7rIyQOR62GCctdiQpZ/zOJlFyk6y+94wXzv6RNZgaR4=
